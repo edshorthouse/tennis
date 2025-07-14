@@ -1,0 +1,1280 @@
+date,match_date,from,to,tournament,score
+19680422,1968-04-22,Owen Davidson,Ken Rosewall,Bournemouth,6-3 7-5 6-3
+19680502,1968-05-02,Ken Rosewall,Rod Laver,Wembley NTL 2,6-0 6-1 6-0
+19680527,1968-05-27,Rod Laver,Ken Rosewall,Roland Garros,6-3 6-1 2-6 6-2
+19680612,1968-06-12,Ken Rosewall,Tony Roche,Boston 1,4-6 10-8 6-3 7-5
+19680617,1968-06-17,Tony Roche,Ove Bengtson,London,W/O
+19680617,1968-06-17,Ove Bengtson,Tom Okker,London,6-4 6-1
+19680624,1968-06-24,Tom Okker,Arthur Ashe,Wimbledon,7-9 9-7 9-7 6-2
+19680624,1968-06-24,Arthur Ashe,Rod Laver,Wimbledon,7-5 6-2 6-4
+19680717,1968-07-17,Rod Laver,Richard Gonzalez,Los Angeles NTL,1-6 6-3 6-4
+19680722,1968-07-22,Richard Gonzalez,Fred Stolle,Oakland,7-5 6-3
+19680809,1968-08-09,Fred Stolle,Andres Gimeno,Binghamton NTL,6-4 6-1
+19680815,1968-08-15,Andres Gimeno,Ken Rosewall,Fort Worth NTL,6-4 6-3
+19680829,1968-08-29,Ken Rosewall,Tom Okker,US Open,8-6 6-4 6-8 6-1
+19680914,1968-09-14,Tom Okker,Marty Riessen,Los Angeles,6-3 6-2
+19680926,1968-09-26,Marty Riessen,Earl Butch Buchholz,Pretoria WCT,6-4 6-4
+19680926,1968-09-26,Earl Butch Buchholz,Tony Roche,Pretoria WCT,6-4 6-3
+19681006,1968-10-06,Tony Roche,John Newcombe,Durban WCT,6-3 6-4
+19681010,1968-10-10,John Newcombe,Roger Taylor,Port Elizabeth WCT,10-4
+19681011,1968-10-11,Roger Taylor,Pierre Barthes,Cape Town WCT,6-4 10-8
+19681016,1968-10-16,Pierre Barthes,John Newcombe,Kimberley WCT,10-6
+19681107,1968-11-07,John Newcombe,Tony Roche,Vienna WCT,6-4 7-5
+19681115,1968-11-15,Tony Roche,Andres Gimeno,Wembley 3,6-4 16-14
+19681115,1968-11-15,Andres Gimeno,Ken Rosewall,Wembley 3,7-5 6-1
+19681128,1968-11-28,Ken Rosewall,Richard Gonzalez,New York 3,7-5 5-7 6-4
+19681128,1968-11-28,Richard Gonzalez,Tony Roche,New York 3,6-4 6-3
+19681230,1968-12-30,Tony Roche,Fred Stolle,Hobart,6-3 0-6 6-4 6-1
+19690113,1969-01-13,Fred Stolle,Richard Gonzalez,Sydney,15-13 6-4 8-6
+19690120,1969-01-20,Richard Gonzalez,Bill Bowrey,Australian Open,6-3 6-0 11-9
+19690120,1969-01-20,Bill Bowrey,Ray Ruffels,Australian Open,9-11 2-6 6-0 6-3 6-4
+19690129,1969-01-29,Ray Ruffels,Thomas Lejus,Auckland,6-3 6-4 4-6 6-1
+19690415,1969-04-15,Thomas Lejus,Roger Taylor,Monte Carlo,6-1 5-7 6-4
+19690428,1969-04-28,Roger Taylor,Bob Hewitt,Bournemouth,6-1 6-3 2-6 6-1
+19690428,1969-04-28,Bob Hewitt,John Newcombe,Bournemouth,6-8 6-3 5-7 6-4 6-4
+19690512,1969-05-12,John Newcombe,Zeljko Franulovic,Brussels,9-7 3-6 6-2 8-6
+19690521,1969-05-21,Zeljko Franulovic,Jean Loup Rouyer,Rome,6-3 2-6 6-4
+19690521,1969-05-21,Jean Loup Rouyer,Tom Okker,Rome,4-6 6-3 6-4 5-7 7-5
+19690521,1969-05-21,Tom Okker,Tony Roche,Rome,4-6 4-6 7-5 12-10 6-3
+19690522,1969-05-22,Tony Roche,Tom Okker,Amsterdam,6-3 6-2
+19690528,1969-05-28,Tom Okker,Rod Laver,Roland Garros,4-6 6-0 6-0 6-4
+19690616,1969-06-16,Rod Laver,John Newcombe,London / Queen's Club,6-4 6-4
+19690623,1969-06-23,John Newcombe,Rod Laver,Wimbledon,6-4 5-7 6-4 6-4
+19690920,1969-09-20,Rod Laver,Raymond Moore,Los Angeles,7-5 3-6 6-2
+19690920,1969-09-20,Raymond Moore,Robert Lutz,Los Angeles,6-2 3-6 6-3
+19691006,1969-10-06,Robert Lutz,Roy Emerson,Las Vegas,6-4 6-3
+19691018,1969-10-18,Roy Emerson,Andres Gimeno,Cologne,6-3 19-17
+19691117,1969-11-17,Andres Gimeno,Nikola Pilic,Wembley,11-9 11-9
+19691117,1969-11-17,Nikola Pilic,Stan Smith,Wembley,3-6 6-3 6-4
+19691117,1969-11-17,Stan Smith,Tony Roche,Wembley,6-3 8-10 6-4
+19691124,1969-11-24,Tony Roche,Ilie Nastase,Stockholm Open,6-2 6-4
+19691124,1969-11-24,Ilie Nastase,Nikola Pilic,Stockholm Open,6-4 4-6 6-2
+19700104,1970-01-04,Nikola Pilic,John Newcombe,Australian Round Robin,6-2 6-3
+19700104,1970-01-04,John Newcombe,Tony Roche,Australian Round Robin,5-7 7-5 7-5
+19700110,1970-01-10,Tony Roche,John Newcombe,Melbourne,6-4 6-4 4-6 RET
+19700119,1970-01-19,John Newcombe,Dennis Ralston,Australian Open,19-17 20-18 4-6 6-3
+19700202,1970-02-02,Dennis Ralston,Rod Laver,Philadelphia WCT,8-6 6-1 6-4
+19700212,1970-02-12,Rod Laver,Andres Gimeno,Miami,4-6 11-9 7-5
+19700212,1970-02-12,Andres Gimeno,Ken Rosewall,Miami,3-6 6-2 3-6 7-6 6-3
+19700304,1970-03-04,Ken Rosewall,Marty Riessen,Wembley,6-4 6-2
+19700316,1970-03-16,Marty Riessen,Bill Bowrey,Sydney,7-5 8-6 6-3
+19700316,1970-03-16,Bill Bowrey,Richard Gonzalez,Sydney,6-3 6-4 6-2
+19700324,1970-03-24,Richard Gonzalez,Frew Mcmillan,Johannesburg,6-4 6-1 6-8 6-3
+19700324,1970-03-24,Frew Mcmillan,Rod Laver,Johannesburg,4-6 6-2 6-1 6-2
+19700421,1970-04-21,Rod Laver,Cliff Drysdale,Dallas,4-5 RET
+19700421,1970-04-21,Cliff Drysdale,Roy Emerson,Dallas,6-4 6-4
+19700506,1970-05-06,Roy Emerson,John Newcombe,Atlanta,12-10 6-3
+19700506,1970-05-06,John Newcombe,Tom Okker,Atlanta,2-6 10-8 6-1
+19700608,1970-06-08,Tom Okker,Nikola Pilic,Bristol,3-6 16-14 10-8
+19700615,1970-06-15,Nikola Pilic,Bob Hewitt,Eastbourne,4-6 7-5 6-4
+19700615,1970-06-15,Bob Hewitt,Ken Rosewall,Eastbourne,6-2 6-1
+19700622,1970-06-22,Ken Rosewall,John Newcombe,Wimbledon,5-7 6-3 6-3 3-6 6-1
+19700705,1970-07-05,John Newcombe,Ken Rosewall,Newport,6-4 6-4
+19700716,1970-07-16,Ken Rosewall,Rod Laver,Champions Classic,6-4 6-3 6-3
+19700809,1970-08-09,Rod Laver,Tony Roche,Boston,3-6 6-4 1-6 6-2 6-2
+19700817,1970-08-17,Tony Roche,Ilie Nastase,Hamburg,3-6 7-5 6-1 6-4
+19700817,1970-08-17,Ilie Nastase,Tom Okker,Hamburg,4-6 6-3 6-3 6-4
+19700902,1970-09-02,Tom Okker,Arthur Ashe,US Open,6-4 6-7 6-2 6-3
+19700902,1970-09-02,Arthur Ashe,John Newcombe,US Open,6-1 7-6 5-7 7-6
+19700902,1970-09-02,John Newcombe,Ken Rosewall,US Open,6-3 6-4 6-3
+19701003,1970-10-03,Ken Rosewall,Zeljko Franulovic,Barcelona,10-8 7-5 6-3
+19701101,1970-11-01,Zeljko Franulovic,Cliff Richey,Stockholm Open,6-1 8-10 6-3
+19701108,1970-11-08,Cliff Richey,Bob Carmichael,Buenos Aires,7-6 5-7 6-4 6-3
+19701108,1970-11-08,Bob Carmichael,Manuel Orantes,Buenos Aires,5-7 6-1 6-0 6-4
+19701108,1970-11-08,Manuel Orantes,Zeljko Franulovic,Buenos Aires,6-4 6-2 6-0
+19701109,1970-11-09,Zeljko Franulovic,Richard Gonzalez,Paris Indoor,6-1 6-3
+19701116,1970-11-16,Richard Gonzalez,Ken Rosewall,Wembley,6-2 6-3
+19701209,1970-12-09,Ken Rosewall,Rod Laver,Masters,5-6 6-3 6-5
+19701209,1970-12-09,Rod Laver,Stan Smith,Masters,4-6 6-3 6-4
+19710418,1971-04-18,Stan Smith,Arthur Ashe,Charlotte,6-3 6-3
+19710424,1971-04-24,Arthur Ashe,John Newcombe,Boston,6-4 3-6 6-3
+19710503,1971-05-03,John Newcombe,Jan Kodes,Rome,2-6 6-1 7-5
+19710503,1971-05-03,Jan Kodes,Rod Laver,Rome,7-5 6-3 6-3
+19710515,1971-05-15,Rod Laver,Marty Riessen,Tehran WCT,6-4 6-4
+19710521,1971-05-21,Marty Riessen,Frank Froehling,Roland Garros,1-6 2-6 6-3 6-4 6-2
+19710521,1971-05-21,Frank Froehling,Ilie Nastase,Roland Garros,6-0 2-6 6-4 6-3
+19710521,1971-05-21,Ilie Nastase,Jan Kodes,Roland Garros,8-6 6-2 2-6 7-5
+19710614,1971-06-14,Jan Kodes,Jean Loup Rouyer,Eastbourne,W/O
+19710621,1971-06-21,Jean Loup Rouyer,Onny Parun,Wimbledon,6-2 2-6 6-2 6-3
+19710621,1971-06-21,Onny Parun,Stan Smith,Wimbledon,8-6 6-3 6-4
+19710710,1971-07-10,Stan Smith,Manuel Santana,Bastad,6-2 4-6 6-4 6-2
+19711018,1971-10-18,Manuel Santana,Allan Stone,Barcelona WCT,W/O
+19711018,1971-10-18,Allan Stone,Fred Stolle,Barcelona WCT,7-6 6-3
+19711018,1971-10-18,Fred Stolle,Martin Mulligan,Barcelona WCT,6-4 6-3
+19720408,1972-04-08,Martin Mulligan,Cliff Richey,Johannesburg,3-6 6-1 6-4 6-2
+19720423,1972-04-23,Cliff Richey,Ken Rosewall,Charlotte WCT,2-6 6-2 6-2
+19720430,1972-04-30,Ken Rosewall,Roy Emerson,Denver WCT,7-6 6-7 6-4
+19720501,1972-05-01,Roy Emerson,Ismail El Shafei,Las Vegas WCT,6-2 6-2
+19720501,1972-05-01,Ismail El Shafei,Tom Okker,Las Vegas WCT,7-6 6-4
+19720510,1972-05-10,Tom Okker,Arthur Ashe,Dallas WCT,6-4 6-1 6-3
+19720510,1972-05-10,Arthur Ashe,Ken Rosewall,Dallas WCT,6-4 6-2 7-6
+19720701,1972-07-01,Ken Rosewall,Roger Taylor,St. Louis WCT,W/O
+19720706,1972-07-06,Roger Taylor,Charlie Pasarell,Boston WCT,7-6 6-4
+19720709,1972-07-09,Charlie Pasarell,Jeff Borowiak,Bretton Woods,6-3 6-2
+19720712,1972-07-12,Jeff Borowiak,Roger Taylor,Washington WCT,3-6 7-6 6-3
+19720729,1972-07-29,Roger Taylor,Bob Lutz,Louisville WCT,4-6 6-2 6-1
+19720729,1972-07-29,Bob Lutz,Marty Riessen,Louisville WCT,6-2 6-7 6-4
+19720813,1972-08-13,Marty Riessen,Cliff Drysdale,Cleveland WCT,6-3 6-3
+19720813,1972-08-13,Cliff Drysdale,Mark Cox,Cleveland WCT,3-6 6-3 7-6
+19720820,1972-08-20,Mark Cox,John Alexander,Fort Worth WCT,6-4 6-3
+19720820,1972-08-20,John Alexander,John Newcombe,Fort Worth WCT,4-6 6-3 6-4
+19720830,1972-08-30,John Newcombe,Fred Stolle,US Open,7-6 6-4 5-7 7-6
+19720830,1972-08-30,Fred Stolle,Ilie Nastase,US Open,6-4 3-6 6-3 6-2
+19720918,1972-09-18,Ilie Nastase,Roscoe Tanner,Los Angeles WCT,5-7 6-4 6-2
+19720918,1972-09-18,Roscoe Tanner,Stan Smith,Los Angeles WCT,6-4 6-4
+19721023,1972-10-23,Stan Smith,Manuel Orantes,Barcelona,9-7 7-9 7-5 6-1
+19721128,1972-11-28,Manuel Orantes,Ilie Nastase,Masters,6-3 6-4
+19730116,1973-01-16,Ilie Nastase,Ove Bengtson,Jacksonville,7-6 7-5
+19730122,1973-01-22,Ove Bengtson,Cliff Richey,Lacosta WCT,6-2 7-6(4)
+19730122,1973-01-22,Cliff Richey,Phil Dent,Lacosta WCT,6-4 7-5
+19730122,1973-01-22,Phil Dent,Roy Emerson,Lacosta WCT,6-4 6-7(6) 6-3
+19730122,1973-01-22,Roy Emerson,Stan Smith,Lacosta WCT,7-5 2-6 6-4
+19730129,1973-01-29,Stan Smith,John Alexander,Richmond WCT,4-6 6-3 6-4
+19730129,1973-01-29,John Alexander,Rod Laver,Richmond WCT,7-6(3) 6-3
+19730206,1973-02-06,Rod Laver,Robert Maud,Philadelphia WCT,6-4 4-6 7-6(6)
+19730206,1973-02-06,Robert Maud,Stan Smith,Philadelphia WCT,6-1 6-3 6-4
+19730211,1973-02-11,Stan Smith,Rod Laver,Toronto WCT,4-6 6-3 7-6(4)
+19730319,1973-03-19,Rod Laver,Stan Smith,Atlanta WCT,6-3 6-4
+19730414,1973-04-14,Stan Smith,Charlie Pasarell,Johannesburg WCT,6-2 6-2
+19730414,1973-04-14,Charlie Pasarell,Ove Bengtson,Johannesburg WCT,7-6(6) 4-6 6-4
+19730423,1973-04-23,Ove Bengtson,Stan Smith,Gothenberg WCT,6-2 6-4
+19730514,1973-05-14,Stan Smith,Raymond Moore,Las Vegas,7-6 6-3
+19730521,1973-05-21,Raymond Moore,Szabolcz Baranyi,Roland Garros,6-4 3-6 6-3
+19730602,1973-06-02,Szabolcz Baranyi,Martin Mulligan,Rome,6-4 6-2
+19730602,1973-06-02,Martin Mulligan,Peter Szoke,Rome,7-5 6-1
+19730611,1973-06-11,Peter Szoke,John Alexander,Hamburg,6-4 6-4
+19730617,1973-06-17,John Alexander,Roger Taylor,Queen's Club,6-4 9-7
+19730625,1973-06-25,Roger Taylor,Jan Kodes,Wimbledon,8-9 9-7 5-7 6-4 7-5
+19730829,1973-08-29,Jan Kodes,John Newcombe,US Open,6-4 1-6 4-6 6-2 6-3
+19730910,1973-09-10,John Newcombe,Rod Laver,World Invitational Classic,6-3 7-5
+19731008,1973-10-08,Rod Laver,Barry Phillips Moore,Barcelona,6-3 7-5
+19731008,1973-10-08,Barry Phillips Moore,Jan Kodes,Barcelona,7-5 2-6 6-4
+19731021,1973-10-21,Jan Kodes,Nicola Spear,Madrid,6-3 6-3
+19731028,1973-10-28,Nicola Spear,Jan Kodes,Prague,W/O
+19731028,1973-10-28,Jan Kodes,Jiri Hrebec,Prague,4-6 6-1 3-6 6-0 7-5
+19740121,1974-01-21,Jiri Hrebec,Bjorn Borg,Philadelphia WCT,W/O
+19740121,1974-01-21,Bjorn Borg,Tony Roche,Philadelphia WCT,7-6(4) 7-6(5)
+19740129,1974-01-29,Tony Roche,Patrice Dominguez,Richmond-WCT,7-5 6-3
+19740129,1974-01-29,Patrice Dominguez,Tom Gorman,Richmond-WCT,2-6 6-3 6-2
+19740211,1974-02-11,Tom Gorman,Ray Ruffels,Toronto WCT,7-6(6) 1-6 6-3
+19740303,1974-03-03,Ray Ruffels,Tom Gorman,Miami WCT,2-6 6-4 6-1
+19740311,1974-03-11,Tom Gorman,Tom Okker,Washington WCT,6-4 7-6
+19740330,1974-03-30,Tom Okker,Arthur Ashe,Tuscon,6-1 6-4
+19740330,1974-03-30,Arthur Ashe,John Newcombe,Tuscon,6-3 7-6
+19740331,1974-03-31,John Newcombe,Dick Stockton,Atlanta WCT,7-6(4) 6-4
+19740407,1974-04-07,Dick Stockton,Bob Lutz,New Orleans WCT,7-6 6-1
+19740407,1974-04-07,Bob Lutz,John Newcombe,New Orleans WCT,6-4 7-5
+19740415,1974-04-15,John Newcombe,Jeff Borowiak,Charlotte,6-2 6-4
+19740422,1974-04-22,Jeff Borowiak,Dick Crealy,St. Louis,6-1 7-6(6)
+19740422,1974-04-22,Dick Crealy,Stan Smith,St. Louis,6-2 6-7(2) 7-6(3)
+19740508,1974-05-08,Stan Smith,John Newcombe,Dallas WCT,6-1 3-6 7-6(3) 6-2
+19740513,1974-05-13,John Newcombe,Marty Riessen,Las Vegas,7-6 6-3
+19740513,1974-05-13,Marty Riessen,Rod Laver,Las Vegas,6-2 6-2
+19741029,1974-10-29,Rod Laver,Ilie Nastase,World Invitational Classic,6-3 6-4
+19741116,1974-11-16,Ilie Nastase,Brian Gottfried,London,6-2 6-4
+19741116,1974-11-16,Brian Gottfried,Jimmy Connors,London,6-2 7-6
+19741221,1974-12-21,Jimmy Connors,John Newcombe,Australian Open,7-5 3-6 6-4 7-6
+19750306,1975-03-06,John Newcombe,Dick Stockton,Hartford,4-6 6-4 6-2
+19750306,1975-03-06,Dick Stockton,Rod Laver,Hartford,5-7 6-4 7-6
+19750331,1975-03-31,Rod Laver,Ilie Nastase,Tuscon,6-3 3-6 6-2
+19750331,1975-03-31,Ilie Nastase,John Alexander,Tuscon,7-5 6-2
+19750414,1975-04-14,John Alexander,Bob Lutz,Tokyo Indoor,6-3 6-4
+19750421,1975-04-21,Bob Lutz,Harold Solomon,Houston,6-2 6-3
+19750421,1975-04-21,Harold Solomon,Ken Rosewall,Houston,6-4 6-7(4) 6-4
+19750512,1975-05-12,Ken Rosewall,Roscoe Tanner,Las Vegas,6-2 7-6
+19750604,1975-06-04,Roscoe Tanner,John Andrews,Roland Garros,3-6 3-6 6-3 6-4 6-4
+19750616,1975-06-16,John Andrews,Sherwood Stewart,Nottingham,6-2 2-6 6-3
+19750623,1975-06-23,Sherwood Stewart,Mike Estep,Wimbledon,2-6 8-6 8-9 6-4 8-6
+19750623,1975-06-23,Mike Estep,Roscoe Tanner,Wimbledon,9-8 6-4 6-2
+19750721,1975-07-21,Roscoe Tanner,Eddie Dibbs,Washington,7-5 6-4
+19750721,1975-07-21,Eddie Dibbs,Raul Ramirez,Washington,6-4 7-6
+19750804,1975-08-04,Raul Ramirez,Ricardo Cano,Indianapolis,6-3 7-6
+19750811,1975-08-11,Ricardo Cano,Bjorn Borg,Toronto,6-2 6-3
+19750811,1975-08-11,Bjorn Borg,Hans Joachim Ploetz,Toronto,6-4 2-6 6-3
+19750811,1975-08-11,Hans Joachim Ploetz,Juan Gisbert,Toronto,6-2 7-5
+19750811,1975-08-11,Juan Gisbert,Manuel Orantes,Toronto,6-4 6-2
+19750818,1975-08-18,Manuel Orantes,John Alexander,Boston,6-3 2-6 7-6
+19750827,1975-08-27,John Alexander,Andrew Pattison,US Open,6-0 7-6
+19750827,1975-08-27,Andrew Pattison,Jimmy Connors,US Open,6-2 6-1 6-2
+19750827,1975-08-27,Jimmy Connors,Manuel Orantes,US Open,6-4 6-3 6-3
+19751005,1975-10-05,Manuel Orantes,Vladimir Zednik,Aviles,6-1 3-6 6-3
+19760504,1976-05-04,Vladimir Zednik,Dick Crealy,Munich,6-3 6-4
+19760504,1976-05-04,Dick Crealy,Jan Kodes,Munich,6-2 1-6 6-3
+19760504,1976-05-04,Jan Kodes,Karl Meiler,Munich,5-7 6-4 6-4
+19760504,1976-05-04,Karl Meiler,Manuel Orantes,Munich,6-1 6-4 6-1
+19760510,1976-05-10,Manuel Orantes,Wojtek Fibak,Bournemouth,6-2 7-9 6-2 6-2
+19760517,1976-05-17,Wojtek Fibak,Patrice Dominguez,Hamburg,7-6 6-2
+19760524,1976-05-24,Patrice Dominguez,Fred Mcnair,Rome,7-5 6-3
+19760531,1976-05-31,Fred Mcnair,Barry Phillips Moore,Roland Garros,3-6 6-4 3-6 6-0 6-3
+19760531,1976-05-31,Barry Phillips Moore,Zeljko Franulovic,Roland Garros,3-6 7-6 6-2 4-6 6-4
+19760615,1976-06-15,Zeljko Franulovic,Alex Metreveli,Nottingham,7-6 6-4
+19760615,1976-06-15,Alex Metreveli,Roger Taylor,Nottingham,6-0 7-6
+19760621,1976-06-21,Roger Taylor,Sashi Menon,Wimbledon,5-7 6-2 9-8 2-6 10-8
+19760712,1976-07-12,Sashi Menon,Dick Crealy,Cincinnati,6-0 6-3
+19760712,1976-07-12,Dick Crealy,Roscoe Tanner,Cincinnati,6-2 7-6
+19760726,1976-07-26,Roscoe Tanner,Tim Gullikson,Washington,6-4 6-4
+19760802,1976-08-02,Tim Gullikson,Harold Solomon,Louisville,6-2 6-4
+19760809,1976-08-09,Harold Solomon,Jimmy Connors,Indianapolis,6-2 7-5
+19760823,1976-08-23,Jimmy Connors,Raul Ramirez,Boston,6-3 3-6 6-3
+19760901,1976-09-01,Raul Ramirez,Colin Dowdeswell,US Open,6-4 6-4
+19760901,1976-09-01,Colin Dowdeswell,Eddie Dibbs,US Open,6-2 6-4 6-2
+19760901,1976-09-01,Eddie Dibbs,Guillermo Vilas,US Open,6-1 2-6 7-6 7-6
+19760901,1976-09-01,Guillermo Vilas,Jimmy Connors,US Open,6-4 6-2 6-1
+19760920,1976-09-20,Jimmy Connors,Brian Gottfried,Los Angeles,6-6 RET
+19760927,1976-09-27,Brian Gottfried,Roscoe Tanner,San Francisco,4-6 7-5 6-1
+19761004,1976-10-04,Roscoe Tanner,Bob Lutz,Maui,7-6 6-1
+19761004,1976-10-04,Bob Lutz,Harold Solomon,Maui,6-3 5-7 7-5
+19761018,1976-10-18,Harold Solomon,Eddie Dibbs,Barcelona,6-3 6-4 5-7 6-4
+19761018,1976-10-18,Eddie Dibbs,Manuel Orantes,Barcelona,6-1 2-6 2-6 7-5 6-4
+19761101,1976-11-01,Manuel Orantes,Raul Ramirez,London,6-3 6-4
+19761107,1976-11-07,Raul Ramirez,Jimmy Connors,Stockholm,7-6 6-1
+19761107,1976-11-07,Jimmy Connors,Mark Cox,Stockholm,7-6 3-6 7-6
+19761115,1976-11-15,Mark Cox,Brian Gottfried,Wembley,1-6 6-1 6-4
+19761115,1976-11-15,Brian Gottfried,Jimmy Connors,Wembley,6-3 5-7 6-2
+19770124,1977-01-24,Jimmy Connors,Dick Stockton,Philadelphia WCT,3-6 6-4 3-6 6-1 6-2
+19770131,1977-01-31,Dick Stockton,Corrado Barazzutti,Richmond WCT,6-4 6-2
+19770131,1977-01-31,Corrado Barazzutti,Vitas Gerulaitis,Richmond WCT,6-3 3-6 7-5
+19770207,1977-02-07,Vitas Gerulaitis,Wojtek Fibak,Mexico City WCT,6-7(3) 6-1 7-6(1)
+19770216,1977-02-16,Wojtek Fibak,Rod Laver,Toronto Indoor WCT,6-0 6-2
+19770221,1977-02-21,Rod Laver,Brian Gottfried,Palm Springs,4-6 6-2 6-2
+19770228,1977-02-28,Brian Gottfried,Bjorn Borg,Memphis,6-4 6-3 4-6 7-5
+19770314,1977-03-14,Bjorn Borg,Jeff Borowiak,Washington Indoor,6-1 6-2
+19770314,1977-03-14,Jeff Borowiak,Tom Gorman,Washington Indoor,6-4 6-4
+19770321,1977-03-21,Tom Gorman,Bjorn Borg,La Costa,7-6 7-5
+19770321,1977-03-21,Bjorn Borg,Brian Gottfried,La Costa,6-1 6-1
+19770328,1977-03-28,Brian Gottfried,Stan Smith,Los Angeles PSW,6-4 2-6 6-3
+19770418,1977-04-18,Stan Smith,Peter Fleming,Denver,6-4 7-5
+19770516,1977-05-16,Peter Fleming,Lito Alvarez,Rome,1-6 6-3 6-4
+19770523,1977-05-23,Lito Alvarez,Ilie Nastase,Roland Garros,7-6 6-3 6-2
+19770613,1977-06-13,Ilie Nastase,Hank Pfister,Queen's Club,6-2 6-3
+19770613,1977-06-13,Hank Pfister,Mark Cox,Queen's Club,9-8 1-6 6-4
+19770613,1977-06-13,Mark Cox,Raul Ramirez,Queen's Club,9-7 7-5
+19770620,1977-06-20,Raul Ramirez,Tim Gullikson,Wimbledon,6-3 6-4 3-6 8-9 6-4
+19770711,1977-07-11,Tim Gullikson,Rick Fagel,Cincinnati,6-2 6-3
+19770731,1977-07-31,Rick Fagel,John Alexander,North Conway,1-6 6-4 6-3
+19770816,1977-08-16,John Alexander,Jeff Borowiak,Toronto,6-4 3-6 7-6
+19770831,1977-08-31,Jeff Borowiak,Willem Prinsloo,US Open,3-6 7-6 6-1
+19770919,1977-09-19,Willem Prinsloo,Alvaro Fillol,Paris,7-5 6-2
+19770919,1977-09-19,Alvaro Fillol,Paolo Bertolucci,Paris,4-6 6-2 6-4
+19770919,1977-09-19,Paolo Bertolucci,Patrick Proisy,Paris,6-4 5-7 8-7 RET
+19770926,1977-09-26,Patrick Proisy,Hans Gildemeister,Aix en Provence,3-6 6-3 8-6
+19771003,1977-10-03,Hans Gildemeister,Wojtek Fibak,Tehran,2-6 6-3 6-2
+19771010,1977-10-10,Wojtek Fibak,Eddie Dibbs,Madrid,6-3 4-6 6-4
+19771017,1977-10-17,Eddie Dibbs,Bjorn Borg,Barcelona,6-0 6-0 6-4
+19771121,1977-11-21,Bjorn Borg,Sherwood Stewart,Oviedo,6-1 7-6
+19771128,1977-11-28,Sherwood Stewart,Frew Mcmillan,Johannesburg WCT,6-2 6-4
+19780109,1978-01-09,Frew Mcmillan,Vitas Gerulaitis,Birmingham WCT,6-4 6-2
+19780120,1978-01-20,Vitas Gerulaitis,Jimmy Connors,Pepsi Grand Slam,6-2 6-4
+19780320,1978-03-20,Jimmy Connors,Jeff Borowiak,Las Vegas,6-3 6-0
+19780417,1978-04-17,Jeff Borowiak,Brian Gottfried,Houston WCT,7-6 6-2
+19780424,1978-04-24,Brian Gottfried,Harold Solomon,Las Vegas,7-6 6-4
+19780508,1978-05-08,Harold Solomon,Jose Higueras,Nations Cup,6-2 6-2
+19780515,1978-05-15,Jose Higueras,Guillermo Vilas,Hamburg,4-6 6-2 6-2
+19780529,1978-05-29,Guillermo Vilas,Bjorn Borg,Roland Garros,6-1 6-1 6-3
+19780829,1978-08-29,Bjorn Borg,Jimmy Connors,US Open,6-4 6-2 6-2
+19781031,1978-10-31,Jimmy Connors,Brian Teacher,Tokyo Indoor,4-6 6-4 6-3
+19781113,1978-11-13,Brian Teacher,Geoff Masters,Hong Kong,7-5 6-2
+19781113,1978-11-13,Geoff Masters,Ramesh Krishnan,Hong Kong,6-3 4-6 6-4
+19781120,1978-11-20,Ramesh Krishnan,Angel Gimenez,Manila,DEF
+19781120,1978-11-20,Angel Gimenez,Yannick Noah,Manila,6-3 6-2
+19781224,1978-12-24,Yannick Noah,Allan Stone,Sydney Outdoor,6-1 6-7 7-6
+19781224,1978-12-24,Allan Stone,John Alexander,Sydney Outdoor,6-2 6-2
+19781224,1978-12-24,John Alexander,Tim Wilkison,Sydney Outdoor,6-4 2-6 6-4
+19781226,1978-12-26,Tim Wilkison,Allan Stone,Australian Open,6-3 6-2 6-3
+19781226,1978-12-26,Allan Stone,Guillermo Vilas,Australian Open,6-4 6-4 6-4
+19790115,1979-01-15,Guillermo Vilas,Eddie Dibbs,Birmingham,6-0 1-6 6-2
+19790115,1979-01-15,Eddie Dibbs,Jimmy Connors,Birmingham,6-2 3-6 7-5
+19790210,1979-02-10,Jimmy Connors,Bjorn Borg,Pepsi Grand Slam,6-2 6-3
+19790212,1979-02-12,Bjorn Borg,Bruce Manson,Rancho Mirage,6-7 7-5 6-2
+19790212,1979-02-12,Bruce Manson,Tom Okker,Rancho Mirage,6-4 5-7 6-4
+19790219,1979-02-19,Tom Okker,Francisco Gonzalez,Denver,7-6 6-7 7-5
+19790219,1979-02-19,Francisco Gonzalez,Wojtek Fibak,Denver,6-1 6-4
+19790226,1979-02-26,Wojtek Fibak,Roscoe Tanner,Memphis,6-3 7-5
+19790319,1979-03-19,Roscoe Tanner,John McEnroe,New Orleans,6-4 6-2
+19790402,1979-04-02,John McEnroe,Bjorn Borg,Rotterdam,6-4 6-2
+19790501,1979-05-01,Bjorn Borg,John McEnroe,Dallas WCT,7-5 4-6 6-2 7-6
+19790625,1979-06-25,John McEnroe,Tim Gullikson,Wimbledon,6-4 6-2 6-4
+19790709,1979-07-09,Tim Gullikson,Hank Pfister,Newport,6-4 6-2
+19790709,1979-07-09,Hank Pfister,Stan Smith,Newport,6-1 6-4
+19790820,1979-08-20,Stan Smith,Peter Fleming,Cincinnati,6-1 6-3
+19790828,1979-08-28,Peter Fleming,Jaime Fillol,US Open,6-1 5-7 6-2 6-2
+19790924,1979-09-24,Jaime Fillol,Jose Luis Clerc,Madrid,6-2 6-4
+19790924,1979-09-24,Jose Luis Clerc,Manuel Orantes,Madrid,3-6 7-5 6-1
+19790924,1979-09-24,Manuel Orantes,Yannick Noah,Madrid,6-3 6-7 6-3 6-2
+19791015,1979-10-15,Yannick Noah,Johan Kriek,Basel,5-7 7-6 6-2
+19791022,1979-10-22,Johan Kriek,Zeljko Franulovic,Vienna,6-0 1-6 6-1
+19791029,1979-10-29,Zeljko Franulovic,Gene Mayer,Cologne,6-1 6-2
+19791105,1979-11-05,Gene Mayer,John McEnroe,Stockholm,6-7 6-3 6-3
+19791119,1979-11-19,John McEnroe,Butch Walts,Bologna,6-4 6-7 6-3
+19800114,1980-01-14,Butch Walts,Jimmy Connors,Birmingham,6-3 6-3
+19800219,1980-02-19,Jimmy Connors,Bjorn Borg,WCT Invitational,6-3 6-1
+19800505,1980-05-05,Bjorn Borg,Guillermo Vilas,Nations Cup,6-3 1-6 6-1
+19800512,1980-05-12,Guillermo Vilas,Harold Solomon,Hamburg,6-7 6-2 6-4 2-6 6-3
+19800526,1980-05-26,Harold Solomon,Bjorn Borg,Roland Garros,6-2 6-2 6-0
+19800811,1980-08-11,Bjorn Borg,Ivan Lendl,Montreal / Toronto,4-6 5-4 RET
+19800818,1980-08-18,Ivan Lendl,Jimmy Connors,Cincinnati,6-2 6-0
+19800826,1980-08-26,Jimmy Connors,John McEnroe,US Open,6-4 5-7 0-6 6-3 7-6
+19800922,1980-09-22,John McEnroe,Johan Kriek,San Francisco,7-6 6-3
+19800929,1980-09-29,Johan Kriek,Mel Purcell,Maui,7-5 6-2
+19800929,1980-09-29,Mel Purcell,Tim Wilkison,Maui,6-1 1-6 6-1
+19801013,1980-10-13,Tim Wilkison,Ken Rosewall,Sydney Indoor,6-4 7-5
+19801020,1980-10-20,Ken Rosewall,Paul Mcnamee,Melbourne Indoor,6-0 6-3
+19801020,1980-10-20,Paul Mcnamee,Vitas Gerulaitis,Melbourne Indoor,6-2 6-3
+19801027,1980-10-27,Vitas Gerulaitis,Paul Mcnamee,Tokyo Indoor,6-4 6-1
+19801027,1980-10-27,Paul Mcnamee,Tom Gullikson,Tokyo Indoor,6-3 2-6 7-6
+19801103,1980-11-03,Tom Gullikson,Jaime Fillol,Hong Kong,3-6 6-3 6-3
+19801110,1980-11-10,Jaime Fillol,Pat Dupre,Taipei,6-0 6-3
+19801110,1980-11-10,Pat Dupre,Ramesh Krishnan,Taipei,1-6 6-3 6-3
+19801117,1980-11-17,Ramesh Krishnan,Vijay Amritraj,Bangkok,6-1 6-4
+19801124,1980-11-24,Vijay Amritraj,Pedro Rebolledo,Santiago,6-3 6-2
+19810126,1981-01-26,Pedro Rebolledo,Eddie Dibbs,Vina del Mar,6-3 6-2
+19810126,1981-01-26,Eddie Dibbs,Victor Pecci,Vina del Mar,6-1 3-6 7-6
+19810202,1981-02-02,Victor Pecci,Guillermo Vilas,Mar Del Plata,2-6 6-3 2-1 RET
+19810213,1981-02-13,Guillermo Vilas,John McEnroe,Pepsi Grand Slam,6-7 6-4 6-0
+19810223,1981-02-23,John McEnroe,Trey Waltke,Memphis,6-3 6-4
+19810309,1981-03-09,Trey Waltke,Fritz Buehning,Brussels,6-1 6-2
+19810309,1981-03-09,Fritz Buehning,Jimmy Connors,Brussels,6-3 7-5
+19810511,1981-05-11,Jimmy Connors,Peter Mcnamara,Hamburg,7-6 6-1 4-6 6-4
+19810518,1981-05-18,Peter Mcnamara,Victor Pecci,Rome,6-2 5-7 7-6
+19810525,1981-05-25,Victor Pecci,Bjorn Borg,Roland Garros,6-4 6-4 7-5
+19810622,1981-06-22,Bjorn Borg,John McEnroe,Wimbledon,4-6 7-6 7-6 6-4
+19810810,1981-08-10,John McEnroe,Vijay Amritraj,Montreal / Toronto,5-7 7-6 6-1
+19810817,1981-08-17,Vijay Amritraj,Bill Scanlon,Cincinnati,6-4 7-5
+19810817,1981-08-17,Bill Scanlon,Chris Lewis,Cincinnati,6-3 1-6 6-3
+19810817,1981-08-17,Chris Lewis,John McEnroe,Cincinnati,6-3 6-4
+19810921,1981-09-21,John McEnroe,Bill Scanlon,San Francisco,3-6 7-6 6-2
+19810921,1981-09-21,Bill Scanlon,Eliot Teltscher,San Francisco,6-0 6-3
+19811012,1981-10-12,Eliot Teltscher,John McEnroe,Sydney Indoor,7-5 7-6
+19811026,1981-10-26,John McEnroe,Vincent Van Patten,Tokyo Indoor,6-3 7-5
+19811102,1981-11-02,Vincent Van Patten,Chris Lewis,Hong Kong,6-1 2-6 6-1
+19811102,1981-11-02,Chris Lewis,Tim Gullikson,Hong Kong,7-6 6-3
+19811109,1981-11-09,Tim Gullikson,Mark Edmondson,Taipei,6-3 3-6 6-4
+19811109,1981-11-09,Mark Edmondson,Pat Dupre,Taipei,6-3 3-6 6-4
+19811109,1981-11-09,Pat Dupre,Robert Vant Hof,Taipei,7-5 6-2
+19811116,1981-11-16,Robert Vant Hof,Chris Lewis,Bangkok,6-2 6-3
+19811214,1981-12-14,Chris Lewis,Tim Wilkison,Sydney Outdoor,6-4 7-6 6-3
+19811224,1981-12-24,Tim Wilkison,Robert Vant Hof,Australian Open,6-3 6-3 1-6 4-6 6-3
+19811224,1981-12-24,Robert Vant Hof,Tim Mayotte,Australian Open,7-6 6-3 6-3
+19820104,1982-01-04,Tim Mayotte,Steve Krulevitz,Adelaide-2,2-6 7-5 6-2
+19820111,1982-01-11,Steve Krulevitz,Lloyd Bourne,Auckland,6-4 6-3
+19820222,1982-02-22,Lloyd Bourne,John Alexander,Monterrey,6-0 6-4
+19820313,1982-03-13,John Alexander,Pavel Slozil,Rotterdam,4-6 6-0 6-3
+19820329,1982-03-29,Pavel Slozil,Tomas Smid,Frankfurt,6-3 6-2
+19820405,1982-04-05,Tomas Smid,Manuel Orantes,Monte Carlo,6-4 6-3
+19820412,1982-04-12,Manuel Orantes,Rod Frawley,Houston,7-6 6-2
+19820425,1982-04-25,Rod Frawley,Brian Teacher,Las Vegas,1-6 6-3 6-2
+19820425,1982-04-25,Brian Teacher,Mark Edmondson,Las Vegas,DEF
+19820427,1982-04-27,Mark Edmondson,Chris Lewis,Hilton Head WCT,6-3 6-2
+19820427,1982-04-27,Chris Lewis,Van Winitsky,Hilton Head WCT,6-4 6-4
+19820502,1982-05-02,Van Winitsky,Tim Wilkison,Forest Hills WCT,6-2 2-6 6-2
+19820607,1982-06-07,Tim Wilkison,Peter Johnston,Queen's Club,3-5 RET
+19821004,1982-10-04,Peter Johnston,David Carter,Melbourne Indoor,6-4 6-2
+19821004,1982-10-04,David Carter,Eliot Teltscher,Melbourne Indoor,6-4 6-3
+19821004,1982-10-04,Eliot Teltscher,Vitas Gerulaitis,Melbourne Indoor,2-6 6-2 6-2
+19821011,1982-10-11,Vitas Gerulaitis,Brad Gilbert,Sydney Indoor,6-3 6-4
+19821011,1982-10-11,Brad Gilbert,Steve Denton,Sydney Indoor,6-7 6-3 6-3
+19821025,1982-10-25,Steve Denton,John McEnroe,Tokyo Indoor,7-6 7-5
+19830118,1983-01-18,John McEnroe,Ivan Lendl,Masters,6-4 6-4 6-2
+19830131,1983-01-31,Ivan Lendl,John McEnroe,Philadelphia,4-6 7-6 6-4 6-3
+19830207,1983-02-07,John McEnroe,Roscoe Tanner,Richmond WCT,6-3 5-7 6-2
+19830207,1983-02-07,Roscoe Tanner,Steve Denton,Richmond WCT,6-2 6-4
+19830214,1983-02-14,Steve Denton,Mike De Palmer,Memphis,6-4 6-3
+19830214,1983-02-14,Mike De Palmer,Paul Mcnamee,Memphis,6-1 1-6 7-6
+19830314,1983-03-14,Paul Mcnamee,Wojtek Fibak,Munich WCT,7-5 6-0
+19830328,1983-03-28,Wojtek Fibak,Yannick Noah,Monte Carlo,6-2 2-6 6-4
+19830404,1983-04-04,Yannick Noah,Mats Wilander,Lisbon,2-6 7-6 6-4
+19830509,1983-05-09,Mats Wilander,Yannick Noah,Hamburg,6-4 6-4
+19830808,1983-08-08,Yannick Noah,Peter Fleming,Montreal / Toronto,7-5 2-6 6-1
+19830815,1983-08-15,Peter Fleming,Mel Purcell,Cincinnati,6-4 6-4
+19830830,1983-08-30,Mel Purcell,Mark Dickson,US Open,6-3 6-2 6-4
+19831010,1983-10-10,Mark Dickson,Marcos Hocevar,Basel,7-5 6-2
+19831010,1983-10-10,Marcos Hocevar,Ricardo Acuna,Basel,7-6 6-7 6-3
+19831010,1983-10-10,Ricardo Acuna,Victor Pecci,Basel,6-1 7-6
+19831010,1983-10-10,Victor Pecci,Vitas Gerulaitis,Basel,7-6 6-3
+19831024,1983-10-24,Vitas Gerulaitis,Brad Gilbert,Tokyo Indoor,6-3 2-6 7-5
+19831024,1983-10-24,Brad Gilbert,Ivan Lendl,Tokyo Indoor,6-2 6-1
+19831129,1983-11-29,Ivan Lendl,Mats Wilander,Australian Open,6-1 6-4 6-4
+19840110,1984-01-10,Mats Wilander,John McEnroe,Masters,6-2 6-4
+19840528,1984-05-28,John McEnroe,Ivan Lendl,Roland Garros,3-6 2-6 6-4 7-5 7-5
+19840611,1984-06-11,Ivan Lendl,Leif Shiras,Queen's Club,7-5 6-3
+19840618,1984-06-18,Leif Shiras,Miloslav Mecir,Bristol,6-3 1-6 6-4
+19840625,1984-06-25,Miloslav Mecir,Danie Visser,Wimbledon,6-3 6-2 6-4
+19840625,1984-06-25,Danie Visser,Jimmy Arias,Wimbledon,5-7 6-3 7-6 6-1
+19840625,1984-06-25,Jimmy Arias,Tomas Smid,Wimbledon,7-5 6-4 6-3
+19840716,1984-07-16,Tomas Smid,Henri Leconte,Stuttgart Outdoor,6-2 6-1
+19840723,1984-07-23,Henri Leconte,Victor Pecci,Kitzbuhel,7-6 6-3
+19840730,1984-07-30,Victor Pecci,Tim Wilkison,North Conway,7-5 6-4
+19840806,1984-08-06,Tim Wilkison,Blaine Willenborg,Indianapolis,3-6 6-4 7-5
+19840828,1984-08-28,Blaine Willenborg,Bill Scanlon,US Open,6-3 6-1 6-3
+19840828,1984-08-28,Bill Scanlon,Mats Wilander,US Open,7-6 7-5 6-3
+19840828,1984-08-28,Mats Wilander,Pat Cash,US Open,7-6 6-4 2-6 6-3
+19840910,1984-09-10,Pat Cash,Lloyd Bourne,Los Angeles,7-5 6-3
+19840910,1984-09-10,Lloyd Bourne,Peter Fleming,Los Angeles,7-5 6-1
+19840910,1984-09-10,Peter Fleming,Ramesh Krishnan,Los Angeles,6-3 6-3
+19840917,1984-09-17,Ramesh Krishnan,Brad Gilbert,San Francisco,6-0 7-6
+19840917,1984-09-17,Brad Gilbert,John McEnroe,San Francisco,6-4 6-4
+19850408,1985-04-08,John McEnroe,Joakim Nystrom,Dallas,6-4 7-6 6-3
+19850408,1985-04-08,Joakim Nystrom,Tim Mayotte,Dallas,6-4 4-6 6-2 7-5
+19850422,1985-04-22,Tim Mayotte,John McEnroe,Atlanta,6-3 3-6 6-2
+19850506,1985-05-06,John McEnroe,Ivan Lendl,Forest Hills,6-3 6-3
+19850520,1985-05-20,Ivan Lendl,Henri Leconte,Dusseldorf,3-6 6-4 6-4
+19850527,1985-05-27,Henri Leconte,Mats Wilander,Roland Garros,6-4 7-6 6-7 7-5
+19850624,1985-06-24,Mats Wilander,Slobodan Zivojinovic,Wimbledon,6-2 5-7 7-5 6-0
+19850708,1985-07-08,Slobodan Zivojinovic,Tim Wilkison,Boston,6-7 6-3 6-4
+19850805,1985-08-05,Tim Wilkison,Ivan Lendl,Stratton Mountain,6-4 6-4
+19850805,1985-08-05,Ivan Lendl,John McEnroe,Stratton Mountain,7-6 6-2
+19850827,1985-08-27,John McEnroe,Ivan Lendl,US Open,7-6 6-3 6-4
+19851125,1985-11-25,Ivan Lendl,Stefan Edberg,Australian Open,6-7 7-5 6-1 4-6 9-7
+19860114,1986-01-14,Stefan Edberg,Johan Kriek,Masters,6-2 4-6 6-2
+19860203,1986-02-03,Johan Kriek,Stefan Edberg,Memphis,6-3 6-2
+19860210,1986-02-10,Stefan Edberg,Mats Wilander,Boca West,6-4 1-0 RET
+19860224,1986-02-24,Mats Wilander,Thierry Tulasne,La Quinta,6-4 6-3
+19860224,1986-02-24,Thierry Tulasne,Yannick Noah,La Quinta,6-2 6-7 7-5
+19860407,1986-04-07,Yannick Noah,Stefan Edberg,Dallas,6-3 7-6 7-6
+19860421,1986-04-21,Stefan Edberg,Joakim Nystrom,Monte Carlo,7-5 4-6 6-3
+19860505,1986-05-05,Joakim Nystrom,Guillermo Vilas,Forest Hills,6-3 6-7 6-2
+19860505,1986-05-05,Guillermo Vilas,Yannick Noah,Forest Hills,7-6 6-0
+19860512,1986-05-12,Yannick Noah,Ivan Lendl,Rome,1-6 6-2 7-6
+19860623,1986-06-23,Ivan Lendl,Boris Becker,Wimbledon,6-4 6-3 7-5
+19860804,1986-08-04,Boris Becker,Ivan Lendl,Stratton Mountain,6-4 7-6
+19860811,1986-08-11,Ivan Lendl,Kevin Curren,Montreal / Toronto,7-6 7-6
+19860818,1986-08-18,Kevin Curren,Mikael Pernfors,Cincinnati,6-1 6-0
+19860826,1986-08-26,Mikael Pernfors,Andrei Chesnokov,US Open,6-4 4-6 4-6 6-3 6-4
+19860826,1986-08-26,Andrei Chesnokov,Tim Wilkison,US Open,6-0 6-2 6-3
+19861006,1986-10-06,Tim Wilkison,Michiel Schapers,Toulouse,6-3 7-6
+19861013,1986-10-13,Michiel Schapers,Claudio Mezzadri,Basel,6-4 6-2
+19861013,1986-10-13,Claudio Mezzadri,Stefan Edberg,Basel,6-1 6-4
+19861020,1986-10-20,Stefan Edberg,Boris Becker,Tokyo Indoor,7-6 6-1
+19861201,1986-12-01,Boris Becker,Ivan Lendl,Masters Dec,6-4 6-4 6-4
+19870112,1987-01-12,Ivan Lendl,Pat Cash,Australian Open,7-6 5-7 7-6 6-4
+19870112,1987-01-12,Pat Cash,Stefan Edberg,Australian Open,6-3 6-4 3-6 5-7 6-3
+19870216,1987-02-16,Stefan Edberg,Boris Becker,Indian Wells,6-4 6-4 7-5
+19870223,1987-02-23,Boris Becker,Derrick Rostagno,Key Biscayne,W/O
+19870223,1987-02-23,Derrick Rostagno,Jimmy Connors,Key Biscayne,6-4 4-6 6-1 6-2
+19870316,1987-03-16,Jimmy Connors,Christo Van Rensburg,Orlando,6-3 3-6 6-1
+19870330,1987-03-30,Christo Van Rensburg,Eliot Teltscher,Chicago,6-3 6-2
+19870330,1987-03-30,Eliot Teltscher,Tim Mayotte,Chicago,3-6 7-5 6-2
+19870407,1987-04-07,Tim Mayotte,Stefan Edberg,Dallas WCT,6-2 7-5 6-7 3-6 6-1
+19870420,1987-04-20,Stefan Edberg,Ulf Stenlund,Monte Carlo,2-6 6-1 6-4
+19870427,1987-04-27,Ulf Stenlund,Javier Sanchez,Hamburg,6-3 3-6 6-3
+19870511,1987-05-11,Javier Sanchez,Emilio Sanchez,Rome,6-2 6-4
+19870511,1987-05-11,Emilio Sanchez,Kent Carlsson,Rome,6-2 4-6 6-1
+19870525,1987-05-25,Kent Carlsson,Yannick Noah,Roland Garros,7-6 6-3 6-7 7-5
+19870608,1987-06-08,Yannick Noah,Andreas Maurer,Queen's Club,3-6 7-6 6-3
+19870608,1987-06-08,Andreas Maurer,Ramesh Krishnan,Queen's Club,6-1 7-6
+19870608,1987-06-08,Ramesh Krishnan,Tim Mayotte,Queen's Club,6-2 6-3
+19870622,1987-06-22,Tim Mayotte,Mikael Pernfors,Wimbledon,2-6 4-6 6-4 6-3 7-5
+19870706,1987-07-06,Mikael Pernfors,Emilio Sanchez,Gstaad,5-7 6-4 6-1
+19870727,1987-07-27,Emilio Sanchez,Stefan Edberg,Bastad,6-4 6-0
+19870810,1987-08-10,Stefan Edberg,Ivan Lendl,Montreal / Toronto,6-4 7-6
+19870928,1987-09-28,Ivan Lendl,Peter Lundgren,San Francisco,6-3 4-6 7-6
+19871005,1987-10-05,Peter Lundgren,Eliot Teltscher,Scottsdale,3-6 6-3 6-4
+19880125,1988-01-25,Eliot Teltscher,Luiz Mattar,Guaruja,6-3 6-3
+19880208,1988-02-08,Luiz Mattar,Jonas Svensson,Rotterdam,6-4 6-2
+19880208,1988-02-08,Jonas Svensson,Miloslav Mecir,Rotterdam,6-2 6-3
+19880208,1988-02-08,Miloslav Mecir,Stefan Edberg,Rotterdam,7-6 6-2
+19880215,1988-02-15,Stefan Edberg,Jim Grabb,Memphis,6-4 6-4
+19880215,1988-02-15,Jim Grabb,Mikael Pernfors,Memphis,6-3 6-1
+19880229,1988-02-29,Mikael Pernfors,Andre Agassi,Indian Wells,0-6 6-2 6-2
+19880229,1988-02-29,Andre Agassi,Boris Becker,Indian Wells,4-6 6-3 7-5
+19880307,1988-03-07,Boris Becker,Amos Mansdorf,Orlando,6-4 6-4
+19880307,1988-03-07,Amos Mansdorf,Andrei Chesnokov,Orlando,4-6 6-2 6-3
+19880314,1988-03-14,Andrei Chesnokov,Yannick Noah,Key Biscayne,6-1 6-4 6-4
+19880328,1988-03-28,Yannick Noah,Stefan Edberg,Dallas WCT,6-2 4-6 6-3 6-3
+19880411,1988-04-11,Stefan Edberg,John McEnroe,Tokyo Outdoor,6-2 6-2
+19880502,1988-05-02,John McEnroe,Diego Perez,Forest Hills,7-6 2-6 6-3
+19880502,1988-05-02,Diego Perez,Luiz Mattar,Forest Hills,6-3 4-6 6-3
+19880502,1988-05-02,Luiz Mattar,Slobodan Zivojinovic,Forest Hills,7-6 6-3
+19880523,1988-05-23,Slobodan Zivojinovic,Mats Wilander,Roland Garros,6-2 6-7 3-6 6-3 7-5
+19880620,1988-06-20,Mats Wilander,Miloslav Mecir,Wimbledon,6-3 6-1 6-3
+19880620,1988-06-20,Miloslav Mecir,Stefan Edberg,Wimbledon,4-6 2-6 6-4 6-3 6-4
+19880808,1988-08-08,Stefan Edberg,Mark Woodforde,Montreal / Toronto,6-7 7-5 6-2
+19880815,1988-08-15,Mark Woodforde,Kevin Curren,Cincinnati,6-3 6-2
+19880829,1988-08-29,Kevin Curren,Mats Wilander,US Open,3-6 6-3 6-2 3-6 6-3
+19881024,1988-10-24,Mats Wilander,Amos Mansdorf,Paris Indoor,W/O
+19881108,1988-11-08,Amos Mansdorf,Jakob Hlasek,Wembley,4-6 6-3 6-2
+19881121,1988-11-21,Jakob Hlasek,Henri Leconte,Brussels,7-6 7-6 6-4
+19881130,1988-11-30,Henri Leconte,Boris Becker,Masters,6-0 1-0 RET
+19881130,1988-11-30,Boris Becker,Stefan Edberg,Masters,7-6 3-6 6-4
+19890116,1989-01-16,Stefan Edberg,Thomas Muster,Australian Open,W/O
+19890306,1989-03-06,Thomas Muster,Amos Mansdorf,Scottsdale,7-5 6-2
+19890306,1989-03-06,Amos Mansdorf,Stefan Edberg,Scottsdale,6-7 6-4 6-1
+19890313,1989-03-13,Stefan Edberg,Michael Chang,Indian Wells,6-3 6-2
+19890313,1989-03-13,Michael Chang,Miloslav Mecir,Indian Wells,6-2 3-6 6-4
+19890320,1989-03-20,Miloslav Mecir,Jaime Yzaga,Key Biscayne,W/O
+19890501,1989-05-01,Jaime Yzaga,Ivan Lendl,Forest Hills,6-2 6-1
+19890529,1989-05-29,Ivan Lendl,Michael Chang,Roland Garros,4-6 4-6 6-3 6-3 6-3
+19890626,1989-06-26,Michael Chang,Tim Mayotte,Wimbledon,6-3 6-1 6-3
+19890807,1989-08-07,Tim Mayotte,Jay Berger,Indianapolis,7-6 7-5
+19890807,1989-08-07,Jay Berger,John McEnroe,Indianapolis,6-4 4-6 6-4
+19890814,1989-08-14,John McEnroe,Ivan Lendl,Montreal / Toronto,6-1 6-3
+19890828,1989-08-28,Ivan Lendl,Boris Becker,US Open,7-6 1-6 6-3 7-6
+19891106,1989-11-06,Boris Becker,Jan Gunnarsson,Stockholm,6-3 7-5
+19891106,1989-11-06,Jan Gunnarsson,Mats Wilander,Stockholm,6-3 6-0
+19900108,1990-01-08,Mats Wilander,Carl Uwe Steeb,Sydney Outdoor,6-3 6-2
+19900108,1990-01-08,Carl Uwe Steeb,Yannick Noah,Sydney Outdoor,5-7 6-3 6-4
+19900115,1990-01-15,Yannick Noah,Ivan Lendl,Australian Open,6-4 6-1 6-2
+19900219,1990-02-19,Ivan Lendl,Boris Becker,Stuttgart Indoor,6-2 6-2
+19900305,1990-03-05,Boris Becker,Andre Agassi,Indian Wells Masters,6-4 6-1
+19900305,1990-03-05,Andre Agassi,Stefan Edberg,Indian Wells Masters,6-4 5-7 7-6 7-6
+19900316,1990-03-16,Stefan Edberg,Andre Agassi,Miami Masters,6-1 6-4 0-6 6-2
+19900507,1990-05-07,Andre Agassi,Magnus Gustafsson,Hamburg Masters,7-6 7-6
+19900514,1990-05-14,Magnus Gustafsson,Andres Gomez,Rome Masters,6-4 7-5
+19900514,1990-05-14,Andres Gomez,Thomas Muster,Rome Masters,5-7 6-4 7-6
+19900521,1990-05-21,Thomas Muster,Stefan Edberg,Dusseldorf,6-2 6-4
+19900528,1990-05-28,Stefan Edberg,Sergi Bruguera,Roland Garros,6-4 6-2 6-1
+19900611,1990-06-11,Sergi Bruguera,Fernando Luna,Florence,7-5 6-4
+19900611,1990-06-11,Fernando Luna,Omar Camporese,Florence,6-1 7-6
+19900618,1990-06-18,Omar Camporese,Ronald Agenor,Genova,4-6 6-3 6-3
+19900709,1990-07-09,Ronald Agenor,Martin Jaite,Gstaad,7-5 6-1
+19900716,1990-07-16,Martin Jaite,Karel Novacek,Stuttgart Outdoor,7-5 6-7 6-1
+19900723,1990-07-23,Karel Novacek,Francisco Clavet,Hilversum,7-6 7-6
+19900730,1990-07-30,Francisco Clavet,Cassio Motta,Kitzbuhel,6-3 6-4
+19900730,1990-07-30,Cassio Motta,Tomas Carbonell,Kitzbuhel,6-2 6-3
+19900827,1990-08-27,Tomas Carbonell,Boris Becker,US Open,6-4 6-2 6-2
+19901008,1990-10-08,Boris Becker,Ivan Lendl,Tokyo Indoor,4-6 6-3 7-6
+19901029,1990-10-29,Ivan Lendl,Jonas Svensson,Paris Masters,3-6 6-4 6-2
+19901211,1990-12-11,Jonas Svensson,Brad Gilbert,Grand Slam Cup,2-6 6-3 6-4
+19901211,1990-12-11,Brad Gilbert,Pete Sampras,Grand Slam Cup,6-3 6-4 6-2
+19910211,1991-02-11,Pete Sampras,Ivan Lendl,Philadelphia,5-7 6-4 6-4 3-6 6-3
+19910225,1991-02-25,Ivan Lendl,Omar Camporese,Rotterdam,3-6 7-6(4) 7-6(4)
+19910401,1991-04-01,Omar Camporese,Karel Novacek,Estoril,6-1 6-3
+19910401,1991-04-01,Karel Novacek,Sergi Bruguera,Estoril,7-6(7) 6-1
+19910408,1991-04-08,Sergi Bruguera,Emilio Sanchez,Barcelona,6-4 7-6(7) 6-2
+19910422,1991-04-22,Emilio Sanchez,Alberto Mancini,Monte Carlo Masters,6-3 6-3
+19910422,1991-04-22,Alberto Mancini,Sergi Bruguera,Monte Carlo Masters,6-1 6-4
+19910429,1991-04-29,Sergi Bruguera,Javier Sanchez,Madrid,3-6 6-1 6-4
+19910429,1991-04-29,Javier Sanchez,Marcelo Filippini,Madrid,7-5 6-1
+19910506,1991-05-06,Marcelo Filippini,Renzo Furlan,Hamburg Masters,6-3 6-3
+19910506,1991-05-06,Renzo Furlan,Yannick Noah,Hamburg Masters,1-6 6-4 6-3
+19910513,1991-05-13,Yannick Noah,Sergi Bruguera,Rome Masters,6-1 6-3
+19910527,1991-05-27,Sergi Bruguera,Omar Camporese,Roland Garros,1-6 2-6 6-4 1-0 RET
+19910610,1991-06-10,Omar Camporese,Thierry Champion,Florence,4-6 6-4 6-3
+19910610,1991-06-10,Thierry Champion,Thomas Muster,Florence,4-6 6-3 6-2
+19910617,1991-06-17,Thomas Muster,Carl Uwe Steeb,Genova,7-5 6-4
+19910624,1991-06-24,Carl Uwe Steeb,Boris Becker,Wimbledon,6-4 6-2 6-4
+19910624,1991-06-24,Boris Becker,Michael Stich,Wimbledon,6-4 7-6(4) 6-4
+19910708,1991-07-08,Michael Stich,Karel Novacek,Gstaad,6-3 6-4
+19910715,1991-07-15,Karel Novacek,Cedric Pioline,Stuttgart Outdoor,6-1 1-6 6-3
+19910715,1991-07-15,Cedric Pioline,Francisco Clavet,Stuttgart Outdoor,6-3 6-7(3) 6-1
+19910715,1991-07-15,Francisco Clavet,Michael Stich,Stuttgart Outdoor,6-4 6-2
+19910826,1991-08-26,Michael Stich,Ivan Lendl,US Open,6-3 3-6 4-6 7-6(5) 6-1
+19910826,1991-08-26,Ivan Lendl,Stefan Edberg,US Open,6-3 6-3 6-4
+19911021,1991-10-21,Stefan Edberg,Boris Becker,Stockholm Masters,3-6 6-4 1-6 6-2 6-2
+19911028,1991-10-28,Boris Becker,Jonas Svensson,Paris Masters,W/O
+19920106,1992-01-06,Jonas Svensson,Magnus Gustafsson,Sydney Outdoor,6-4 6-4
+19920106,1992-01-06,Magnus Gustafsson,Omar Camporese,Sydney Outdoor,6-3 7-6(3)
+19920113,1992-01-13,Omar Camporese,Ivan Lendl,Australian Open,7-6(4) 6-1 6-3
+19920113,1992-01-13,Ivan Lendl,Stefan Edberg,Australian Open,4-6 7-5 6-1 6-7(5) 6-1
+19920210,1992-02-10,Stefan Edberg,Boris Becker,Brussels,4-6 6-4 6-2
+19920217,1992-02-17,Boris Becker,Jan Siemerink,Stuttgart Indoor,6-3 6-4
+19920217,1992-02-17,Jan Siemerink,Petr Korda,Stuttgart Indoor,6-4 6-4
+19920217,1992-02-17,Petr Korda,Stefan Edberg,Stuttgart Indoor,6-4 6-4
+19920224,1992-02-24,Stefan Edberg,Jan Siemerink,Rotterdam,7-6(5) 6-2
+19920302,1992-03-02,Jan Siemerink,Pablo Arraya,Copenhagen,7-5 6-2
+19920316,1992-03-16,Pablo Arraya,Alberto Berasategui,Casablanca,6-1 6-4
+19920316,1992-03-16,Alberto Berasategui,Guillermo Perez Roldan,Casablanca,6-4 6-2
+19920420,1992-04-20,Guillermo Perez Roldan,Carlos Costa,Monte Carlo Masters,3-1 RET
+19920420,1992-04-20,Carlos Costa,Wayne Ferreira,Monte Carlo Masters,4-6 6-3 6-4
+19920504,1992-05-04,Wayne Ferreira,Renzo Furlan,Hamburg Masters,6-7(3) 6-3 6-3
+19920511,1992-05-11,Renzo Furlan,Michael Chang,Rome Masters,6-1 3-6 6-3
+19920525,1992-05-25,Michael Chang,Nicklas Kulti,Roland Garros,7-6(5) 2-6 6-3 3-6 8-6
+19920608,1992-06-08,Nicklas Kulti,Thierry Champion,Florence,4-6 6-1 6-4
+19920615,1992-06-15,Thierry Champion,Francisco Montana,Genova,6-1 1-0 RET
+19920622,1992-06-22,Francisco Montana,Patrick McEnroe,Wimbledon,6-4 6-1 6-1
+19920720,1992-07-20,Patrick McEnroe,Richey Reneberg,Canada Masters,7-6(2) 6-4
+19920803,1992-08-03,Richey Reneberg,Sandon Stolle,Los Angeles,6-4 6-4
+19920810,1992-08-10,Sandon Stolle,Michael Chang,Cincinnati Masters,6-4 6-3
+19920817,1992-08-17,Michael Chang,Ivan Lendl,New Haven,6-3 7-6(7)
+19920817,1992-08-17,Ivan Lendl,Stefan Edberg,New Haven,7-6(2) 4-6 6-3
+19920824,1992-08-24,Stefan Edberg,Petr Korda,Long Island,7-5 7-5
+19920831,1992-08-31,Petr Korda,Emilio Sanchez,US Open,6-2 4-6 2-6 6-1 7-6(4)
+19920831,1992-08-31,Emilio Sanchez,Wayne Ferreira,US Open,6-2 6-4 2-6 6-4
+19921005,1992-10-05,Wayne Ferreira,Henrik Holm,Sydney Indoor,7-6(5) 3-6 6-4
+19921005,1992-10-05,Henrik Holm,Stefan Edberg,Sydney Indoor,6-2 3-6 6-3
+19921012,1992-10-12,Stefan Edberg,Alexander Volkov,Tokyo Indoor,6-3 3-6 7-5
+19921012,1992-10-12,Alexander Volkov,Henrik Holm,Tokyo Indoor,7-5 6-2
+19921012,1992-10-12,Henrik Holm,Ivan Lendl,Tokyo Indoor,7-6(7) 6-4
+19921109,1992-11-09,Ivan Lendl,Mark Woodforde,Antwerp,6-4 6-2
+19921109,1992-11-09,Mark Woodforde,Richard Krajicek,Antwerp,6-2 6-2
+19921116,1992-11-16,Richard Krajicek,Goran Ivanisevic,Tour Finals,6-4 6-3
+19921208,1992-12-08,Goran Ivanisevic,Michael Chang,Grand Slam Cup,6-7 6-2 6-4 3-6 6-3
+19921208,1992-12-08,Michael Chang,Michael Stich,Grand Slam Cup,6-2 6-3 6-2
+19930118,1993-01-18,Michael Stich,Jim Courier,Australian Open,7-6(4) 6-4 6-2
+19930215,1993-02-15,Jim Courier,Derrick Rostagno,Philadelphia,7-6(5) 6-1
+19930215,1993-02-15,Derrick Rostagno,Mark Woodforde,Philadelphia,7-5 7-5
+19930222,1993-02-22,Mark Woodforde,Andre Agassi,Scottsdale,6-2 6-3
+19930301,1993-03-01,Andre Agassi,Marc Rosset,Indian Wells Masters,3-6 7-6(5) 6-4
+19930312,1993-03-12,Marc Rosset,Patrick McEnroe,Miami Masters,4-6 7-6(2) 6-0
+19930405,1993-04-05,Patrick McEnroe,Christian Bergstrom,Tokyo Outdoor,6-4 6-1
+19930405,1993-04-05,Christian Bergstrom,Todd Woodbridge,Tokyo Outdoor,3-6 7-6(4) 6-3
+19930405,1993-04-05,Todd Woodbridge,Wally Masur,Tokyo Outdoor,6-4 6-0
+19930503,1993-05-03,Wally Masur,Bryan Shelton,Tampa,6-4 6-4
+19930503,1993-05-03,Bryan Shelton,Richard Fromberg,Tampa,6-7(5) 6-3 7-5
+19930510,1993-05-10,Richard Fromberg,Jonathan Stark,Coral Springs,6-0 6-4
+19930524,1993-05-24,Jonathan Stark,Stefan Edberg,Roland Garros,6-4 6-4 7-6(4)
+19930607,1993-06-07,Stefan Edberg,Jamie Morgan,Queen's Club,4-6 7-6(9) 6-3
+19930607,1993-06-07,Jamie Morgan,Michael Stich,Queen's Club,5-7 6-4 8-6
+19930621,1993-06-21,Michael Stich,Boris Becker,Wimbledon,7-5 6-7(5) 6-7(5) 6-2 6-4
+19930621,1993-06-21,Boris Becker,Pete Sampras,Wimbledon,7-6(5) 6-4 6-4
+19930726,1993-07-26,Pete Sampras,Brett Steven,Canada Masters,7-6(6) 6-3
+19930726,1993-07-26,Brett Steven,Richey Reneberg,Canada Masters,3-6 6-3 6-2
+19930726,1993-07-26,Richey Reneberg,Todd Martin,Canada Masters,6-3 6-4
+19930809,1993-08-09,Todd Martin,Andre Agassi,Cincinnati Masters,6-3 6-7(2) 6-3
+19930809,1993-08-09,Andre Agassi,Michael Chang,Cincinnati Masters,7-5 1-6 7-5
+19930823,1993-08-23,Michael Chang,Marc Rosset,Long Island,6-4 3-6 6-1
+19930830,1993-08-30,Marc Rosset,Todd Woodbridge,US Open,5-7 6-0 6-1 7-5
+19930927,1993-09-27,Todd Woodbridge,Grant Stafford,Kuala Lumpur-2,6-4 6-0
+19930927,1993-09-27,Grant Stafford,Michael Chang,Kuala Lumpur-2,6-1 6-3
+19931011,1993-10-11,Michael Chang,Greg Rusedski,Tokyo Indoor,4-6 6-3 7-6(6)
+19931011,1993-10-11,Greg Rusedski,Todd Martin,Tokyo Indoor,7-6(5) 6-3
+19931025,1993-10-25,Todd Martin,Goran Ivanisevic,Stockholm Masters,6-2 6-4
+19931025,1993-10-25,Goran Ivanisevic,Michael Stich,Stockholm Masters,4-6 7-6(6) 7-6(3) 6-2
+19931101,1993-11-01,Michael Stich,Stefan Edberg,Paris Masters,6-2 5-7 6-2
+19931115,1993-11-15,Stefan Edberg,Goran Ivanisevic,Tour Finals,7-6(3) 6-7(5) 6-3
+19931115,1993-11-15,Goran Ivanisevic,Michael Stich,Tour Finals,7-6(2) 7-6(10)
+19931207,1993-12-07,Michael Stich,Petr Korda,Grand Slam Cup,2-6 6-4 7-6 2-6 11-9
+19940110,1994-01-10,Petr Korda,Pete Sampras,Sydney Outdoor,6-3 6-3
+19940214,1994-02-14,Pete Sampras,Jacco Eltingh,Philadelphia,7-6(8) 6-4
+19940214,1994-02-14,Jacco Eltingh,Jaime Yzaga,Philadelphia,2-6 7-5 6-2
+19940214,1994-02-14,Jaime Yzaga,Paul Haarhuis,Philadelphia,6-3 6-3
+19940221,1994-02-21,Paul Haarhuis,Michael Stich,Rotterdam,6-4 6-3
+19940328,1994-03-28,Michael Stich,Mark Petchey,Sun City,4-6 7-5 7-6(6)
+19940404,1994-04-04,Mark Petchey,David Wheaton,Tokyo Outdoor,6-1 6-4
+19940404,1994-04-04,David Wheaton,Michael Chang,Tokyo Outdoor,7-6(3) 6-3
+19940404,1994-04-04,Michael Chang,Pete Sampras,Tokyo Outdoor,6-4 6-2
+19940516,1994-05-16,Pete Sampras,Michael Stich,Dusseldorf,3-6 7-6(7) 6-2
+19940523,1994-05-23,Michael Stich,Aaron Krickstein,Roland Garros,6-3 6-3 6-4
+19940523,1994-05-23,Aaron Krickstein,Hendrik Dreekmann,Roland Garros,6-4 6-4 6-4
+19940523,1994-05-23,Hendrik Dreekmann,Magnus Larsson,Roland Garros,3-6 6-7(1) 7-6(3) 6-0 6-1
+19940613,1994-06-13,Magnus Larsson,Michael Stich,Halle,6-4 4-6 6-3
+19940620,1994-06-20,Michael Stich,Bryan Shelton,Wimbledon,6-3 6-3 6-4
+19940620,1994-06-20,Bryan Shelton,Christian Bergstrom,Wimbledon,3-6 6-3 3-6 6-3 10-8
+19940704,1994-07-04,Christian Bergstrom,Mikael Tillstrom,Bastad,6-2 2-6 7-5
+19950529,1995-05-29,Mikael Tillstrom,Bernd Karbacher,Roland Garros,7-6(4) 6-3 6-7(5) 2-6 9-7
+19950612,1995-06-12,Bernd Karbacher,Jordi Arrese,Oporto,6-1 6-3
+19950619,1995-06-19,Jordi Arrese,Jordi Burillo,St. Poelten,6-3 6-2
+19950619,1995-06-19,Jordi Burillo,Slava Dosedel,St. Poelten,6-3 6-7(7) 6-4
+19950626,1995-06-26,Slava Dosedel,Jan Siemerink,Wimbledon,6-3 6-2 6-2
+19950717,1995-07-17,Jan Siemerink,Tomas Carbonell,Stuttgart Outdoor,6-2 3-6 6-2
+19950731,1995-07-31,Tomas Carbonell,Andrew Ilie,Kitzbuhel,6-3 6-2
+19950911,1995-09-11,Andrew Ilie,Andrea Gaudenzi,Bucharest,3-6 6-3 6-3
+19950911,1995-09-11,Andrea Gaudenzi,Gilbert Schaller,Bucharest,6-3 4-6 6-3
+19950911,1995-09-11,Gilbert Schaller,Thomas Muster,Bucharest,6-3 6-4
+19951009,1995-10-09,Thomas Muster,Frederik Fetterlein,Tel Aviv,6-2 6-7(1) 6-1
+19951009,1995-10-09,Frederik Fetterlein,Stefano Pescosolido,Tel Aviv,6-3 7-6(8)
+19951016,1995-10-16,Stefano Pescosolido,Tomas Carbonell,Lyon,3-6 6-4 6-2
+19951023,1995-10-23,Tomas Carbonell,Alex Corretja,Santiago,7-5 7-5
+19951023,1995-10-23,Alex Corretja,Hernan Gumy,Santiago,7-6(2) 6-1
+19951023,1995-10-23,Hernan Gumy,Marcelo Rios,Santiago,3-6 6-4 6-2
+19951023,1995-10-23,Marcelo Rios,Slava Dosedel,Santiago,7-6(3) 6-3
+19951030,1995-10-30,Slava Dosedel,Galo Blanco,Montevideo,3-6 6-2 7-5
+19951106,1995-11-06,Galo Blanco,Jiri Novak,Buenos Aires,6-1 6-0
+19960101,1996-01-01,Jiri Novak,Byron Black,Adelaide,6-1 3-6 6-2
+19960101,1996-01-01,Byron Black,Yevgeny Kafelnikov,Adelaide,7-6(0) 3-6 6-1
+19960115,1996-01-15,Yevgeny Kafelnikov,Boris Becker,Australian Open,6-4 7-6(9) 6-1
+19960219,1996-02-19,Boris Becker,Goran Ivanisevic,Antwerp,6-4 7-6(5)
+19960219,1996-02-19,Goran Ivanisevic,Michael Stich,Antwerp,6-3 6-2 7-6(5)
+19960226,1996-02-26,Michael Stich,Guy Forget,Milan,W/O
+19960304,1996-03-04,Guy Forget,Yevgeny Kafelnikov,Rotterdam,6-3 7-6(5)
+19960318,1996-03-18,Yevgeny Kafelnikov,Magnus Gustafsson,St. Petersburg,6-2 7-6(4)
+19960415,1996-04-15,Magnus Gustafsson,Magnus Larsson,Barcelona,6-3 1-6 7-6(5)
+19960415,1996-04-15,Magnus Larsson,Marcelo Rios,Barcelona,2-6 6-1 6-2
+19960415,1996-04-15,Marcelo Rios,Thomas Muster,Barcelona,6-3 4-6 6-4 6-1
+19960429,1996-04-29,Thomas Muster,Carlos Moya,Munich,6-3 6-3
+19960429,1996-04-29,Carlos Moya,Slava Dosedel,Munich,6-4 4-6 6-3
+19960506,1996-05-06,Slava Dosedel,Marcelo Rios,Hamburg Masters,6-3 6-4
+19960513,1996-05-13,Marcelo Rios,Thomas Muster,Rome Masters,6-3 6-2
+19960520,1996-05-20,Thomas Muster,Andrea Gaudenzi,St. Poelten,W/O
+19960520,1996-05-20,Andrea Gaudenzi,Felix Mantilla,St. Poelten,6-3 5-7 6-2
+19960520,1996-05-20,Felix Mantilla,Marcelo Rios,St. Poelten,6-2 6-4
+19960527,1996-05-27,Marcelo Rios,Cedric Pioline,Roland Garros,6-4 6-1 6-2
+19960527,1996-05-27,Cedric Pioline,Michael Stich,Roland Garros,6-4 4-6 6-3 6-2
+19960527,1996-05-27,Michael Stich,Yevgeny Kafelnikov,Roland Garros,7-6(4) 7-5 7-6(4)
+19960617,1996-06-17,Yevgeny Kafelnikov,Nicklas Kulti,Halle,6-7(5) 6-3 6-4
+19960624,1996-06-24,Nicklas Kulti,Hicham Arazi,Wimbledon,4-6 6-7(4) 6-4 6-2 6-3
+19960624,1996-06-24,Hicham Arazi,Thomas Johansson,Wimbledon,6-4 6-3 6-3
+19960624,1996-06-24,Thomas Johansson,Todd Martin,Wimbledon,3-6 6-3 7-5 6-2
+19960805,1996-08-05,Todd Martin,Bernd Karbacher,Cincinnati Masters,6-4 4-6 6-4
+19960805,1996-08-05,Bernd Karbacher,Goran Ivanisevic,Cincinnati Masters,3-6 6-3 6-3
+19960805,1996-08-05,Goran Ivanisevic,Michael Chang,Cincinnati Masters,6-3 7-5
+19960819,1996-08-19,Michael Chang,Karol Kucera,Long Island,6-4 6-4
+19960826,1996-08-26,Karol Kucera,Jonas Bjorkman,US Open,6-2 5-7 7-6(3) 7-5
+19960923,1996-09-23,Jonas Bjorkman,Mikael Tillstrom,Basel,3-6 6-3 6-3
+19960923,1996-09-23,Mikael Tillstrom,Pete Sampras,Basel,6-3 6-4
+19961021,1996-10-21,Pete Sampras,Boris Becker,Stuttgart Masters,3-6 6-3 3-6 6-3 6-4
+19961028,1996-10-28,Boris Becker,Carlos Moya,Paris Masters,6-3 5-7 6-4
+19961028,1996-10-28,Carlos Moya,Thomas Enqvist,Paris Masters,6-2 7-6(4)
+19961119,1996-11-19,Thomas Enqvist,Yevgeny Kafelnikov,Tour Finals,6-3 7-6(5)
+19961203,1996-12-03,Yevgeny Kafelnikov,Goran Ivanisevic,Grand Slam Cup,6-7 2-6 6-3 6-2 6-4
+19970106,1997-01-06,Goran Ivanisevic,Tim Henman,Sydney Outdoor,4-6 7-6(1) 6-1
+19970113,1997-01-13,Tim Henman,Michael Chang,Australian Open,6-1 7-6(3) 6-3
+19970210,1997-02-10,Michael Chang,Greg Rusedski,San Jose,7-6(4) 6-4
+19970210,1997-02-10,Greg Rusedski,Pete Sampras,San Jose,3-6 5-0 RET
+19970310,1997-03-10,Pete Sampras,Bohdan Ulihrach,Indian Wells Masters,7-6(5) 7-5
+19970310,1997-03-10,Bohdan Ulihrach,Michael Chang,Indian Wells Masters,4-6 6-3 6-4 6-3
+19970317,1997-03-17,Michael Chang,Sergi Bruguera,Miami Masters,6-4 6-3
+19970317,1997-03-17,Sergi Bruguera,Thomas Muster,Miami Masters,7-6(6) 6-3 6-1
+19970414,1997-04-14,Thomas Muster,Cedric Pioline,Barcelona,7-6(4) 6-4
+19970421,1997-04-21,Cedric Pioline,Alex Corretja,Monte Carlo Masters,6-4 6-3
+19970421,1997-04-21,Alex Corretja,Marcelo Rios,Monte Carlo Masters,6-4 6-3 6-3
+19970428,1997-04-28,Marcelo Rios,Fabrice Santoro,Prague,4-6 6-3 6-0
+19970512,1997-05-12,Fabrice Santoro,Marcelo Rios,Rome Masters,6-2 6-2
+19970519,1997-05-19,Marcelo Rios,Tomas Nydahl,St. Poelten,6-4 6-2
+19970707,1997-07-07,Tomas Nydahl,Juan Antonio Marin,Bastad,6-2 6-1
+19970707,1997-07-07,Juan Antonio Marin,Magnus Norman,Bastad,7-5 6-2
+19970714,1997-07-14,Magnus Norman,Javier Sanchez,Stuttgart Outdoor,6-3 7-6(4)
+19970714,1997-07-14,Javier Sanchez,Marcelo Rios,Stuttgart Outdoor,6-2 6-3
+19970804,1997-08-04,Marcelo Rios,Yevgeny Kafelnikov,Cincinnati Masters,7-5 6-2
+19970818,1997-08-18,Yevgeny Kafelnikov,Arnaud Boetsch,Long Island,6-4 7-6(6)
+19970818,1997-08-18,Arnaud Boetsch,Richey Reneberg,Long Island,6-4 6-1
+19970818,1997-08-18,Richey Reneberg,Thomas Enqvist,Long Island,5-7 6-4 6-2
+19970929,1997-09-29,Thomas Enqvist,Greg Rusedski,Basel,7-6(4) 4-6 6-3
+19971006,1997-10-06,Greg Rusedski,Goran Ivanisevic,Vienna,3-6 6-7(4) 7-6(4) 6-2 6-3
+19971013,1997-10-13,Goran Ivanisevic,Karol Kucera,Ostrava,6-3 RET
+19971020,1997-10-20,Karol Kucera,Marcelo Rios,Stuttgart Masters,6-7(7) 6-4 6-4
+19971020,1997-10-20,Marcelo Rios,Petr Korda,Stuttgart Masters,6-3 6-4
+19971027,1997-10-27,Petr Korda,Pete Sampras,Paris Masters,4-6 7-6(2) 6-4
+19971110,1997-11-10,Pete Sampras,Carlos Moya,Tour Finals,6-3 6-7(4) 6-2
+19971110,1997-11-10,Carlos Moya,Patrick Rafter,Tour Finals,6-4 6-2
+19971110,1997-11-10,Patrick Rafter,Pete Sampras,Tour Finals,6-4 6-1
+19980119,1998-01-19,Pete Sampras,Karol Kucera,Australian Open,6-4 6-2 6-7(5) 6-3
+19980119,1998-01-19,Karol Kucera,Petr Korda,Australian Open,6-1 6-4 1-6 6-2
+19980216,1998-02-16,Petr Korda,Karol Kucera,Antwerp,3-6 6-4 6-2
+19980223,1998-02-23,Karol Kucera,Cedric Pioline,London,6-3 4-6 6-2
+19980223,1998-02-23,Cedric Pioline,Yevgeny Kafelnikov,London,7-5 6-4
+19980302,1998-03-02,Yevgeny Kafelnikov,Thomas Johansson,Rotterdam,7-6(5) 6-2
+19980309,1998-03-09,Thomas Johansson,David Prinosil,Copenhagen,3-6 6-4 6-4
+19980309,1998-03-09,David Prinosil,Magnus Gustafsson,Copenhagen,3-6 6-1 6-1
+19980413,1998-04-13,Magnus Gustafsson,Dominik Hrbaty,Barcelona,5-7 6-4 6-3
+19980427,1998-04-27,Dominik Hrbaty,Nicolas Escude,Munich,4-6 6-3 6-1
+19980504,1998-05-04,Nicolas Escude,Sergi Bruguera,Hamburg Masters,6-0 6-2
+19980511,1998-05-11,Sergi Bruguera,Magnus Norman,Rome Masters,6-3 1-0 RET
+19980511,1998-05-11,Magnus Norman,Pete Sampras,Rome Masters,7-6(8) 6-4
+19980525,1998-05-25,Pete Sampras,Ramon Delgado,Roland Garros,7-6(6) 6-3 6-4
+19980615,1998-06-15,Ramon Delgado,Brett Steven,Nottingham,7-6(5) 6-3
+19980615,1998-06-15,Brett Steven,Sargis Sargsian,Nottingham,7-6(8) 6-2
+19980622,1998-06-22,Sargis Sargsian,Magnus Larsson,Wimbledon,6-3 6-7(5) 6-3 7-5
+19980706,1998-07-06,Magnus Larsson,Fernando Vicente,Bastad,7-6(4) 6-0
+19980706,1998-07-06,Fernando Vicente,Karim Alami,Bastad,1-6 7-6(3) 6-4
+19980706,1998-07-06,Karim Alami,Thomas Johansson,Bastad,W/O
+19980720,1998-07-20,Thomas Johansson,Albert Portas,Stuttgart Outdoor,7-6(2) 6-4
+19980727,1998-07-27,Albert Portas,Radomir Vasek,Kitzbuhel,7-5 1-6 6-2
+19980727,1998-07-27,Radomir Vasek,Yevgeny Kafelnikov,Kitzbuhel,6-7(2) 6-3 7-6(4)
+19980803,1998-08-03,Yevgeny Kafelnikov,Richard Krajicek,Canada Masters,6-4 6-4
+19980810,1998-08-10,Richard Krajicek,Vincent Spadea,Cincinnati Masters,6-2 6-3
+19980817,1998-08-17,Vincent Spadea,Felix Mantilla,Indianapolis,7-5 7-6(3)
+19980817,1998-08-17,Felix Mantilla,Hicham Arazi,Indianapolis,6-2 4-6 6-4
+19980817,1998-08-17,Hicham Arazi,Todd Martin,Indianapolis,7-6(4) 7-6(11)
+19980831,1998-08-31,Todd Martin,Goran Ivanisevic,US Open,1-6 7-6(5) 7-5 6-3
+19980831,1998-08-31,Goran Ivanisevic,Patrick Rafter,US Open,6-3 6-4 4-6 6-1
+19981005,1998-10-05,Patrick Rafter,Daniel Vacek,Basel,7-6(7) 7-5
+19981005,1998-10-05,Daniel Vacek,Fabrice Santoro,Basel,3-6 6-3 7-6(5)
+19981005,1998-10-05,Fabrice Santoro,Thomas Johansson,Basel,6-3 6-3
+19981005,1998-10-05,Thomas Johansson,Tim Henman,Basel,6-3 2-6 7-6(5)
+19981012,1998-10-12,Tim Henman,Pete Sampras,Vienna,6-0 6-3
+19981019,1998-10-19,Pete Sampras,Tommy Haas,Lyon,W/O
+19981026,1998-10-26,Tommy Haas,Marcelo Rios,Stuttgart Masters,6-3 7-5
+19981026,1998-10-26,Marcelo Rios,Yevgeny Kafelnikov,Stuttgart Masters,W/O
+19981102,1998-11-02,Yevgeny Kafelnikov,Greg Rusedski,Paris Masters,6-3 4-6 6-4
+19981109,1998-11-09,Greg Rusedski,Thomas Johansson,Stockholm,7-5 7-6(7)
+19981109,1998-11-09,Thomas Johansson,Todd Martin,Stockholm,6-3 6-4 6-4
+19990118,1999-01-18,Todd Martin,Yevgeny Kafelnikov,Australian Open,6-2 7-6(1) 6-2
+19990201,1999-02-01,Yevgeny Kafelnikov,Dominik Hrbaty,Marseille,6-7(4) 6-4 6-2
+19990201,1999-02-01,Dominik Hrbaty,Fabrice Santoro,Marseille,6-4 6-3
+19990208,1999-02-08,Fabrice Santoro,Jerome Golmard,Dubai,6-4 6-3
+19990215,1999-02-15,Jerome Golmard,Wayne Ferreira,Rotterdam,5-7 6-3 7-6(4)
+19990222,1999-02-22,Wayne Ferreira,Petr Korda,London,6-3 6-4
+19990308,1999-03-08,Petr Korda,Greg Rusedski,Indian Wells Masters,6-3 6-4
+19990308,1999-03-08,Greg Rusedski,Tim Henman,Indian Wells Masters,6-4 2-6 6-4
+19990315,1999-03-15,Tim Henman,Jerome Golmard,Miami Masters,6-4 7-6(7)
+19990315,1999-03-15,Jerome Golmard,Thomas Enqvist,Miami Masters,6-3 7-5
+19990412,1999-04-12,Thomas Enqvist,Nicolas Kiefer,Tokyo,6-7(5) 7-5 6-4
+19990510,1999-05-10,Nicolas Kiefer,Nicolas Lapentti,Rome Masters,3-6 7-6(3) 6-3
+19990510,1999-05-10,Nicolas Lapentti,Patrick Rafter,Rome Masters,4-6 7-5 6-1
+19990516,1999-05-16,Patrick Rafter,Karol Kucera,Dusseldorf,6-3 7-6(5)
+19990516,1999-05-16,Karol Kucera,Pete Sampras,Dusseldorf,7-6(5) 4-6 6-2
+19990524,1999-05-24,Pete Sampras,Andrei Medvedev,Roland Garros,7-5 1-6 6-4 6-3
+19990607,1999-06-07,Andrei Medvedev,Hendrik Dreekmann,Halle,6-1 5-7 6-4
+19990607,1999-06-07,Hendrik Dreekmann,Tommy Haas,Halle,6-4 7-6(4)
+19990614,1999-06-14,Tommy Haas,Patrick Rafter,s Hertogenbosch,6-2 7-5
+19990621,1999-06-21,Patrick Rafter,Andre Agassi,Wimbledon,7-5 7-6(5) 6-2
+19990621,1999-06-21,Andre Agassi,Pete Sampras,Wimbledon,6-3 6-4 7-5
+19990816,1999-08-16,Pete Sampras,Vincent Spadea,Indianapolis,6-4 3-6 RET
+19990830,1999-08-30,Vincent Spadea,Richard Krajicek,US Open,6-2 7-6(3) 6-2
+19990830,1999-08-30,Richard Krajicek,Yevgeny Kafelnikov,US Open,7-6(0) 7-6(4) 3-6 1-6 7-6(5)
+19990913,1999-09-13,Yevgeny Kafelnikov,Daniel Vacek,Tashkent,7-6(5) 2-6 7-5
+19990913,1999-09-13,Daniel Vacek,Nicolas Kiefer,Tashkent,7-6(4) 6-2
+19991004,1999-10-04,Nicolas Kiefer,Karol Kucera,Basel,6-4 6-3
+19991011,1999-10-11,Karol Kucera,Roger Federer,Vienna,2-6 6-4 6-1
+19991018,1999-10-18,Roger Federer,Lleyton Hewitt,Lyon,7-6(4) 2-6 6-4
+19991018,1999-10-18,Lleyton Hewitt,Nicolas Lapentti,Lyon,6-3 6-2
+19991025,1999-10-25,Nicolas Lapentti,Marcelo Rios,Stuttgart Masters,6-4 6-3
+19991025,1999-10-25,Marcelo Rios,Thomas Enqvist,Stuttgart Masters,6-4 6-2
+19991101,1999-11-01,Thomas Enqvist,Jim Courier,Paris Masters,6-7(3) 7-6(4) 7-5
+19991101,1999-11-01,Jim Courier,Marat Safin,Paris Masters,6-2 6-4
+19991108,1999-11-08,Marat Safin,Fabrice Santoro,Moscow,7-6(3) 7-5
+20000117,2000-01-17,Fabrice Santoro,Richard Krajicek,Australian Open,6-1 6-2 7-5
+20000417,2000-04-17,Richard Krajicek,Albert Costa,Monte Carlo Masters,7-6(3) 6-3
+20000417,2000-04-17,Albert Costa,Karim Alami,Monte Carlo Masters,6-4 7-5
+20000424,2000-04-24,Karim Alami,Greg Rusedski,Barcelona,6-3 3-6 6-2
+20000424,2000-04-24,Greg Rusedski,Tommy Haas,Barcelona,7-6(6) 6-3
+20000501,2000-05-01,Tommy Haas,Franco Squillari,Munich,6-4 6-4
+20000508,2000-05-08,Franco Squillari,Dominik Hrbaty,Rome Masters,6-4 7-6(3)
+20000515,2000-05-15,Dominik Hrbaty,Andrei Medvedev,Hamburg Masters,6-4 7-6(7)
+20000515,2000-05-15,Andrei Medvedev,Cedric Pioline,Hamburg Masters,4-6 6-2 6-3
+20000515,2000-05-15,Cedric Pioline,Marat Safin,Hamburg Masters,7-6(4) 4-6 6-3
+20000521,2000-05-21,Marat Safin,Karol Kucera,Dusseldorf,6-3 6-2
+20000529,2000-05-29,Karol Kucera,Franco Squillari,Roland Garros,6-1 6-4 4-6 6-4
+20000529,2000-05-29,Franco Squillari,Magnus Norman,Roland Garros,6-1 6-4 6-3
+20000626,2000-06-26,Magnus Norman,Olivier Rochus,Wimbledon,6-4 2-6 6-4 6-7(4) 6-1
+20000828,2000-08-28,Olivier Rochus,Richard Krajicek,US Open,6-7(1) 6-1 6-1 6-4
+20001009,2000-10-09,Richard Krajicek,Roger Federer,Vienna,6-4 6-3
+20001009,2000-10-09,Roger Federer,Tim Henman,Vienna,2-6 7-6(4) 6-3
+20001023,2000-10-23,Tim Henman,Thomas Enqvist,Basel,6-1 6-3
+20001030,2000-10-30,Thomas Enqvist,Wayne Ferreira,Stuttgart Masters,6-2 7-5
+20001106,2000-11-06,Wayne Ferreira,Mark Philippoussis,Lyon,6-3 6-7(10) 6-3
+20001113,2000-11-13,Mark Philippoussis,Marat Safin,Paris Masters,3-6 7-6(7) 6-4 3-6 7-6(8)
+20001127,2000-11-27,Marat Safin,Andre Agassi,Masters Cup,6-3 6-3
+20001127,2000-11-27,Andre Agassi,Gustavo Kuerten,Masters Cup,6-4 6-4 6-4
+20010115,2001-01-15,Gustavo Kuerten,Greg Rusedski,Australian Open,4-6 6-4 6-3 2-6 9-7
+20010129,2001-01-29,Greg Rusedski,Julien Boutter,Milan,7-6(5) 7-6(3)
+20010129,2001-01-29,Julien Boutter,Roger Federer,Milan,6-4 6-7(7) 6-4
+20010212,2001-02-12,Roger Federer,Yevgeny Kafelnikov,Marseille,6-7(4) 6-4 6-4
+20010219,2001-02-19,Yevgeny Kafelnikov,Nicolas Kiefer,Rotterdam,6-4 6-2
+20010226,2001-02-26,Nicolas Kiefer,Patrick Rafter,Dubai,6-2 6-4
+20010305,2001-03-05,Patrick Rafter,Wayne Arthurs,Delray Beach,6-1 7-6(0)
+20010319,2001-03-19,Wayne Arthurs,Tommy Haas,Miami Masters,3-6 7-6(3) 6-3
+20010416,2001-04-16,Tommy Haas,Gustavo Kuerten,Monte Carlo Masters,6-7(6) 6-3 6-3
+20010507,2001-05-07,Gustavo Kuerten,Juan Carlos Ferrero,Rome Masters,3-6 6-1 2-6 6-4 6-2
+20010514,2001-05-14,Juan Carlos Ferrero,Albert Portas,Hamburg Masters,4-6 6-2 0-6 7-6(5) 7-5
+20010521,2001-05-21,Albert Portas,Jiri Vanek,St. Poelten,6-4 6-1
+20010521,2001-05-21,Jiri Vanek,Markus Hipfl,St. Poelten,7-5 6-0
+20010528,2001-05-28,Markus Hipfl,Marat Safin,Roland Garros,6-3 6-3 6-7(6) 6-1
+20010611,2001-06-11,Marat Safin,Peter Wessels,Queen's Club,4-6 6-4 7-6(8)
+20010611,2001-06-11,Peter Wessels,Wayne Ferreira,Queen's Club,6-3 7-5
+20010618,2001-06-18,Wayne Ferreira,Harel Levy,Nottingham,6-2 6-4
+20010618,2001-06-18,Harel Levy,Thomas Johansson,Nottingham,7-5 6-3
+20010625,2001-06-25,Thomas Johansson,Andy Roddick,Wimbledon,7-6(1) 6-1 4-6 7-6(3)
+20010625,2001-06-25,Andy Roddick,Goran Ivanisevic,Wimbledon,7-6(5) 7-5 3-6 6-3
+20010806,2001-08-06,Goran Ivanisevic,Gustavo Kuerten,Cincinnati Masters,6-2 6-1
+20010813,2001-08-13,Gustavo Kuerten,Patrick Rafter,Indianapolis,4-2 RET
+20010827,2001-08-27,Patrick Rafter,Pete Sampras,US Open,6-3 6-2 6-7(5) 6-4
+20011015,2001-10-15,Pete Sampras,Max Mirnyi,Stuttgart Masters,6-4 6-2
+20011015,2001-10-15,Max Mirnyi,Tommy Haas,Stuttgart Masters,6-2 6-2 6-2
+20011022,2001-10-22,Tommy Haas,Andrei Medvedev,St. Petersburg,3-6 7-6(7) 6-4
+20011022,2001-10-22,Andrei Medvedev,Stefan Koubek,St. Petersburg,7-6(3) 6-2
+20011231,2001-12-31,Stefan Koubek,Goran Ivanisevic,Doha,6-4 3-6 6-3
+20011231,2001-12-31,Goran Ivanisevic,Radek Stepanek,Doha,7-6(4) 6-2
+20020211,2002-02-11,Radek Stepanek,Christophe Rochus,Copenhagen,4-6 7-5 7-6(4)
+20020211,2002-02-11,Christophe Rochus,Davide Sanguinetti,Copenhagen,6-2 7-6(2)
+20020211,2002-02-11,Davide Sanguinetti,Olivier Rochus,Copenhagen,2-6 6-0 6-4
+20020311,2002-03-11,Olivier Rochus,Jiri Novak,Indian Wells Masters,5-7 7-5 6-2
+20020318,2002-03-18,Jiri Novak,Nicolas Lapentti,Miami Masters,7-6(7) 7-6(4)
+20020415,2002-04-15,Nicolas Lapentti,Michael Llodra,Monte Carlo Masters,7-6(6) 6-2
+20020422,2002-04-22,Michael Llodra,Andrea Gaudenzi,Barcelona,3-6 6-3 6-2
+20020422,2002-04-22,Andrea Gaudenzi,Carlos Moya,Barcelona,6-3 6-3
+20020422,2002-04-22,Carlos Moya,Gaston Gaudio,Barcelona,6-4 6-2
+20020506,2002-05-06,Gaston Gaudio,Wayne Ferreira,Rome Masters,6-3 6-3
+20020513,2002-05-13,Wayne Ferreira,Younes El Aynaoui,Hamburg Masters,7-6(11) 6-3
+20020527,2002-05-27,Younes El Aynaoui,Albert Montanes,Roland Garros,7-5 7-6(2) 6-4
+20020527,2002-05-27,Albert Montanes,Andrei Pavel,Roland Garros,6-1 1-6 6-4 6-3
+20020610,2002-06-10,Andrei Pavel,Mikhail Youzhny,Halle,6-4 6-0
+20020610,2002-06-10,Mikhail Youzhny,Roger Federer,Halle,6-3 6-4
+20020617,2002-06-17,Roger Federer,Sjeng Schalken,s Hertogenbosch,3-6 7-5 6-3
+20020624,2002-06-24,Sjeng Schalken,Lleyton Hewitt,Wimbledon,6-2 6-2 6-7(5) 1-6 7-5
+20020729,2002-07-29,Lleyton Hewitt,Felix Mantilla,Canada Masters,2-6 6-4 6-3
+20020729,2002-07-29,Felix Mantilla,Taylor Dent,Canada Masters,7-6(2) 7-5
+20020805,2002-08-05,Taylor Dent,Juan Carlos Ferrero,Cincinnati Masters,6-7(5) 6-1 7-6(4)
+20020826,2002-08-26,Juan Carlos Ferrero,Fernando Gonzalez,US Open,6-4 6-4 6-4
+20020826,2002-08-26,Fernando Gonzalez,Sjeng Schalken,US Open,6-7(5) 6-3 6-3 6-7(5) 7-6(2)
+20020909,2002-09-09,Sjeng Schalken,Cecil Mamiit,Costa Do Sauipe,6-3 7-6(6)
+20020909,2002-09-09,Cecil Mamiit,Guillermo Coria,Costa Do Sauipe,7-5 6-2
+20020909,2002-09-09,Guillermo Coria,Gustavo Kuerten,Costa Do Sauipe,6-7(4) 7-5 7-6(2)
+20021007,2002-10-07,Gustavo Kuerten,Paul Henri Mathieu,Lyon,4-6 6-3 6-1
+20030317,2003-03-17,Paul Henri Mathieu,Hyung Taik Lee,Miami Masters,6-1 1-6 6-1
+20030317,2003-03-17,Hyung Taik Lee,Robby Ginepri,Miami Masters,6-3 6-2
+20030609,2003-06-09,Robby Ginepri,Greg Rusedski,Queen's Club,7-6(5) 3-6 6-0
+20030623,2003-06-23,Greg Rusedski,Andy Roddick,Wimbledon,7-6(4) 7-6(1) 7-5
+20030623,2003-06-23,Andy Roddick,Roger Federer,Wimbledon,7-6(6) 6-3 6-3
+20030707,2003-07-07,Roger Federer,Jiri Novak,Gstaad,5-7 6-3 6-3 1-6 6-3
+20030714,2003-07-14,Jiri Novak,Mikhail Youzhny,Stuttgart,7-6(1) 6-4
+20030721,2003-07-21,Mikhail Youzhny,Nicolas Lapentti,Kitzbuhel,6-3 6-3
+20030721,2003-07-21,Nicolas Lapentti,Nicolas Massu,Kitzbuhel,7-5 6-4
+20030804,2003-08-04,Nicolas Massu,Max Mirnyi,Canada Masters,6-4 7-6(4)
+20030804,2003-08-04,Max Mirnyi,Roger Federer,Canada Masters,6-2 7-6(3)
+20030811,2003-08-11,Roger Federer,David Nalbandian,Cincinnati Masters,7-6(4) 7-6(5)
+20030811,2003-08-11,David Nalbandian,Mardy Fish,Cincinnati Masters,7-6(3) 6-3
+20030825,2003-08-25,Mardy Fish,Karol Kucera,US Open,6-4 7-6(7) 6-4
+20030929,2003-09-29,Karol Kucera,Marc Rosset,Moscow,7-5 7-6(6)
+20030929,2003-09-29,Marc Rosset,Taylor Dent,Moscow,6-3 6-4
+20031020,2003-10-20,Taylor Dent,Robby Ginepri,Stockholm,6-7(2) 7-6(7) 6-4
+20031020,2003-10-20,Robby Ginepri,Thomas Enqvist,Stockholm,6-3 6-4
+20040105,2004-01-05,Thomas Enqvist,Hicham Arazi,Doha,7-6(1) 2-6 6-3
+20040119,2004-01-19,Hicham Arazi,Juan Carlos Ferrero,Australian Open,6-1 7-6(6) 7-6(5)
+20040119,2004-01-19,Juan Carlos Ferrero,Roger Federer,Australian Open,6-4 6-1 6-4
+20040216,2004-02-16,Roger Federer,Tim Henman,Rotterdam,6-3 7-6(9)
+20040301,2004-03-01,Tim Henman,Tomas Zib,Dubai,6-4 3-6 7-6(4)
+20040517,2004-05-17,Tomas Zib,Raemon Sluiter,St. Poelten,6-4 2-6 6-3
+20040524,2004-05-24,Raemon Sluiter,Carlos Moya,Roland Garros,6-0 6-3 6-4
+20040524,2004-05-24,Carlos Moya,Guillermo Coria,Roland Garros,7-5 7-6(3) 6-3
+20040607,2004-06-07,Guillermo Coria,Yen Hsun Lu,Queen's Club,6-2 6-4
+20040614,2004-06-14,Yen Hsun Lu,Michael Llodra,s Hertogenbosch,6-3 6-1
+20040621,2004-06-21,Michael Llodra,Cyril Saulnier,Wimbledon,7-5 4-6 7-6(6) 7-6(3)
+20040621,2004-06-21,Cyril Saulnier,Feliciano Lopez,Wimbledon,3-6 6-3 6-4 6-7(3) 8-6
+20040621,2004-06-21,Feliciano Lopez,Ivo Karlovic,Wimbledon,7-6(12) 7-6(3) 6-7(2) 7-5
+20040621,2004-06-21,Ivo Karlovic,Roger Federer,Wimbledon,6-3 7-6(3) 7-6(5)
+20040802,2004-08-02,Roger Federer,Dominik Hrbaty,Cincinnati Masters,1-6 7-6(7) 6-4
+20040802,2004-08-02,Dominik Hrbaty,Jonas Bjorkman,Cincinnati Masters,6-7(6) 6-3 6-3
+20040816,2004-08-16,Jonas Bjorkman,Mardy Fish,Athens Olympics,7-6(7) 1-0 RET
+20040816,2004-08-16,Mardy Fish,Nicolas Massu,Athens Olympics,6-3 3-6 2-6 6-3 6-4
+20040830,2004-08-30,Nicolas Massu,Sargis Sargsian,US Open,6-7(6) 6-4 3-6 7-6(6) 6-4
+20041004,2004-10-04,Sargis Sargsian,Juan Carlos Ferrero,Lyon,6-3 7-6(4)
+20041018,2004-10-18,Juan Carlos Ferrero,Luis Horna,Madrid Masters,6-3 6-1
+20041018,2004-10-18,Luis Horna,Marat Safin,Madrid Masters,6-4 6-4
+20041025,2004-10-25,Marat Safin,Michael Llodra,St. Petersburg,6-4 6-1
+20041101,2004-11-01,Michael Llodra,Radek Stepanek,Paris Masters,7-6(2) 6-1
+20050103,2005-01-03,Radek Stepanek,Olivier Rochus,Adelaide,6-0 6-3
+20050110,2005-01-10,Olivier Rochus,Fernando Gonzalez,Auckland,6-4 6-2
+20050117,2005-01-17,Fernando Gonzalez,David Nalbandian,Australian Open,6-7(3) 7-5 6-2 6-3
+20050117,2005-01-17,David Nalbandian,Lleyton Hewitt,Australian Open,6-3 6-2 1-6 3-6 10-8
+20050117,2005-01-17,Lleyton Hewitt,Marat Safin,Australian Open,1-6 6-3 6-4 6-4
+20050221,2005-02-21,Marat Safin,Nicolas Kiefer,Dubai,7-6(2) 6-4
+20050221,2005-02-21,Nicolas Kiefer,Tommy Robredo,Dubai,6-4 6-4
+20050307,2005-03-07,Tommy Robredo,Tim Henman,Indian Wells Masters,6-4 2-6 6-2
+20050321,2005-03-21,Tim Henman,Roger Federer,Miami Masters,6-4 6-2
+20050411,2005-04-11,Roger Federer,Richard Gasquet,Monte Carlo Masters,6-7(1) 6-2 7-6(8)
+20050502,2005-05-02,Richard Gasquet,Andre Agassi,Rome Masters,6-2 6-3
+20050502,2005-05-02,Andre Agassi,Guillermo Coria,Rome Masters,7-5 7-6(0)
+20050502,2005-05-02,Guillermo Coria,Rafael Nadal,Rome Masters,6-4 3-6 6-3 4-6 7-6(6)
+20050606,2005-06-06,Rafael Nadal,Alexander Waske,Halle,4-6 7-5 6-3
+20050606,2005-06-06,Alexander Waske,Juan Carlos Ferrero,Halle,7-6(5) 6-7(7) 6-3
+20050606,2005-06-06,Juan Carlos Ferrero,Tommy Haas,Halle,6-2 7-5
+20050620,2005-06-20,Tommy Haas,Janko Tipsarevic,Wimbledon,6-2 2-1 RET
+20050620,2005-06-20,Janko Tipsarevic,Thomas Johansson,Wimbledon,6-2 6-3 6-1
+20050808,2005-08-08,Thomas Johansson,Xavier Malisse,Canada Masters,7-5 7-6(4)
+20050815,2005-08-15,Xavier Malisse,Carlos Moya,Cincinnati Masters,6-4 6-4
+20050815,2005-08-15,Carlos Moya,Robby Ginepri,Cincinnati Masters,6-3 6-4
+20050815,2005-08-15,Robby Ginepri,Roger Federer,Cincinnati Masters,4-6 7-5 6-4
+20051114,2005-11-14,Roger Federer,David Nalbandian,Masters Cup,6-7(4) 6-7(11) 6-2 6-1 7-6(3)
+20051114,2005-11-14,David Nalbandian,Roger Federer,Masters Cup,6-3 2-6 6-4
+20060227,2006-02-27,Roger Federer,Rafael Nadal,Dubai,2-6 6-4 6-4
+20060306,2006-03-06,Rafael Nadal,James Blake,Indian Wells Masters,7-5 6-3
+20060306,2006-03-06,James Blake,Roger Federer,Indian Wells Masters,7-5 6-3 6-0
+20060417,2006-04-17,Roger Federer,Rafael Nadal,Monte Carlo Masters,6-2 6-7(2) 6-3 7-6(5)
+20060612,2006-06-12,Rafael Nadal,Lleyton Hewitt,Queen's Club,3-6 6-3 RET
+20060626,2006-06-26,Lleyton Hewitt,Marcos Baghdatis,Wimbledon,6-1 5-7 7-6(5) 6-2
+20060626,2006-06-26,Marcos Baghdatis,Rafael Nadal,Wimbledon,6-1 7-5 6-3
+20060626,2006-06-26,Rafael Nadal,Roger Federer,Wimbledon,6-0 7-6(5) 6-7(2) 6-3
+20060814,2006-08-14,Roger Federer,Andy Murray,Cincinnati Masters,7-5 6-4
+20060814,2006-08-14,Andy Murray,Andy Roddick,Cincinnati Masters,6-3 6-4
+20060828,2006-08-28,Andy Roddick,Roger Federer,US Open,6-2 4-6 7-5 6-1
+20070305,2007-03-05,Roger Federer,Guillermo Canas,Indian Wells Masters,7-5 6-2
+20070319,2007-03-19,Guillermo Canas,Novak Djokovic,Miami Masters,6-3 6-2 6-4
+20070415,2007-04-15,Novak Djokovic,David Ferrer,Monte Carlo Masters,7-5 6-4
+20070415,2007-04-15,David Ferrer,Roger Federer,Monte Carlo Masters,6-4 6-0
+20070507,2007-05-07,Roger Federer,Filippo Volandri,Rome Masters,6-2 6-4
+20070514,2007-05-14,Filippo Volandri,Jose Acasuso,Hamburg Masters,3-6 7-6(3) 6-3
+20070514,2007-05-14,Jose Acasuso,Nicolas Almagro,Hamburg Masters,6-2 6-3
+20070528,2007-05-28,Nicolas Almagro,Michael Llodra,Roland Garros,2-6 6-2 6-7(7) 6-4 6-4
+20070528,2007-05-28,Michael Llodra,Nikolay Davydenko,Roland Garros,6-4 6-2 6-4
+20070528,2007-05-28,Nikolay Davydenko,Roger Federer,Roland Garros,7-5 7-6(5) 7-6(7)
+20070805,2007-08-05,Roger Federer,Novak Djokovic,Canada Masters,7-6(2) 2-6 7-6(2)
+20070813,2007-08-13,Novak Djokovic,Carlos Moya,Cincinnati Masters,6-4 6-1
+20070813,2007-08-13,Carlos Moya,Lleyton Hewitt,Cincinnati Masters,6-2 6-4
+20070813,2007-08-13,Lleyton Hewitt,Roger Federer,Cincinnati Masters,6-3 6-7(7) 7-6(1)
+20071015,2007-10-15,Roger Federer,David Nalbandian,Madrid Masters,1-6 6-3 6-3
+20071022,2007-10-22,David Nalbandian,Stan Wawrinka,Basel,7-6(5) 6-2
+20071022,2007-10-22,Stan Wawrinka,Tomas Berdych,Basel,7-5 6-4
+20071028,2007-10-28,Tomas Berdych,David Ferrer,Paris Masters,6-4 6-2
+20071028,2007-10-28,David Ferrer,David Nalbandian,Paris Masters,7-6(3) 6-7(3) 6-2
+20080114,2008-01-14,David Nalbandian,Juan Carlos Ferrero,Australian Open,6-1 6-2 6-3
+20080211,2008-02-11,Juan Carlos Ferrero,Nicolas Mahut,Marseille,5-7 6-4 7-6(1)
+20080218,2008-02-18,Nicolas Mahut,Teymuraz Gabashvili,Rotterdam,6-2 7-6(7)
+20080225,2008-02-25,Teymuraz Gabashvili,Ivan Ljubicic,Zagreb,6-2 6-7(5) 6-3
+20080225,2008-02-25,Ivan Ljubicic,Sergiy Stakhovsky,Zagreb,7-5 6-4
+20080414,2008-04-14,Sergiy Stakhovsky,Daniel Gimeno Traver,Valencia,6-4 6-4
+20080414,2008-04-14,Daniel Gimeno Traver,Evgeny Korolev,Valencia,6-7(8) 7-6(2) 6-3
+20080414,2008-04-14,Evgeny Korolev,Nicolas Almagro,Valencia,6-1 6-4
+20080420,2008-04-20,Nicolas Almagro,Igor Andreev,Monte Carlo Masters,7-5 4-6 6-4
+20080420,2008-04-20,Igor Andreev,Nikolay Davydenko,Monte Carlo Masters,6-3 4-6 7-5
+20080420,2008-04-20,Nikolay Davydenko,Rafael Nadal,Monte Carlo Masters,6-3 6-2
+20080505,2008-05-05,Rafael Nadal,Juan Carlos Ferrero,Rome Masters,7-5 6-1
+20080505,2008-05-05,Juan Carlos Ferrero,Stan Wawrinka,Rome Masters,6-4 6-3
+20080511,2008-05-11,Stan Wawrinka,Nicolas Kiefer,Hamburg Masters,7-5 7-5
+20080518,2008-05-18,Nicolas Kiefer,Dmitry Tursunov,Dusseldorf,6-4 3-6 7-5
+20080525,2008-05-25,Dmitry Tursunov,Jeremy Chardy,Roland Garros,7-6(1) 6-3 6-4
+20080525,2008-05-25,Jeremy Chardy,Nicolas Almagro,Roland Garros,7-6(0) 7-6(7) 7-5
+20080525,2008-05-25,Nicolas Almagro,Rafael Nadal,Roland Garros,6-1 6-1 6-1
+20080728,2008-07-28,Rafael Nadal,Novak Djokovic,Cincinnati Masters,6-1 7-5
+20080811,2008-08-11,Novak Djokovic,Rafael Nadal,Beijing Olympics,6-4 1-6 6-4
+20080825,2008-08-25,Rafael Nadal,Andy Murray,US Open,6-2 7-6(5) 4-6 6-4
+20080825,2008-08-25,Andy Murray,Roger Federer,US Open,6-2 7-5 6-2
+20081012,2008-10-12,Roger Federer,Andy Murray,Madrid Masters,3-6 6-3 7-5
+20081026,2008-10-26,Andy Murray,David Nalbandian,Paris Masters,7-6(3) 6-3
+20081026,2008-10-26,David Nalbandian,Jo-Wilfried Tsonga,Paris Masters,6-3 4-6 6-4
+20081109,2008-11-09,Jo-Wilfried Tsonga,Juan Martin del Potro,Masters Cup,7-6(4) 7-6(5)
+20081109,2008-11-09,Juan Martin del Potro,Nikolay Davydenko,Masters Cup,6-3 6-2
+20081109,2008-11-09,Nikolay Davydenko,Novak Djokovic,Masters Cup,7-6(3) 0-6 7-5
+20090104,2009-01-04,Novak Djokovic,Ernests Gulbis,Brisbane,6-4 6-4
+20090104,2009-01-04,Ernests Gulbis,Paul Henri Mathieu,Brisbane,6-3 6-4
+20090112,2009-01-12,Paul Henri Mathieu,Novak Djokovic,Sydney,6-1 6-2
+20090119,2009-01-19,Novak Djokovic,Andy Roddick,Australian Open,6-7(3) 6-4 6-2 2-1 RET
+20090119,2009-01-19,Andy Roddick,Roger Federer,Australian Open,6-2 7-5 7-5
+20090312,2009-03-12,Roger Federer,Andy Murray,Indian Wells Masters,6-3 4-6 6-1
+20090312,2009-03-12,Andy Murray,Rafael Nadal,Indian Wells Masters,6-1 6-2
+20090325,2009-03-25,Rafael Nadal,Juan Martin del Potro,Miami Masters,6-4 3-6 7-6(3)
+20090412,2009-04-12,Juan Martin del Potro,Ivan Ljubicic,Monte Carlo Masters,4-6 6-1 6-4
+20090412,2009-04-12,Ivan Ljubicic,Rafael Nadal,Monte Carlo Masters,6-3 6-3
+20090510,2009-05-10,Rafael Nadal,Roger Federer,Madrid Masters,6-4 6-4
+20090810,2009-08-10,Roger Federer,Jo-Wilfried Tsonga,Canada Masters,7-6(5) 1-6 7-6(3)
+20090816,2009-08-16,Jo-Wilfried Tsonga,Chris Guccione,Cincinnati Masters,7-6(12) 6-2
+20090816,2009-08-16,Chris Guccione,Tomas Berdych,Cincinnati Masters,6-4 6-3
+20090831,2009-08-31,Tomas Berdych,Fernando Gonzalez,US Open,7-5 6-4 6-4
+20090831,2009-08-31,Fernando Gonzalez,Rafael Nadal,US Open,7-6(4) 7-6(2) 6-0
+20091005,2009-10-05,Rafael Nadal,Marin Cilic,Beijing,6-1 6-3
+20091005,2009-10-05,Marin Cilic,Novak Djokovic,Beijing,6-2 7-6(4)
+20091011,2009-10-11,Novak Djokovic,Nikolay Davydenko,Shanghai Masters,4-6 6-4 7-6(1)
+20091019,2009-10-19,Nikolay Davydenko,Marat Safin,Moscow,4-6 6-4 6-2
+20091025,2009-10-25,Marat Safin,Sergiy Stakhovsky,St. Petersburg,6-4 4-6 6-4
+20100104,2010-01-04,Sergiy Stakhovsky,Lukasz Kubot,Doha,6-2 7-6(5)
+20100104,2010-01-04,Lukasz Kubot,Viktor Troicki,Doha,4-6 6-4 7-6(1)
+20100111,2010-01-11,Viktor Troicki,Marcos Baghdatis,Sydney,7-5 6-3
+20100118,2010-01-18,Marcos Baghdatis,Lleyton Hewitt,Australian Open,6-0 4-2 RET
+20100118,2010-01-18,Lleyton Hewitt,Roger Federer,Australian Open,6-2 6-3 6-4
+20100311,2010-03-11,Roger Federer,Marcos Baghdatis,Indian Wells Masters,5-7 7-5 7-6(4)
+20100311,2010-03-11,Marcos Baghdatis,Tommy Robredo,Indian Wells Masters,7-5 0-6 6-4
+20100324,2010-03-24,Tommy Robredo,Benjamin Becker,Miami Masters,1-6 6-4 7-6(1)
+20100411,2010-04-11,Benjamin Becker,Juan Carlos Ferrero,Monte Carlo Masters,6-3 6-4
+20100411,2010-04-11,Juan Carlos Ferrero,Rafael Nadal,Monte Carlo Masters,6-4 6-2
+20100607,2010-06-07,Rafael Nadal,Feliciano Lopez,Queen's Club,7-6(5) 6-4
+20100607,2010-06-07,Feliciano Lopez,Mardy Fish,Queen's Club,6-3 6-4
+20100607,2010-06-07,Mardy Fish,Sam Querrey,Queen's Club,7-6(3) 7-5
+20100621,2010-06-21,Sam Querrey,Andy Murray,Wimbledon,7-5 6-3 6-4
+20100621,2010-06-21,Andy Murray,Rafael Nadal,Wimbledon,6-4 7-6(6) 6-4
+20100809,2010-08-09,Rafael Nadal,Andy Murray,Canada Masters,6-3 6-4
+20100815,2010-08-15,Andy Murray,Mardy Fish,Cincinnati Masters,6-7(7) 6-1 7-6(5)
+20100815,2010-08-15,Mardy Fish,Roger Federer,Cincinnati Masters,6-7(5) 7-6(1) 6-4
+20100830,2010-08-30,Roger Federer,Novak Djokovic,US Open,5-7 6-1 5-7 6-2 7-5
+20100830,2010-08-30,Novak Djokovic,Rafael Nadal,US Open,6-4 5-7 6-4 6-2
+20100927,2010-09-27,Rafael Nadal,Guillermo Garcia Lopez,Bangkok,2-6 7-6(3) 6-3
+20101004,2010-10-04,Guillermo Garcia Lopez,Viktor Troicki,Tokyo,6-2 3-6 6-4
+20101025,2010-10-25,Viktor Troicki,Rainer Schuettler,St. Petersburg,6-3 4-6 6-3
+20110103,2011-01-03,Rainer Schuettler,Teymuraz Gabashvili,Doha,6-4 7-6(2)
+20110103,2011-01-03,Teymuraz Gabashvili,Viktor Troicki,Doha,6-3 6-1
+20110110,2011-01-10,Viktor Troicki,Gilles Simon,Sydney,7-5 7-6(4)
+20110117,2011-01-17,Gilles Simon,Roger Federer,Australian Open,6-2 6-3 4-6 4-6 6-3
+20110221,2011-02-21,Roger Federer,Novak Djokovic,Dubai,6-3 6-3
+20110522,2011-05-22,Novak Djokovic,Roger Federer,Roland Garros,7-6(5) 6-3 3-6 7-6(5)
+20110620,2011-06-20,Roger Federer,Jo-Wilfried Tsonga,Wimbledon,3-6 6-7(3) 6-4 6-4 6-4
+20110620,2011-06-20,Jo-Wilfried Tsonga,Novak Djokovic,Wimbledon,7-6(4) 6-2 6-7(9) 6-3
+20110814,2011-08-14,Novak Djokovic,Andy Murray,Cincinnati Masters,6-4 3-0 RET
+20110829,2011-08-29,Andy Murray,Rafael Nadal,US Open,6-4 6-2 3-6 6-2
+20111003,2011-10-03,Rafael Nadal,Andy Murray,Tokyo,3-6 6-2 6-0
+20111107,2011-11-07,Andy Murray,Tomas Berdych,Paris Masters,4-6 7-6(5) 6-4
+20111120,2011-11-20,Tomas Berdych,Jo-Wilfried Tsonga,Tour Finals,6-3 7-5
+20111120,2011-11-20,Jo-Wilfried Tsonga,Roger Federer,Tour Finals,6-2 2-6 6-4
+20120102,2012-01-02,Roger Federer,Jo-Wilfried Tsonga,Doha,W/O
+20120116,2012-01-16,Jo-Wilfried Tsonga,Kei Nishikori,Australian Open,2-6 6-2 6-1 3-6 6-3
+20120220,2012-02-20,Kei Nishikori,Stan Wawrinka,Buenos Aires,6-4 6-2
+20120227,2012-02-27,Stan Wawrinka,Fernando Verdasco,Acapulco,6-3 6-3
+20120308,2012-03-08,Fernando Verdasco,Juan Martin del Potro,Indian Wells Masters,6-2 7-6(6)
+20120308,2012-03-08,Juan Martin del Potro,Roger Federer,Indian Wells Masters,6-3 6-2
+20120321,2012-03-21,Roger Federer,Andy Roddick,Miami Masters,7-6(4) 1-6 6-4
+20120321,2012-03-21,Andy Roddick,Juan Monaco,Miami Masters,7-5 6-0
+20120321,2012-03-21,Juan Monaco,Novak Djokovic,Miami Masters,6-0 7-6(5)
+20120415,2012-04-15,Novak Djokovic,Rafael Nadal,Monte Carlo Masters,6-3 6-1
+20120506,2012-05-06,Rafael Nadal,Fernando Verdasco,Madrid Masters,6-3 3-6 7-5
+20120506,2012-05-06,Fernando Verdasco,Tomas Berdych,Madrid Masters,6-1 6-2
+20120513,2012-05-13,Tomas Berdych,Rafael Nadal,Rome Masters,6-4 7-5
+20120611,2012-06-11,Rafael Nadal,Philipp Kohlschreiber,Halle,6-3 6-4
+20120611,2012-06-11,Philipp Kohlschreiber,Tommy Haas,Halle,7-6(5) 7-5
+20120625,2012-06-25,Tommy Haas,Philipp Kohlschreiber,Wimbledon,3-6 7-6(8) 6-7(5) 7-6(1) 6-2
+20120716,2012-07-16,Philipp Kohlschreiber,Nicolas Almagro,Hamburg,7-5 7-5
+20120725,2012-07-25,Nicolas Almagro,Andy Murray,London Olympics,6-4 6-1
+20120806,2012-08-06,Andy Murray,Milos Raonic,Canada Masters,W/O
+20120812,2012-08-12,Milos Raonic,Stan Wawrinka,Cincinnati Masters,2-6 7-6(5) 6-4
+20120827,2012-08-27,Stan Wawrinka,Novak Djokovic,US Open,6-4 6-1 3-1 RET
+20121029,2012-10-29,Novak Djokovic,Sam Querrey,Paris Masters,0-6 7-6(5) 6-4
+20130107,2013-01-07,Sam Querrey,Philipp Kohlschreiber,Auckland,6-4 7-6(2)
+20130114,2013-01-14,Philipp Kohlschreiber,Milos Raonic,Australian Open,7-6(4) 6-3 6-4
+20130114,2013-01-14,Milos Raonic,Roger Federer,Australian Open,6-4 7-6(4) 6-2
+20130211,2013-02-11,Roger Federer,Julien Benneteau,Rotterdam,6-3 7-5
+20130218,2013-02-18,Julien Benneteau,Jerzy Janowicz,Marseille,7-6(0) 6-3
+20130218,2013-02-18,Jerzy Janowicz,Tomas Berdych,Marseille,6-3 6-7(0) 6-3
+20130225,2013-02-25,Tomas Berdych,Novak Djokovic,Dubai,7-5 6-3
+20130307,2013-03-07,Novak Djokovic,Juan Martin del Potro,Indian Wells Masters,4-6 6-4 6-4
+20130307,2013-03-07,Juan Martin del Potro,Rafael Nadal,Indian Wells Masters,4-6 6-3 6-4
+20130414,2013-04-14,Rafael Nadal,Novak Djokovic,Monte Carlo Masters,6-2 7-6(1)
+20130505,2013-05-05,Novak Djokovic,Grigor Dimitrov,Madrid Masters,7-6(6) 6-7(8) 6-3
+20130505,2013-05-05,Grigor Dimitrov,Stan Wawrinka,Madrid Masters,3-6 6-4 6-1
+20130512,2013-05-12,Stan Wawrinka,Alexandr Dolgopolov,Rome Masters,W/O
+20130512,2013-05-12,Alexandr Dolgopolov,Novak Djokovic,Rome Masters,6-1 6-4
+20130512,2013-05-12,Novak Djokovic,Tomas Berdych,Rome Masters,2-6 7-5 6-4
+20130527,2013-05-27,Tomas Berdych,Gael Monfils,Roland Garros,7-6(8) 6-4 6-7(3) 6-7(4) 7-5
+20130527,2013-05-27,Gael Monfils,Tommy Robredo,Roland Garros,2-6 6-7(5) 6-2 7-6(3) 6-2
+20130624,2013-06-24,Tommy Robredo,Andy Murray,Wimbledon,6-2 6-4 7-5
+20130805,2013-08-05,Andy Murray,Ernests Gulbis,Canada Masters,6-4 6-3
+20130805,2013-08-05,Ernests Gulbis,Milos Raonic,Canada Masters,7-6(3) 4-6 6-4
+20130805,2013-08-05,Milos Raonic,Rafael Nadal,Canada Masters,6-2 6-2
+20130930,2013-09-30,Rafael Nadal,Novak Djokovic,Beijing,6-3 6-4
+20140113,2014-01-13,Novak Djokovic,Stan Wawrinka,Australian Open,2-6 6-4 6-2 3-6 9-7
+20140306,2014-03-06,Stan Wawrinka,Kevin Anderson,Indian Wells Masters,7-6(1) 4-6 6-1
+20140306,2014-03-06,Kevin Anderson,Roger Federer,Indian Wells Masters,7-5 6-1
+20140319,2014-03-19,Roger Federer,Kei Nishikori,Miami Masters,3-6 7-5 6-4
+20140319,2014-03-19,Kei Nishikori,Novak Djokovic,Miami Masters,W/O
+20140413,2014-04-13,Novak Djokovic,Roger Federer,Monte Carlo Masters,7-5 6-2
+20140413,2014-04-13,Roger Federer,Stan Wawrinka,Monte Carlo Masters,4-6 7-6(5) 6-2
+20140504,2014-05-04,Stan Wawrinka,Dominic Thiem,Madrid Masters,1-6 6-2 6-4
+20140504,2014-05-04,Dominic Thiem,Feliciano Lopez,Madrid Masters,W/O
+20140504,2014-05-04,Feliciano Lopez,Kei Nishikori,Madrid Masters,6-4 6-4
+20140504,2014-05-04,Kei Nishikori,Rafael Nadal,Madrid Masters,2-6 6-4 3-0 RET
+20140511,2014-05-11,Rafael Nadal,Novak Djokovic,Rome Masters,4-6 6-3 6-3
+20140526,2014-05-26,Novak Djokovic,Rafael Nadal,Roland Garros,3-6 7-5 6-2 6-4
+20140609,2014-06-09,Rafael Nadal,Dustin Brown,Halle,6-4 6-1
+20140609,2014-06-09,Dustin Brown,Philipp Kohlschreiber,Halle,6-4 5-7 7-6(16)
+20140623,2014-06-23,Philipp Kohlschreiber,Simone Bolelli,Wimbledon,4-6 6-4 6-3 2-6 7-5
+20140825,2014-08-25,Simone Bolelli,Tommy Robredo,US Open,5-7 6-7(5) 6-4 6-3 6-2
+20140922,2014-09-22,Tommy Robredo,Andy Murray,Shenzhen,5-7 7-6(9) 6-1
+20140929,2014-09-29,Andy Murray,Novak Djokovic,Beijing,6-3 6-4
+20141005,2014-10-05,Novak Djokovic,Roger Federer,Shanghai Masters,6-4 6-4
+20141027,2014-10-27,Roger Federer,Milos Raonic,Paris Masters,7-6(5) 7-5
+20141027,2014-10-27,Milos Raonic,Novak Djokovic,Paris Masters,6-2 6-3
+20150105,2015-01-05,Novak Djokovic,Ivo Karlovic,Doha,6-7(2) 7-6(6) 6-4
+20150119,2015-01-19,Ivo Karlovic,Nick Kyrgios,Australian Open,7-6(4) 6-4 5-7 6-4
+20150312,2015-03-12,Nick Kyrgios,Grigor Dimitrov,Indian Wells Masters,7-6(2) 3-6 7-6(4)
+20150312,2015-03-12,Grigor Dimitrov,Tommy Robredo,Indian Wells Masters,6-4 1-6 7-5
+20150325,2015-03-25,Tommy Robredo,Alexandr Dolgopolov,Miami Masters,6-7(1) 6-3 7-5
+20150325,2015-03-25,Alexandr Dolgopolov,Novak Djokovic,Miami Masters,6-7(3) 7-5 6-0
+20150524,2015-05-24,Novak Djokovic,Stan Wawrinka,Roland Garros,4-6 6-4 6-3 6-4
+20150615,2015-06-15,Stan Wawrinka,Kevin Anderson,Queen's Club,7-6(4) 7-6(11)
+20150629,2015-06-29,Kevin Anderson,Novak Djokovic,Wimbledon,6-7(6) 6-7(6) 6-1 6-4 7-5
+20150810,2015-08-10,Novak Djokovic,Andy Murray,Canada Masters,6-4 4-6 6-3
+20150816,2015-08-16,Andy Murray,Roger Federer,Cincinnati Masters,6-4 7-6(6)
+20150831,2015-08-31,Roger Federer,Novak Djokovic,US Open,6-4 5-7 6-4 6-4
+20151115,2015-11-15,Novak Djokovic,Roger Federer,Tour Finals,7-5 6-2
+20160104,2016-01-04,Roger Federer,Milos Raonic,Brisbane,6-4 6-4
+20160118,2016-01-18,Milos Raonic,Andy Murray,Australian Open,4-6 7-5 6-7(4) 6-4 6-2
+20160118,2016-01-18,Andy Murray,Novak Djokovic,Australian Open,6-1 7-5 7-6(3)
+20160222,2016-02-22,Novak Djokovic,Feliciano Lopez,Dubai,6-3 0-0 RET
+20160222,2016-02-22,Feliciano Lopez,Marcos Baghdatis,Dubai,3-6 7-6(1) 6-1
+20160222,2016-02-22,Marcos Baghdatis,Stan Wawrinka,Dubai,6-4 7-6(13)
+20160307,2016-03-07,Stan Wawrinka,David Goffin,Indian Wells Masters,6-3 5-7 7-6(5)
+20160307,2016-03-07,David Goffin,Milos Raonic,Indian Wells Masters,6-3 3-6 6-3
+20160307,2016-03-07,Milos Raonic,Novak Djokovic,Indian Wells Masters,6-2 6-0
+20160411,2016-04-11,Novak Djokovic,Jiri Vesely,Monte Carlo Masters,6-4 2-6 6-4
+20160425,2016-04-25,Jiri Vesely,Grigor Dimitrov,Istanbul,7-6(1) 6-1
+20160502,2016-05-02,Grigor Dimitrov,Pablo Carreno Busta,Madrid Masters,7-6(3) 6-3
+20160516,2016-05-16,Pablo Carreno Busta,Stan Wawrinka,Geneva,6-3 6-1
+20160523,2016-05-23,Stan Wawrinka,Andy Murray,Roland Garros,6-4 6-2 4-6 6-2
+20160523,2016-05-23,Andy Murray,Novak Djokovic,Roland Garros,3-6 6-1 6-2 6-4
+20160627,2016-06-27,Novak Djokovic,Sam Querrey,Wimbledon,7-6(6) 6-1 3-6 7-6(5)
+20160718,2016-07-18,Sam Querrey,Gael Monfils,Washington,6-4 3-6 6-1
+20160725,2016-07-25,Gael Monfils,Novak Djokovic,Canada Masters,6-3 6-2
+20160808,2016-08-08,Novak Djokovic,Juan Martin del Potro,Rio Olympics,7-6(4) 7-6(2)
+20160829,2016-08-29,Juan Martin del Potro,Stan Wawrinka,US Open,7-6(5) 4-6 6-3 6-2
+20160919,2016-09-19,Stan Wawrinka,Alexander Zverev,St. Petersburg,6-2 3-6 7-5
+20161003,2016-10-03,Alexander Zverev,David Ferrer,Beijing,6-7(4) 6-1 7-5
+20161010,2016-10-10,David Ferrer,Feliciano Lopez,Shanghai Masters,7-6(3) 4-6 7-6(4)
+20161010,2016-10-10,Feliciano Lopez,Jack Sock,Shanghai Masters,6-3 4-6 6-4
+20161017,2016-10-17,Jack Sock,Juan Martin del Potro,Stockholm,7-5 6-1
+20161024,2016-10-24,Juan Martin del Potro,Kei Nishikori,Basel,7-5 6-4
+20161024,2016-10-24,Kei Nishikori,Marin Cilic,Basel,6-1 7-6(5)
+20161031,2016-10-31,Marin Cilic,John Isner,Paris Masters,6-4 6-3
+20170109,2017-01-09,John Isner,Steve Johnson,Auckland,6-3 5-7 7-6(3)
+20170116,2017-01-16,Steve Johnson,Stan Wawrinka,Australian Open,6-3 6-4 6-4
+20170227,2017-02-27,Stan Wawrinka,Damir Dzumhur,Dubai,7-6(4) 6-3
+20170227,2017-02-27,Damir Dzumhur,Robin Haase,Dubai,6-2 4-6 6-4
+20170306,2017-03-06,Robin Haase,Paolo Lorenzi,Indian Wells Masters,6-4 6-3
+20170306,2017-03-06,Paolo Lorenzi,Stan Wawrinka,Indian Wells Masters,6-3 6-4
+20170320,2017-03-20,Stan Wawrinka,Alexander Zverev,Miami Masters,4-6 6-2 6-1
+20170320,2017-03-20,Alexander Zverev,Nick Kyrgios,Miami Masters,6-4 6-7(9) 6-3
+20170320,2017-03-20,Nick Kyrgios,Roger Federer,Miami Masters,7-6(9) 6-7(9) 7-6(5)
+20170612,2017-06-12,Roger Federer,Tommy Haas,Stuttgart,2-6 7-6(8) 6-4
+20170619,2017-06-19,Tommy Haas,Bernard Tomic,Halle,6-4 6-4
+20170619,2017-06-19,Bernard Tomic,Richard Gasquet,Halle,6-3 6-3
+20170626,2017-06-26,Richard Gasquet,Gael Monfils,Eastbourne,6-2 6-7(7) 7-6(4)
+20170626,2017-06-26,Gael Monfils,Novak Djokovic,Eastbourne,6-3 6-4
+20170703,2017-07-03,Novak Djokovic,Tomas Berdych,Wimbledon,7-6(2) 2-0 RET
+20170731,2017-07-31,Tomas Berdych,Thanasi Kokkinakis,Los Cabos,3-6 7-6(5) 6-4
+20170828,2017-08-28,Thanasi Kokkinakis,Janko Tipsarevic,US Open,6-7(5) 3-6 6-1 7-6(2) 6-3
+20190114,2019-01-14,Janko Tipsarevic,Grigor Dimitrov,Australian Open,4-6 6-3 6-1 6-4
+20190318,2019-03-18,Grigor Dimitrov,Jordan Thompson,Miami Masters,7-5 7-5
+20190318,2019-03-18,Jordan Thompson,Kevin Anderson,Miami Masters,7-5 7-5
+20190318,2019-03-18,Kevin Anderson,Roger Federer,Miami Masters,6-0 6-4
+20190506,2019-05-06,Roger Federer,Dominic Thiem,Madrid Masters,3-6 7-6(11) 6-4
+20190506,2019-05-06,Dominic Thiem,Novak Djokovic,Madrid Masters,7-6(2) 7-6(4)
+20190513,2019-05-13,Novak Djokovic,Rafael Nadal,Rome Masters,6-0 4-6 6-1
+20190701,2019-07-01,Rafael Nadal,Roger Federer,Wimbledon,7-6(3) 1-6 6-3 6-4
+20190812,2019-08-12,Roger Federer,Andrey Rublev,Cincinnati Masters,6-3 6-4
+20190812,2019-08-12,Andrey Rublev,Daniil Medvedev,Cincinnati Masters,6-2 6-3
+20190826,2019-08-26,Daniil Medvedev,Rafael Nadal,US Open,7-5 6-3 5-7 4-6 6-4
+20191028,2019-10-28,Rafael Nadal,Denis Shapovalov,Paris Masters,W/O
+20191028,2019-10-28,Denis Shapovalov,Novak Djokovic,Paris Masters,6-3 6-4
+20191111,2019-11-11,Novak Djokovic,Dominic Thiem,Tour Finals,6-7(5) 6-3 7-6(5)
+20191111,2019-11-11,Dominic Thiem,Matteo Berrettini,Tour Finals,7-6(3) 6-3
+20191111,2019-11-11,Matteo Berrettini,Novak Djokovic,Tour Finals,6-2 6-1
+20191111,2019-11-11,Novak Djokovic,Roger Federer,Tour Finals,6-4 6-3
+20191111,2019-11-11,Roger Federer,Stefanos Tsitsipas,Tour Finals,6-3 6-4
+20200106,2020-01-06,Stefanos Tsitsipas,Denis Shapovalov,Atp Cup,7-6(6) 7-6(4)
+20200106,2020-01-06,Denis Shapovalov,Novak Djokovic,Atp Cup,4-6 6-1 7-6(4)
+20200831,2020-08-31,Novak Djokovic,Pablo Carreno Busta,Us Open,6-5 DEF
+20200914,2020-09-14,Pablo Carreno Busta,Rafael Nadal,Rome Masters,6-1 6-1
+20201102,2020-11-02,Rafael Nadal,Alexander Zverev,Paris Masters,6-4 7-5
+20201102,2020-11-02,Alexander Zverev,Daniil Medvedev,Paris Masters,5-7 6-4 6-1
+20210208,2021-02-08,Daniil Medvedev,Novak Djokovic,Australian Open,7-5 6-2 6-2
+20210412,2021-04-12,Novak Djokovic,Daniel Evans,Monte Carlo Masters,6-4 7-5
+20210412,2021-04-12,Daniel Evans,Stefanos Tsitsipas,Monte Carlo Masters,6-2 6-1
+20210419,2021-04-19,Stefanos Tsitsipas,Rafael Nadal,Barcelona,6-4 6-7(6) 7-5
+20210503,2021-05-03,Rafael Nadal,Alexander Zverev,Madrid Masters,6-4 6-4
+20210510,2021-05-10,Alexander Zverev,Rafael Nadal,Rome Masters,6-3 6-4
+20210531,2021-05-31,Rafael Nadal,Novak Djokovic,Roland Garros,3-6 6-3 7-6(4) 6-2
+20210724,2021-07-24,Novak Djokovic,Alexander Zverev,Tokyo Olympics,1-6 6-3 6-1
+20210830,2021-08-30,Alexander Zverev,Novak Djokovic,Us Open,4-6 6-2 6-4 4-6 6-2
+20211115,2021-11-15,Novak Djokovic,Alexander Zverev,Tour Finals,7-6(4) 4-6 6-3
+20211115,2021-11-15,Alexander Zverev,Daniil Medvedev,Tour Finals,6-3 6-7(3) 7-6(6)
+20220103,2022-01-03,Daniil Medvedev,Ugo Humbert,Atp Cup,6-7(5) 7-5 7-6(2)
+20220117,2022-01-17,Ugo Humbert,Richard Gasquet,Australian Open,3-6 7-6(4) 7-6(3) 6-3
+20220131,2022-01-31,Richard Gasquet,Mikael Ymer,Montpellier,7-5 6-7(6) 6-1
+20220207,2022-02-07,Mikael Ymer,Lorenzo Musetti,Rotterdam,6-3 6-7(4) 6-3
+20220221,2022-02-21,Lorenzo Musetti,Novak Djokovic,Dubai,6-3 6-3
+20220411,2022-04-11,Novak Djokovic,Alejandro Davidovich Fokina,Monte Carlo Masters,6-3 6-7(5) 6-1
+20220411,2022-04-11,Alejandro Davidovich Fokina,Stefanos Tsitsipas,Monte Carlo Masters,6-3 7-6(3)
+20220418,2022-04-18,Stefanos Tsitsipas,Carlos Alcaraz,Barcelona,6-4 5-7 6-2
+20220523,2022-05-23,Carlos Alcaraz,Alexander Zverev,Roland Garros,6-4 6-4 4-6 7-6(7)
+20220523,2022-05-23,Alexander Zverev,Rafael Nadal,Roland Garros,7-6(8) 6-6 RET
+20220627,2022-06-27,Rafael Nadal,Nick Kyrgios,Wimbledon,W/O
+20220627,2022-06-27,Nick Kyrgios,Novak Djokovic,Wimbledon,4-6 6-3 6-4 7-6(3)
+20220923,2022-09-23,Novak Djokovic,Felix Auger Aliassime,Laver Cup,6-3 7-6(3)
+20220923,2022-09-23,Felix Auger Aliassime,Matteo Berrettini,Laver Cup,7-6(11) 4-6 [10-7]
+20221010,2022-10-10,Matteo Berrettini,Roberto Carballes Baena,Florence,5-7 7-6(5) 7-5
+20221017,2022-10-17,Roberto Carballes Baena,Matteo Berrettini,Naples,6-4 6-2
+20230102,2023-01-02,Matteo Berrettini,Stefanos Tsitsipas,United Cup,4-6 7-6(2) 6-4
+20230116,2023-01-16,Stefanos Tsitsipas,Novak Djokovic,Australian Open,6-3 7-6(4) 7-6(5)
+20230227,2023-02-27,Novak Djokovic,Daniil Medvedev,Dubai,6-4 6-4
+20230306,2023-03-06,Daniil Medvedev,Carlos Alcaraz,Indian Wells Masters,6-3 6-2
+20230320,2023-03-20,Carlos Alcaraz,Jannik Sinner,Miami Masters,6-7(4) 6-4 6-2
+20230410,2023-04-10,Jannik Sinner,Holger Rune,Monte Carlo Masters,1-6 7-5 7-5
+20230424,2023-04-24,Holger Rune,Alejandro Davidovich Fokina,Madrid Masters,7-6(1) 5-7 7-6(5)
+20230424,2023-04-24,Alejandro Davidovich Fokina,Borna Coric,Madrid Masters,6-7(5) 6-3 7-6(5)
+20230424,2023-04-24,Borna Coric,Carlos Alcaraz,Madrid Masters,6-4 6-3
+20230508,2023-05-08,Carlos Alcaraz,Fabian Marozsan,Rome Masters,6-3 7-6(4)
+20230703,2023-07-03,Fabian Marozsan,David Goffin,Wimbledon,6-2 5-7 6-2 6-0
+20231016,2023-10-16,David Goffin,Giovanni Mpetshi Perricard,Antwerp,7-5 6-3
+20240527,2024-05-27,Giovanni Mpetshi Perricard,David Goffin,Roland Garros,4-6 6-4 6-3 6-7(4) 6-3
+20240610,2024-06-10,David Goffin,Luca Nardi,s Hertogenbosch,7-5 7-5
+20240610,2024-06-10,Luca Nardi,Sebastian Korda,s Hertogenbosch,7-5 7-5
+20240617,2024-06-17,Sebastian Korda,Tommy Paul,Queen's Club,6-4 7-6(2)
+20240701,2024-07-01,Tommy Paul,Carlos Alcaraz,Wimbledon,5-7 6-4 6-2 6-2
+20240812,2024-08-12,Carlos Alcaraz,Gael Monfils,Cincinnati Masters,4-6 7-6(5) 6-4
+20240812,2024-08-12,Gael Monfils,Holger Rune,Cincinnati Masters,3-6 6-3 6-4
+20240826,2024-08-26,Holger Rune,Brandon Nakashima,Us Open,6-2 6-1 6-4
+20240918,2024-09-18,Brandon Nakashima,Marin Cilic,Hangzhou,6-4 7-6(6)
+20240925,2024-09-25,Marin Cilic,Kei Nishikori,Tokyo,6-4 3-6 6-3
+20241002,2024-10-02,Kei Nishikori,Stefanos Tsitsipas,Shanghai Masters,7-6(6) 6-4
+20241014,2024-10-14,Stefanos Tsitsipas,Jiri Lehecka,Antwerp,6-4 6-4
+20241014,2024-10-14,Jiri Lehecka,Roberto Bautista Agut,Antwerp,7-5 6-1
+20241021,2024-10-21,Roberto Bautista Agut,Denis Shapovalov,Basel,6-3 7-6(4)
+20241021,2024-10-21,Denis Shapovalov,Giovanni Mpetshi Perricard,Basel,6-7(7) 6-3 7-6(3)
+20241028,2024-10-28,Giovanni Mpetshi Perricard,Karen Khachanov,Paris Masters,6-7(12) 6-1 6-4
+20241028,2024-10-28,Karen Khachanov,Ugo Humbert,Paris Masters,6-7(6) 6-4 6-3

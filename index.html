@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ultimate World Champion – Lineal Tennis Title</title>
+
+  <!-- Styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #2a5caa;
+    }
+    .section {
+      background: white;
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 2em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    a.button {
+      display: inline-block;
+      margin: 0.5em 0;
+      padding: 0.6em 1.2em;
+      background: #2a5caa;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    a.button:hover {
+      background: #1e468f;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background: #2a5caa;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 3em;
+    }
+  </style>
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+</head>
+<body>
+
+  <h1>🏆 Ultimate World Champion</h1>
+
+  <div class="section">
+    <p><strong>The Ultimate World Champion</strong> is a fictional lineal tennis title passed from player to player by defeating the reigning champion, starting with Owen Davidson in the first match of the Open Era on 22 April 1968.</p>
+  </div>
+
+  <div class="section">
+    <h2>📊 Interactive Title Lineage</h2>
+    <p>Below is the full lineage of the title — who held it, when, where, and how it changed hands.</p>
+    <table id="lineage" class="display">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Tournament</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>📂 Download Full Data</h2>
+    <ul>
+      <li><a class="button" href="ultimate_world_champion_lineage.csv">Lineage (All Title Changes)</a></li>
+      <li><a class="button" href="reign_periods.csv">Reign Periods (Match-by-Match)</a></li>
+      <li><a class="button" href="champion_summary.csv">Champion Summary (Total Reigns, Days, Matches)</a></li>
+      <li><a class="button" href="top_reigns_by_days.csv">Top 10 Reigns by Days Held</a></li>
+      <li><a class="button" href="top_reigns_by_matches.csv">Top 10 Reigns by Matches Played</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    Built with R, tennis history, and a love for title drama 🎾
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+  <!-- Load CSV and populate table -->
+  <script>
+    $(document).ready(function () {
+      $.get("ultimate_world_champion_lineage.csv", function (csv) {
+        const rows = csv.trim().split("\n").slice(1); // skip header
+        rows.forEach(row => {
+          const cols = row.split(",");
+          const htmlRow = `<tr>
+              <td>${cols[1]}</td>
+              <td>${cols[2]}</td>
+              <td>${cols[3]}</td>
+              <td>${cols[4]}</td>
+              <td>${cols[5]}</td>
+            </tr>`;
+          $("#lineage tbody").append(htmlRow);
+        });
+        $("#lineage").DataTable();
+      });
+    });
+  </script>
+
+</body>
+</html>
