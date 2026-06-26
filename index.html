@@ -46,6 +46,21 @@
     th { background: #2a5caa; color: white; }
     footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 3em; }
     .note { font-size: 0.9em; color: #666; }
+    .callout {
+      background: #fff8e1;
+      border-left: 5px solid #f0ad4e;
+      padding: 1em 1.2em;
+      border-radius: 4px;
+      margin-top: 1em;
+    }
+    .callout strong { color: #8a6d00; }
+    /* Reign timeline */
+    #timeline-wrap { overflow-x: auto; }
+    #timeline svg { width: 100%; height: auto; display: block; }
+    #timeline .seg:hover { opacity: 0.7; cursor: pointer; }
+    .timeline-legend { font-size: 0.85em; color: #555; margin-top: 0.6em; }
+    .timeline-legend span { display: inline-block; margin-right: 1.2em; white-space: nowrap; }
+    .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: middle; margin-right: 4px; }
   </style>
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
@@ -58,12 +73,22 @@
   <div class="section">
     <p><strong>The Ultimate World Champion</strong> is a fictional lineal tennis title. The first holder is the winner of the first Open Era match — <strong>Owen Davidson</strong>, on 22 April 1968 — and the title then passes <em>only</em> when the reigning champion loses a match. It is tracked over Jeff Sackmann's ATP match data, filtered to consistent tour-level events (Grand Slams, Masters, ATP 500/250 and the Tour Finals).</p>
     <p class="note">Strict lineal rule: there is no vacancy clause. If a champion retires without losing, the title stays dormant with them — which is why the current holder is a player from an earlier era.</p>
+    <div class="callout">
+      <strong>⚠️ About the current reign.</strong> <strong>Pete Sampras</strong> won the title at the 2002 US Open final against <strong>Andre Agassi</strong> on 26 August 2002 — which turned out to be the <strong>last ATP match he ever played</strong>. He retired without losing it. His reign is therefore counted as ending on that date (not running on through the rest of the dataset), and the Ultimate World Champion title has been <strong>dormant ever since</strong>.
+    </div>
   </div>
 
   <div class="section champion-banner">
     <div>Current Ultimate World Champion</div>
     <div class="name" id="current-champion">…</div>
     <div class="meta" id="current-champion-meta"></div>
+  </div>
+
+  <div class="section">
+    <h2>🧭 Reign Timeline</h2>
+    <p>Every reign from 1968 to 2002, drawn to scale by length. Each segment is one reign; hover for the champion and dates. The biggest blocks are the longest holders.</p>
+    <div id="timeline-wrap"><div id="timeline"></div></div>
+    <div class="timeline-legend" id="timeline-legend"></div>
   </div>
 
   <div class="section">
@@ -95,6 +120,15 @@
     <p>Every time the title changed hands — who lost it, who took it, where, and the score.</p>
     <table id="lineage" class="display">
       <thead><tr><th>Date</th><th>Lost By</th><th>Won By</th><th>Tournament</th><th>Score</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>📋 All Reigns (match-by-match)</h2>
+    <p>Every individual reign — including the many that lasted a single match — with length in days and in matches defended.</p>
+    <table id="reigns" class="display">
+      <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
       <tbody></tbody>
     </table>
   </div>
@@ -136,6 +170,66 @@
       });
     }
 
+    // ---- Reign timeline (inline SVG, drawn to scale by reign length) ----
+    const PALETTE = ["#2a5caa","#e07b39","#3a9a52","#b5435a","#7a5ea8","#c79a1e",
+                     "#4aa6b0","#9c6b3f","#d05fa0","#5b8c2a","#8a8d92","#c0392b"];
+    function colorFor(name, map) {
+      if (!(name in map)) map[name] = PALETTE[Object.keys(map).length % PALETTE.length];
+      return map[name];
+    }
+    const isoOf = ms => new Date(ms).toISOString().slice(0, 10);
+    const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    function renderTimeline(reigns) {
+      const parse = s => new Date(s + "T00:00:00").getTime();
+      const data = reigns
+        .filter(r => r.start_date && r.end_date)
+        .map(r => ({ champ: r.champion, s: parse(r.start_date), e: parse(r.end_date), days: +r.reign_days }));
+      if (!data.length) return;
+
+      const minT = Math.min(...data.map(d => d.s));
+      const maxT = Math.max(...data.map(d => d.e));
+      const span = maxT - minT;
+      const W = 1000, L = 12, R = 12, barY = 24, barH = 54, axisY = barY + barH;
+      const x = t => L + (t - minT) / span * (W - L - R);
+      const colorMap = {};
+
+      let rects = "";
+      data.forEach(d => {
+        const xx = x(d.s), w = Math.max(0, x(d.e) - xx);
+        if (w <= 0) return; // single-match (0-day) reigns occupy no time
+        const c = colorFor(d.champ, colorMap);
+        const label = d.champ + " — " + isoOf(d.s) + " to " + isoOf(d.e) + " (" + d.days + " days)";
+        rects += '<rect class="seg" x="' + xx.toFixed(2) + '" y="' + barY + '" width="' +
+                 w.toFixed(2) + '" height="' + barH + '" fill="' + c + '"><title>' + esc(label) + '</title></rect>';
+      });
+
+      let ticks = "";
+      const y0 = new Date(minT).getFullYear(), y1 = new Date(maxT).getFullYear();
+      for (let yr = Math.ceil(y0 / 5) * 5; yr <= y1; yr += 5) {
+        const tx = x(new Date(yr, 0, 1).getTime());
+        ticks += '<line x1="' + tx.toFixed(1) + '" y1="' + barY + '" x2="' + tx.toFixed(1) +
+                 '" y2="' + (axisY + 4) + '" stroke="#ccc" stroke-width="1"/>';
+        ticks += '<text x="' + tx.toFixed(1) + '" y="' + (axisY + 16) +
+                 '" font-size="11" fill="#666" text-anchor="middle">' + yr + '</text>';
+      }
+
+      document.getElementById("timeline").innerHTML =
+        '<svg viewBox="0 0 ' + W + ' ' + (axisY + 22) +
+        '" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">' +
+        ticks + rects + '</svg>';
+
+      // Legend: the longest-holding champions, by total days.
+      const totals = {};
+      data.forEach(d => totals[d.champ] = (totals[d.champ] || 0) + d.days);
+      const top = Object.entries(totals).sort((a, b) => b[1] - a[1]).slice(0, 8);
+      document.getElementById("timeline-legend").innerHTML =
+        "Longest holders: " +
+        top.map(([n]) => '<span><span class="swatch" style="background:' + colorFor(n, colorMap) +
+                         '"></span>' + esc(n) + '</span>').join("") +
+        '<div style="margin-top:.4em">Title dormant after 26 Aug 2002 (Sampras retired undefeated).</div>';
+    }
+
     $(document).ready(function () {
       // Lineage — also derive the current champion from the last row.
       loadCsv("ultimate_world_champion_lineage.csv").then(rows => {
@@ -147,7 +241,7 @@
           $("#current-champion").text(last.to);
           $("#current-champion-meta").text(
             "Took the title at " + last.tournament + " on " + last.match_date +
-            ", beating " + last.from + " — and has not lost it since."
+            ", beating " + last.from + ". It was the last match he ever played — the title has been dormant since."
           );
         }
       });
@@ -165,6 +259,13 @@
       loadCsv("top_reigns_by_matches.csv").then(rows => {
         fillBody("#top-matches", rows, ["champion", "start_date", "end_date", "reign_days", "reign_matches"]);
         $("#top-matches").DataTable({ order: [[4, "desc"]], paging: false, searching: false, info: false });
+      });
+
+      // Full reign list — drives both the timeline chart and the sixth table.
+      loadCsv("reign_periods.csv").then(rows => {
+        renderTimeline(rows);
+        fillBody("#reigns", rows, ["champion", "start_date", "end_date", "reign_days", "reign_matches"]);
+        $("#reigns").DataTable({ order: [[1, "asc"]], pageLength: 25 });
       });
     });
   </script>

@@ -99,6 +99,22 @@ for (i in 1:nrow(atp_data)) {
 
 lineage_df <- do.call(rbind, lineage)
 
+# Precompute match_date once — needed for reign match counts below and for the
+# final champion's true last-match date.
+atp_data <- atp_data %>%
+  mutate(match_date = as.Date(as.character(tourney_date), format = "%Y%m%d"))
+
+# A champion who never plays again has effectively stopped defending the title.
+# So the final (still-open) reign ends at THAT champion's last actual match, not
+# the dataset's last date. Pete Sampras won the 2002 US Open final (beating
+# Agassi) and never played another tour match — his reign ends there, and the
+# Ultimate World Champion title has been dormant ever since.
+final_champion <- champion
+final_champ_last_match <- atp_data %>%
+  filter(winner_name == final_champion | loser_name == final_champion) %>%
+  summarise(d = max(match_date)) %>%
+  pull(d)
+
 # ➕ Add start/end dates to compute reigns.
 #    A reign begins when a player WINS the title (the `to` column) and ends when
 #    the next title change happens. The opening reign belongs to the first
@@ -110,14 +126,9 @@ reigns <- data.frame(
   start_date = c(first_match_date, lineage_df$match_date),
   stringsAsFactors = FALSE
 ) %>%
-  mutate(end_date = lead(start_date, default = last_match_date),
+  mutate(end_date = lead(start_date, default = final_champ_last_match),
          reign_days = as.integer(end_date - start_date),
          reign_matches = NA_integer_)
-
-# 🧮 Count number of matches played by each champion during their reign
-# Precompute match_date once
-atp_data <- atp_data %>%
-  mutate(match_date = as.Date(as.character(tourney_date), format = "%Y%m%d"))
 
 # Count matches in reigns without recomputing
 for (i in 1:nrow(reigns)) {
