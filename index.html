@@ -3,146 +3,282 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ultimate World Champion – Lineal Tennis Title</title>
+  <title>The Ultimate World Champion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
 
   <style>
+    :root {
+      --ink: #16241c;
+      --green: #0c4a32;
+      --green-deep: #08361f;
+      --gold: #b88a2a;
+      --gold-soft: #d8b25a;
+      --cream: #f4f0e6;
+      --card: #fffdf8;
+      --muted: #6f685a;
+      --line: #e7e0d0;
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-      padding: 2em;
-      max-width: 1000px;
-      margin: auto;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.6;
     }
-    h1 { text-align: center; color: #2a5caa; margin-bottom: 0.2em; }
-    h2 { color: #2a5caa; }
-    .subtitle { text-align: center; color: #666; margin-top: 0; }
-    .section {
-      background: white;
-      padding: 1.5em;
-      border-radius: 8px;
-      margin-bottom: 2em;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .champion-banner {
-      background: linear-gradient(135deg, #2a5caa, #1e468f);
-      color: white;
-      text-align: center;
-      padding: 1.5em;
-    }
-    .champion-banner .name { font-size: 2em; font-weight: bold; margin: 0.2em 0; }
-    .champion-banner .meta { opacity: 0.9; }
-    a.button {
-      display: inline-block;
-      margin: 0.4em 0.4em 0.4em 0;
-      padding: 0.6em 1.2em;
-      background: #2a5caa;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-    a.button:hover { background: #1e468f; }
-    table.display { width: 100% !important; }
-    th { background: #2a5caa; color: white; }
-    footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 3em; }
-    .note { font-size: 0.9em; color: #666; }
-    .callout {
-      background: #fff8e1;
-      border-left: 5px solid #f0ad4e;
-      padding: 1em 1.2em;
-      border-radius: 4px;
-      margin-top: 1em;
-    }
-    .callout strong { color: #8a6d00; }
-    /* Reign timeline */
-    #timeline-wrap { overflow-x: auto; }
-    #timeline svg { width: 100%; height: auto; display: block; }
-    #timeline .seg:hover { opacity: 0.7; cursor: pointer; }
-    .timeline-legend { font-size: 0.85em; color: #555; margin-top: 0.6em; }
-    .timeline-legend span { display: inline-block; margin-right: 1.2em; white-space: nowrap; }
-    .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: middle; margin-right: 4px; }
-  </style>
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 1.25rem 4rem; }
 
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+    /* Hero */
+    .hero {
+      background: radial-gradient(120% 140% at 50% 0%, var(--green) 0%, var(--green-deep) 70%);
+      color: var(--cream);
+      text-align: center;
+      padding: 4rem 1.25rem 3.25rem;
+      border-bottom: 3px solid var(--gold);
+    }
+    .hero .kicker {
+      font-size: 0.78rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      margin: 0 0 0.9rem;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2.3rem, 5vw, 3.6rem);
+      line-height: 1.05;
+      margin: 0;
+    }
+    .hero p {
+      max-width: 40rem;
+      margin: 1.1rem auto 0;
+      color: #d7e2da;
+      font-size: 1.05rem;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.9rem;
+      margin-top: 1.75rem;
+      box-shadow: 0 1px 2px rgba(20,36,28,0.04), 0 12px 30px -18px rgba(20,36,28,0.25);
+    }
+    h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--green);
+      margin: 0 0 0.4rem;
+    }
+    h2 + p { margin-top: 0; color: var(--muted); }
+    .lead { font-size: 1.08rem; }
+    .lead strong { color: var(--green); }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+
+    .callout {
+      margin-top: 1.4rem;
+      padding: 1.1rem 1.3rem;
+      background: #fbf6e9;
+      border: 1px solid #ecd9a6;
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      font-size: 0.97rem;
+    }
+    .callout .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+
+    /* Current champion */
+    .champion {
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-deep) 100%);
+      color: var(--cream);
+      border: none;
+      text-align: center;
+      padding: 2.4rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .champion::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(216,178,90,0.35);
+      border-radius: 12px;
+      margin: 10px;
+      pointer-events: none;
+    }
+    .champion .label {
+      font-size: 0.74rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+    }
+    .champion .name {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(2rem, 4.5vw, 2.9rem);
+      font-weight: 600;
+      margin: 0.35rem 0 0.55rem;
+    }
+    .champion .meta { color: #d7e2da; max-width: 38rem; margin: 0 auto; }
+
+    /* Timeline */
+    #timeline-wrap { overflow-x: auto; margin-top: 0.5rem; }
+    #timeline svg { width: 100%; height: auto; display: block; min-width: 560px; }
+    #timeline .seg { transition: opacity 0.12s ease; }
+    #timeline .seg:hover { opacity: 0.62; cursor: pointer; }
+    .legend { font-size: 0.9rem; color: var(--muted); margin-top: 1rem; }
+    .legend .holders { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-top: 0.5rem; }
+    .legend .holder { display: inline-flex; align-items: center; white-space: nowrap; }
+    .swatch { width: 12px; height: 12px; border-radius: 3px; margin-right: 0.45rem; }
+    .legend .dormant { margin-top: 0.8rem; font-style: italic; }
+
+    /* Tables */
+    table.display { width: 100% !important; border-collapse: collapse; font-size: 0.94rem; }
+    table.display thead th {
+      background: var(--green);
+      color: var(--cream);
+      border: none !important;
+      font-weight: 600;
+      padding: 0.7rem 0.85rem;
+    }
+    table.display tbody td { padding: 0.6rem 0.85rem; border-top: 1px solid var(--line); }
+    table.display tbody tr:hover td { background: #f7f2e6; }
+    .dataTables_wrapper .dataTables_filter input,
+    .dataTables_wrapper .dataTables_length select {
+      border: 1px solid var(--line); border-radius: 6px; padding: 0.25rem 0.45rem;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+      background: var(--green) !important; color: var(--cream) !important;
+      border-radius: 6px; border: none !important;
+    }
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter { color: var(--muted); }
+
+    /* Downloads */
+    .downloads { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .downloads a {
+      text-decoration: none;
+      color: var(--green);
+      border: 1px solid var(--green);
+      border-radius: 8px;
+      padding: 0.5rem 0.95rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.12s ease, color 0.12s ease;
+    }
+    .downloads a:hover { background: var(--green); color: var(--cream); }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      padding: 2.5rem 1.25rem 0;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>🏆 Ultimate World Champion</h1>
-  <p class="subtitle">A fictional lineal tennis title, boxing-style: held until you lose.</p>
+  <header class="hero">
+    <p class="kicker">Open Era · Men's Tennis</p>
+    <h1>The Ultimate World Champion</h1>
+    <p>A lineal title in the spirit of boxing. One player holds it, and it only changes hands on the court, when the champion is beaten.</p>
+  </header>
 
-  <div class="section">
-    <p><strong>The Ultimate World Champion</strong> is a fictional lineal tennis title. The first holder is the winner of the first Open Era match — <strong>Owen Davidson</strong>, on 22 April 1968 — and the title then passes <em>only</em> when the reigning champion loses a match. It is tracked over Jeff Sackmann's ATP match data, filtered to consistent tour-level events (Grand Slams, Masters, ATP 500/250 and the Tour Finals).</p>
-    <p class="note">Strict lineal rule: there is no vacancy clause. If a champion retires without losing, the title stays dormant with them — which is why the current holder is a player from an earlier era.</p>
-    <div class="callout">
-      <strong>⚠️ About the current reign.</strong> <strong>Pete Sampras</strong> won the title at the 2002 US Open final against <strong>Andre Agassi</strong> on 26 August 2002 — which turned out to be the <strong>last ATP match he ever played</strong>. He retired without losing it. His reign is therefore counted as ending on that date (not running on through the rest of the dataset), and the Ultimate World Champion title has been <strong>dormant ever since</strong>.
-    </div>
+  <div class="wrap">
+
+    <section class="card">
+      <p class="lead">The <strong>Ultimate World Champion</strong> is an imaginary lineal title for men's tennis. It begins with the winner of the very first Open Era match, <strong>Owen Davidson</strong> on 22 April 1968, and passes to a new player only when the reigning champion loses. Every result is drawn from Jeff Sackmann's ATP data, limited to the events that have run consistently since 1968: Grand Slams, Masters, ATP 500 and 250 tournaments, and the Tour Finals.</p>
+      <p class="muted">There is no vacancy rule. A champion who retires without ever losing keeps the title, which is why it currently rests with a player from an earlier era.</p>
+      <div class="callout">
+        <span class="tag">The current reign</span>
+        <strong>Pete Sampras</strong> won the title at the 2002 US Open, beating <strong>Andre Agassi</strong> on 26 August 2002. That turned out to be the last match he ever played. He retired without losing it, so his reign is counted up to that date rather than rolling on through the rest of the data. The title has been dormant ever since.
+      </div>
+    </section>
+
+    <section class="card champion">
+      <div class="label">Current Ultimate World Champion</div>
+      <div class="name" id="current-champion">…</div>
+      <div class="meta" id="current-champion-meta"></div>
+    </section>
+
+    <section class="card">
+      <h2>Reign timeline</h2>
+      <p>Every reign from 1968 to 2002, scaled by length. Each block is a single reign; hover one to see the champion and dates. The widest blocks belong to the longest holders.</p>
+      <div id="timeline-wrap"><div id="timeline"></div></div>
+      <div class="legend" id="timeline-legend"></div>
+    </section>
+
+    <section class="card">
+      <h2>Most days as champion</h2>
+      <p>Career totals across every reign a player held.</p>
+      <table id="summary" class="display">
+        <thead><tr><th>Champion</th><th>Reigns</th><th>Total days</th><th>Total matches</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Longest single reigns, by days</h2>
+      <table id="top-days" class="display">
+        <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Longest single reigns, by matches defended</h2>
+      <table id="top-matches" class="display">
+        <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Full title lineage</h2>
+      <p>Every time the title changed hands: who lost it, who won it, where, and the score.</p>
+      <table id="lineage" class="display">
+        <thead><tr><th>Date</th><th>Lost by</th><th>Won by</th><th>Tournament</th><th>Score</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Every reign</h2>
+      <p>Each individual reign, including the many that lasted a single match, with its length in days and in matches defended.</p>
+      <table id="reigns" class="display">
+        <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Download the data</h2>
+      <p>The full set of CSV files behind this page.</p>
+      <div class="downloads">
+        <a href="ultimate_world_champion_lineage.csv">Lineage</a>
+        <a href="reign_periods.csv">Reign periods</a>
+        <a href="champion_summary.csv">Champion summary</a>
+        <a href="top_reigns_by_days.csv">Top reigns by days</a>
+        <a href="top_reigns_by_matches.csv">Top reigns by matches</a>
+      </div>
+    </section>
+
+    <footer>Built with R and Jeff Sackmann's ATP match data.</footer>
   </div>
-
-  <div class="section champion-banner">
-    <div>Current Ultimate World Champion</div>
-    <div class="name" id="current-champion">…</div>
-    <div class="meta" id="current-champion-meta"></div>
-  </div>
-
-  <div class="section">
-    <h2>🧭 Reign Timeline</h2>
-    <p>Every reign from 1968 to 2002, drawn to scale by length. Each segment is one reign; hover for the champion and dates. The biggest blocks are the longest holders.</p>
-    <div id="timeline-wrap"><div id="timeline"></div></div>
-    <div class="timeline-legend" id="timeline-legend"></div>
-  </div>
-
-  <div class="section">
-    <h2>📈 Most Days as Champion</h2>
-    <table id="summary" class="display">
-      <thead><tr><th>Champion</th><th>Reigns</th><th>Total Days</th><th>Total Matches</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>⏳ Longest Single Reigns (by days)</h2>
-    <table id="top-days" class="display">
-      <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>🎾 Longest Single Reigns (by matches defended)</h2>
-    <table id="top-matches" class="display">
-      <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>📊 Full Title Lineage</h2>
-    <p>Every time the title changed hands — who lost it, who took it, where, and the score.</p>
-    <table id="lineage" class="display">
-      <thead><tr><th>Date</th><th>Lost By</th><th>Won By</th><th>Tournament</th><th>Score</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>📋 All Reigns (match-by-match)</h2>
-    <p>Every individual reign — including the many that lasted a single match — with length in days and in matches defended.</p>
-    <table id="reigns" class="display">
-      <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>📂 Download Full Data</h2>
-    <a class="button" href="ultimate_world_champion_lineage.csv">Lineage</a>
-    <a class="button" href="reign_periods.csv">Reign Periods</a>
-    <a class="button" href="champion_summary.csv">Champion Summary</a>
-    <a class="button" href="top_reigns_by_days.csv">Top Reigns by Days</a>
-    <a class="button" href="top_reigns_by_matches.csv">Top Reigns by Matches</a>
-  </div>
-
-  <footer>Built with R, Jeff Sackmann's tennis data, and a love for title drama 🎾</footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -171,8 +307,8 @@
     }
 
     // ---- Reign timeline (inline SVG, drawn to scale by reign length) ----
-    const PALETTE = ["#2a5caa","#e07b39","#3a9a52","#b5435a","#7a5ea8","#c79a1e",
-                     "#4aa6b0","#9c6b3f","#d05fa0","#5b8c2a","#8a8d92","#c0392b"];
+    const PALETTE = ["#0c4a32","#b88a2a","#1f6f8b","#9c4a3f","#5b4b8a","#3a7d44",
+                     "#c2823b","#7a6f3a","#a8516e","#2f6d6d","#86603a","#4a6b2f"];
     function colorFor(name, map) {
       if (!(name in map)) map[name] = PALETTE[Object.keys(map).length % PALETTE.length];
       return map[name];
@@ -190,16 +326,19 @@
       const minT = Math.min(...data.map(d => d.s));
       const maxT = Math.max(...data.map(d => d.e));
       const span = maxT - minT;
-      const W = 1000, L = 12, R = 12, barY = 24, barH = 54, axisY = barY + barH;
+      const W = 1000, L = 12, R = 12, barY = 26, barH = 58, axisY = barY + barH;
       const x = t => L + (t - minT) / span * (W - L - R);
       const colorMap = {};
+
+      const track = '<rect x="' + L + '" y="' + barY + '" width="' + (W - L - R) +
+                    '" height="' + barH + '" rx="5" fill="#efe9da"/>';
 
       let rects = "";
       data.forEach(d => {
         const xx = x(d.s), w = Math.max(0, x(d.e) - xx);
         if (w <= 0) return; // single-match (0-day) reigns occupy no time
         const c = colorFor(d.champ, colorMap);
-        const label = d.champ + " — " + isoOf(d.s) + " to " + isoOf(d.e) + " (" + d.days + " days)";
+        const label = d.champ + ", " + isoOf(d.s) + " to " + isoOf(d.e) + " (" + d.days + " days)";
         rects += '<rect class="seg" x="' + xx.toFixed(2) + '" y="' + barY + '" width="' +
                  w.toFixed(2) + '" height="' + barH + '" fill="' + c + '"><title>' + esc(label) + '</title></rect>';
       });
@@ -209,29 +348,31 @@
       for (let yr = Math.ceil(y0 / 5) * 5; yr <= y1; yr += 5) {
         const tx = x(new Date(yr, 0, 1).getTime());
         ticks += '<line x1="' + tx.toFixed(1) + '" y1="' + barY + '" x2="' + tx.toFixed(1) +
-                 '" y2="' + (axisY + 4) + '" stroke="#ccc" stroke-width="1"/>';
-        ticks += '<text x="' + tx.toFixed(1) + '" y="' + (axisY + 16) +
-                 '" font-size="11" fill="#666" text-anchor="middle">' + yr + '</text>';
+                 '" y2="' + (axisY + 5) + '" stroke="#cfc6b2" stroke-width="1"/>';
+        ticks += '<text x="' + tx.toFixed(1) + '" y="' + (axisY + 19) +
+                 '" font-size="12" fill="#6f685a" text-anchor="middle" font-family="Inter, sans-serif">' + yr + '</text>';
       }
 
       document.getElementById("timeline").innerHTML =
-        '<svg viewBox="0 0 ' + W + ' ' + (axisY + 22) +
+        '<svg viewBox="0 0 ' + W + ' ' + (axisY + 26) +
         '" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">' +
-        ticks + rects + '</svg>';
+        track + ticks + rects + '</svg>';
 
       // Legend: the longest-holding champions, by total days.
       const totals = {};
       data.forEach(d => totals[d.champ] = (totals[d.champ] || 0) + d.days);
       const top = Object.entries(totals).sort((a, b) => b[1] - a[1]).slice(0, 8);
       document.getElementById("timeline-legend").innerHTML =
-        "Longest holders: " +
-        top.map(([n]) => '<span><span class="swatch" style="background:' + colorFor(n, colorMap) +
+        "Longest holders" +
+        '<div class="holders">' +
+        top.map(([n]) => '<span class="holder"><span class="swatch" style="background:' + colorFor(n, colorMap) +
                          '"></span>' + esc(n) + '</span>').join("") +
-        '<div style="margin-top:.4em">Title dormant after 26 Aug 2002 (Sampras retired undefeated).</div>';
+        '</div>' +
+        '<div class="dormant">Title dormant after 26 August 2002, when Sampras retired undefeated.</div>';
     }
 
     $(document).ready(function () {
-      // Lineage — also derive the current champion from the last row.
+      // Lineage, and derive the current champion from the last row.
       loadCsv("ultimate_world_champion_lineage.csv").then(rows => {
         fillBody("#lineage", rows, ["match_date", "from", "to", "tournament", "score"]);
         $("#lineage").DataTable({ order: [[0, "asc"]], pageLength: 25 });
@@ -240,8 +381,8 @@
           const last = rows[rows.length - 1];
           $("#current-champion").text(last.to);
           $("#current-champion-meta").text(
-            "Took the title at " + last.tournament + " on " + last.match_date +
-            ", beating " + last.from + ". It was the last match he ever played — the title has been dormant since."
+            "Won the title at " + last.tournament + " on " + last.match_date +
+            ", beating " + last.from + ". It was the last match he played, and the title has been dormant since."
           );
         }
       });
@@ -261,7 +402,7 @@
         $("#top-matches").DataTable({ order: [[4, "desc"]], paging: false, searching: false, info: false });
       });
 
-      // Full reign list — drives both the timeline chart and the sixth table.
+      // Full reign list, used by both the timeline and the table below.
       loadCsv("reign_periods.csv").then(rows => {
         renderTimeline(rows);
         fillBody("#reigns", rows, ["champion", "start_date", "end_date", "reign_days", "reign_matches"]);
