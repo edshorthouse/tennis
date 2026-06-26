@@ -2,6 +2,9 @@
 # https://github.com/JeffSackmann/tennis_atp
 tennis_atp-master/
 
+# Local editor / preview config
+.claude/
+
 # R session files
 .Rhistory
 .RData

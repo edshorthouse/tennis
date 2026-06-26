@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ultimate World Champion – Lineal Tennis Title</title>
 
-  <!-- Styling -->
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f7f7f7;
       color: #222;
       padding: 2em;
       max-width: 1000px;
       margin: auto;
     }
-    h1 {
-      text-align: center;
-      color: #2a5caa;
-    }
+    h1 { text-align: center; color: #2a5caa; margin-bottom: 0.2em; }
+    h2 { color: #2a5caa; }
+    .subtitle { text-align: center; color: #666; margin-top: 0; }
     .section {
       background: white;
       padding: 1.5em;
@@ -26,105 +24,147 @@
       margin-bottom: 2em;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+    .champion-banner {
+      background: linear-gradient(135deg, #2a5caa, #1e468f);
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+    .champion-banner .name { font-size: 2em; font-weight: bold; margin: 0.2em 0; }
+    .champion-banner .meta { opacity: 0.9; }
     a.button {
       display: inline-block;
-      margin: 0.5em 0;
+      margin: 0.4em 0.4em 0.4em 0;
       padding: 0.6em 1.2em;
       background: #2a5caa;
       color: white;
       text-decoration: none;
       border-radius: 6px;
     }
-    a.button:hover {
-      background: #1e468f;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      text-align: left;
-      padding: 8px;
-    }
-    th {
-      background: #2a5caa;
-      color: white;
-    }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 3em;
-    }
+    a.button:hover { background: #1e468f; }
+    table.display { width: 100% !important; }
+    th { background: #2a5caa; color: white; }
+    footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 3em; }
+    .note { font-size: 0.9em; color: #666; }
   </style>
 
-  <!-- DataTables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
 </head>
 <body>
 
   <h1>🏆 Ultimate World Champion</h1>
+  <p class="subtitle">A fictional lineal tennis title, boxing-style: held until you lose.</p>
 
   <div class="section">
-    <p><strong>The Ultimate World Champion</strong> is a fictional lineal tennis title passed from player to player by defeating the reigning champion, starting with Owen Davidson in the first match of the Open Era on 22 April 1968.</p>
+    <p><strong>The Ultimate World Champion</strong> is a fictional lineal tennis title. The first holder is the winner of the first Open Era match — <strong>Owen Davidson</strong>, on 22 April 1968 — and the title then passes <em>only</em> when the reigning champion loses a match. It is tracked over Jeff Sackmann's ATP match data, filtered to consistent tour-level events (Grand Slams, Masters, ATP 500/250 and the Tour Finals).</p>
+    <p class="note">Strict lineal rule: there is no vacancy clause. If a champion retires without losing, the title stays dormant with them — which is why the current holder is a player from an earlier era.</p>
+  </div>
+
+  <div class="section champion-banner">
+    <div>Current Ultimate World Champion</div>
+    <div class="name" id="current-champion">…</div>
+    <div class="meta" id="current-champion-meta"></div>
   </div>
 
   <div class="section">
-    <h2>📊 Interactive Title Lineage</h2>
-    <p>Below is the full lineage of the title — who held it, when, where, and how it changed hands.</p>
+    <h2>📈 Most Days as Champion</h2>
+    <table id="summary" class="display">
+      <thead><tr><th>Champion</th><th>Reigns</th><th>Total Days</th><th>Total Matches</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>⏳ Longest Single Reigns (by days)</h2>
+    <table id="top-days" class="display">
+      <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>🎾 Longest Single Reigns (by matches defended)</h2>
+    <table id="top-matches" class="display">
+      <thead><tr><th>Champion</th><th>Start</th><th>End</th><th>Days</th><th>Matches</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>📊 Full Title Lineage</h2>
+    <p>Every time the title changed hands — who lost it, who took it, where, and the score.</p>
     <table id="lineage" class="display">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>From</th>
-          <th>To</th>
-          <th>Tournament</th>
-          <th>Score</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Date</th><th>Lost By</th><th>Won By</th><th>Tournament</th><th>Score</th></tr></thead>
       <tbody></tbody>
     </table>
   </div>
 
   <div class="section">
     <h2>📂 Download Full Data</h2>
-    <ul>
-      <li><a class="button" href="ultimate_world_champion_lineage.csv">Lineage (All Title Changes)</a></li>
-      <li><a class="button" href="reign_periods.csv">Reign Periods (Match-by-Match)</a></li>
-      <li><a class="button" href="champion_summary.csv">Champion Summary (Total Reigns, Days, Matches)</a></li>
-      <li><a class="button" href="top_reigns_by_days.csv">Top 10 Reigns by Days Held</a></li>
-      <li><a class="button" href="top_reigns_by_matches.csv">Top 10 Reigns by Matches Played</a></li>
-    </ul>
+    <a class="button" href="ultimate_world_champion_lineage.csv">Lineage</a>
+    <a class="button" href="reign_periods.csv">Reign Periods</a>
+    <a class="button" href="champion_summary.csv">Champion Summary</a>
+    <a class="button" href="top_reigns_by_days.csv">Top Reigns by Days</a>
+    <a class="button" href="top_reigns_by_matches.csv">Top Reigns by Matches</a>
   </div>
 
-  <footer>
-    Built with R, tennis history, and a love for title drama 🎾
-  </footer>
+  <footer>Built with R, Jeff Sackmann's tennis data, and a love for title drama 🎾</footer>
 
-  <!-- JS Libraries -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
-  <!-- Load CSV and populate table -->
   <script>
-    $(document).ready(function () {
-      $.get("ultimate_world_champion_lineage.csv", function (csv) {
-        const rows = csv.trim().split("\n").slice(1); // skip header
-        rows.forEach(row => {
-          const cols = row.split(",");
-          const htmlRow = `<tr>
-              <td>${cols[1]}</td>
-              <td>${cols[2]}</td>
-              <td>${cols[3]}</td>
-              <td>${cols[4]}</td>
-              <td>${cols[5]}</td>
-            </tr>`;
-          $("#lineage tbody").append(htmlRow);
+    // Robustly load a CSV (handles quoted commas) and hand back row objects.
+    function loadCsv(path) {
+      return new Promise((resolve, reject) => {
+        Papa.parse(path, {
+          download: true,
+          header: true,
+          skipEmptyLines: true,
+          complete: r => resolve(r.data),
+          error: reject
         });
-        $("#lineage").DataTable();
+      });
+    }
+
+    function fillBody(selector, rows, cols) {
+      const $tbody = $(selector + " tbody");
+      rows.forEach(row => {
+        const cells = cols.map(c => "<td>" + (row[c] ?? "") + "</td>").join("");
+        $tbody.append("<tr>" + cells + "</tr>");
+      });
+    }
+
+    $(document).ready(function () {
+      // Lineage — also derive the current champion from the last row.
+      loadCsv("ultimate_world_champion_lineage.csv").then(rows => {
+        fillBody("#lineage", rows, ["match_date", "from", "to", "tournament", "score"]);
+        $("#lineage").DataTable({ order: [[0, "asc"]], pageLength: 25 });
+
+        if (rows.length) {
+          const last = rows[rows.length - 1];
+          $("#current-champion").text(last.to);
+          $("#current-champion-meta").text(
+            "Took the title at " + last.tournament + " on " + last.match_date +
+            ", beating " + last.from + " — and has not lost it since."
+          );
+        }
+      });
+
+      loadCsv("champion_summary.csv").then(rows => {
+        fillBody("#summary", rows, ["champion", "reigns", "total_days", "total_matches"]);
+        $("#summary").DataTable({ order: [[2, "desc"]], pageLength: 10 });
+      });
+
+      loadCsv("top_reigns_by_days.csv").then(rows => {
+        fillBody("#top-days", rows, ["champion", "start_date", "end_date", "reign_days", "reign_matches"]);
+        $("#top-days").DataTable({ order: [[3, "desc"]], paging: false, searching: false, info: false });
+      });
+
+      loadCsv("top_reigns_by_matches.csv").then(rows => {
+        fillBody("#top-matches", rows, ["champion", "start_date", "end_date", "reign_days", "reign_matches"]);
+        $("#top-matches").DataTable({ order: [[4, "desc"]], paging: false, searching: false, info: false });
       });
     });
   </script>
