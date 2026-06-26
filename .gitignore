@@ -1,0 +1,8 @@
+# Raw Sackmann ATP dataset — large and reproducible from
+# https://github.com/JeffSackmann/tennis_atp
+tennis_atp-master/
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
