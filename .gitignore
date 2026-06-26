@@ -1,6 +1,7 @@
 # Raw Sackmann ATP dataset — large and reproducible from
 # https://github.com/JeffSackmann/tennis_atp
 tennis_atp-master/
+tennis_atp/
 
 # Local editor / preview config
 .claude/

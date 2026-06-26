@@ -11,8 +11,14 @@ library(readr)
 library(stringr)
 library(lubridate)
 
-# 📁 Path to your ATP match data folder
-data_folder <- "C:/Users/eshor/OneDrive/tennis/tennis_atp-master"
+# 📁 Path to your ATP match data folder.
+#    This is a local clone of https://github.com/JeffSackmann/tennis_atp,
+#    kept up to date by refresh.ps1 (git pull). Falls back to the older
+#    manually-downloaded folder if the clone isn't present yet.
+data_folder <- "C:/Users/eshor/OneDrive/Tennis/tennis_atp"
+if (!dir.exists(data_folder)) {
+  data_folder <- "C:/Users/eshor/OneDrive/Tennis/tennis_atp-master"
+}
 file_list <- list.files(data_folder, pattern = "atp_matches_\\d{4}\\.csv", full.names = TRUE)
 
 # 🔁 Load valid matches from consistent tournaments
