@@ -307,12 +307,12 @@
     }
 
     // ---- Reign timeline (inline SVG, drawn to scale by reign length) ----
-    const PALETTE = ["#0c4a32","#b88a2a","#1f6f8b","#9c4a3f","#5b4b8a","#3a7d44",
-                     "#c2823b","#7a6f3a","#a8516e","#2f6d6d","#86603a","#4a6b2f"];
-    function colorFor(name, map) {
-      if (!(name in map)) map[name] = PALETTE[Object.keys(map).length % PALETTE.length];
-      return map[name];
-    }
+    // The longest-holding champions get distinct, hand-picked colours; everyone
+    // else is drawn in a single muted grey so the big names stand out.
+    const TOP_N = 8;
+    const HIGHLIGHT = ["#0c4a32", "#c8902a", "#2a7fb8", "#b0413e",
+                       "#6a4c93", "#e07a3f", "#1aa39a", "#8a5a2b"];
+    const GREY = "#c7c0b0";
     const isoOf = ms => new Date(ms).toISOString().slice(0, 10);
     const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -323,24 +323,33 @@
         .map(r => ({ champ: r.champion, s: parse(r.start_date), e: parse(r.end_date), days: +r.reign_days }));
       if (!data.length) return;
 
+      // Rank champions by total days, then colour the top few distinctly.
+      const totals = {};
+      data.forEach(d => totals[d.champ] = (totals[d.champ] || 0) + d.days);
+      const topChamps = Object.entries(totals).sort((a, b) => b[1] - a[1]).slice(0, TOP_N).map(e => e[0]);
+      const colorMap = {};
+      topChamps.forEach((n, i) => colorMap[n] = HIGHLIGHT[i]);
+      const colorOf = name => colorMap[name] || GREY;
+
       const minT = Math.min(...data.map(d => d.s));
       const maxT = Math.max(...data.map(d => d.e));
       const span = maxT - minT;
       const W = 1000, L = 12, R = 12, barY = 26, barH = 58, axisY = barY + barH;
       const x = t => L + (t - minT) / span * (W - L - R);
-      const colorMap = {};
 
       const track = '<rect x="' + L + '" y="' + barY + '" width="' + (W - L - R) +
                     '" height="' + barH + '" rx="5" fill="#efe9da"/>';
 
+      // Draw grey reigns first, highlighted ones on top so they read clearly.
+      const ordered = data.slice().sort((a, b) => (colorMap[a.champ] ? 1 : 0) - (colorMap[b.champ] ? 1 : 0));
       let rects = "";
-      data.forEach(d => {
+      ordered.forEach(d => {
         const xx = x(d.s), w = Math.max(0, x(d.e) - xx);
         if (w <= 0) return; // single-match (0-day) reigns occupy no time
-        const c = colorFor(d.champ, colorMap);
         const label = d.champ + ", " + isoOf(d.s) + " to " + isoOf(d.e) + " (" + d.days + " days)";
         rects += '<rect class="seg" x="' + xx.toFixed(2) + '" y="' + barY + '" width="' +
-                 w.toFixed(2) + '" height="' + barH + '" fill="' + c + '"><title>' + esc(label) + '</title></rect>';
+                 w.toFixed(2) + '" height="' + barH + '" fill="' + colorOf(d.champ) + '"><title>' +
+                 esc(label) + '</title></rect>';
       });
 
       let ticks = "";
@@ -358,15 +367,12 @@
         '" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">' +
         track + ticks + rects + '</svg>';
 
-      // Legend: the longest-holding champions, by total days.
-      const totals = {};
-      data.forEach(d => totals[d.champ] = (totals[d.champ] || 0) + d.days);
-      const top = Object.entries(totals).sort((a, b) => b[1] - a[1]).slice(0, 8);
       document.getElementById("timeline-legend").innerHTML =
         "Longest holders" +
         '<div class="holders">' +
-        top.map(([n]) => '<span class="holder"><span class="swatch" style="background:' + colorFor(n, colorMap) +
-                         '"></span>' + esc(n) + '</span>').join("") +
+        topChamps.map(n => '<span class="holder"><span class="swatch" style="background:' + colorOf(n) +
+                           '"></span>' + esc(n) + '</span>').join("") +
+        '<span class="holder"><span class="swatch" style="background:' + GREY + '"></span>Everyone else</span>' +
         '</div>' +
         '<div class="dormant">Title dormant after 26 August 2002, when Sampras retired undefeated.</div>';
     }
