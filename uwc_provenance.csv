@@ -1,0 +1,21 @@
+key,value
+start_date,19680422
+splice_year,2024
+end_year,2026
+backbone_source,Jeff Sackmann tennis_atp (local frozen 1968-2024)
+tail_source,TennisMyLife (live 2025-2026)
+independent_cross_check,datahub ATP-archive scrape (1968-1990)
+corroborating_cross_check,UTS / Ultimate Tennis Statistics (<=2021)
+ret_counts,TRUE
+wo_def_count,FALSE
+include_davis_cup,FALSE
+include_olympics,FALSE
+fragile_before,1985
+valid_levels,"G,M,A,F,250,500"
+verified_since,1998
+current_champion,Pete Sampras
+current_since,2002-08-26
+total_baton_hops,1029
+flagged_hops,57
+truly_isolated_hops,10
+generated,2026-06-27

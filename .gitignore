@@ -3,6 +3,11 @@
 tennis_atp-master/
 tennis_atp/
 
+# Cross-check datasets (large; reproducible from their sources)
+tml_data/
+datahub_match_scores_1968-1990.csv
+uts_matches.csv
+
 # Local editor / preview config
 .claude/
 

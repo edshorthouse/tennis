@@ -168,6 +168,26 @@
     .dataTables_wrapper .dataTables_length,
     .dataTables_wrapper .dataTables_filter { color: var(--muted); }
 
+    h3 { font-family: 'Fraunces', Georgia, serif; color: var(--green); font-size: 1.2rem; margin: 1.7rem 0 0.4rem; }
+
+    /* Integrity layer */
+    .verified-badge {
+      display: inline-block; margin-top: 1.1rem; padding: 0.35rem 0.95rem;
+      background: rgba(216,178,90,0.16); color: var(--gold-soft);
+      border: 1px solid rgba(216,178,90,0.5); border-radius: 999px;
+      font-size: 0.8rem; letter-spacing: 0.03em;
+    }
+    .tri { font-size: 1.02rem; margin: 0.4rem 0 1.2rem; }
+    .tri strong { color: var(--green); }
+    .prov { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.4rem; font-size: 0.92rem; margin: 0; }
+    .prov dt { color: var(--muted); }
+    .prov dd { margin: 0; }
+    .pill { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.76rem; font-weight: 500; margin: 0 0.15rem 0.15rem 0; }
+    .pill-sameday  { background: #fbe8c8; color: #8a5a00; }
+    .pill-disagree { background: #f3dede; color: #a23b3b; }
+    .pill-ret      { background: #e4eddf; color: #3a6b2f; }
+    td a.src { color: var(--green); text-decoration: none; border-bottom: 1px dotted var(--green); }
+
     /* Downloads */
     .downloads { display: flex; flex-wrap: wrap; gap: 0.6rem; }
     .downloads a {
@@ -213,6 +233,7 @@
       <div class="label">Current Ultimate World Champion</div>
       <div class="name" id="current-champion">…</div>
       <div class="meta" id="current-champion-meta"></div>
+      <div class="verified-badge" id="verified-badge"></div>
     </section>
 
     <section class="card">
@@ -266,6 +287,20 @@
     </section>
 
     <section class="card">
+      <h2>Data sources and chain integrity</h2>
+      <p>A lineal title is only as trustworthy as the single match that hands it over, so the chain is built to be audited. It runs on a frozen Jeff Sackmann base (1968 to 2024), extended with a live TennisMyLife tail (2025 to 2026), and every title-changing match is cross-checked against independent compilations.</p>
+      <p class="tri" id="triangulation"></p>
+      <dl class="prov" id="provenance"></dl>
+
+      <h3>Flagged baton hops</h3>
+      <p>The title changes worth a second look: ambiguous same-day ordering, a non-completed result, or a match an independent source does not carry. Each one links out to the primary records to settle it.</p>
+      <table id="baton-flags" class="display">
+        <thead><tr><th>Date</th><th>Lost by</th><th>Won by</th><th>Tournament</th><th>Flags</th><th>Verify</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
       <h2>Download the data</h2>
       <p>The full set of CSV files behind this page.</p>
       <div class="downloads">
@@ -274,6 +309,9 @@
         <a href="champion_summary.csv">Champion summary</a>
         <a href="top_reigns_by_days.csv">Top reigns by days</a>
         <a href="top_reigns_by_matches.csv">Top reigns by matches</a>
+        <a href="uwc_lineage.csv">Audited lineage (with sources)</a>
+        <a href="uwc_baton_flags.csv">Flagged baton hops</a>
+        <a href="uwc_provenance.csv">Provenance</a>
       </div>
     </section>
 
@@ -413,6 +451,57 @@
         renderTimeline(rows);
         fillBody("#reigns", rows, ["champion", "start_date", "end_date", "reign_days", "reign_matches"]);
         $("#reigns").DataTable({ order: [[1, "asc"]], pageLength: 25 });
+      });
+
+      // ---- Chain integrity layer ----
+      loadCsv("uwc_provenance.csv").then(rows => {
+        const m = {};
+        rows.forEach(r => m[r.key] = r.value);
+        const inout = v => v === "TRUE" ? "in" : "out";
+        $("#verified-badge").text("Chain verified-sound since " + m.verified_since);
+        const facts = [
+          ["Backbone", m.backbone_source],
+          ["Live tail", m.tail_source],
+          ["Independent cross-check", m.independent_cross_check],
+          ["Corroborating cross-check", m.corroborating_cross_check],
+          ["Included levels", m.valid_levels],
+          ["Retirements pass the title", m.ret_counts === "TRUE" ? "yes" : "no"],
+          ["Walkovers / defaults pass it", m.wo_def_count === "TRUE" ? "yes" : "no"],
+          ["Davis Cup / Olympics", inout(m.include_davis_cup) + " / " + inout(m.include_olympics)],
+          ["Total title changes", m.total_baton_hops],
+          ["Flagged for review", m.flagged_hops],
+          ["Generated", m.generated]
+        ];
+        $("#provenance").html(facts.map(([k, v]) => "<dt>" + k + "</dt><dd>" + (v ?? "") + "</dd>").join(""));
+      });
+
+      // Triangulation headline, computed from the audited lineage.
+      loadCsv("uwc_lineage.csv").then(rows => {
+        const early = rows.filter(r => +r.year <= 1990 && r.from);
+        const conf = early.filter(r => /DH/.test(r.corrob)).length;
+        const iso = early.filter(r => r.corrob === "S").length;
+        $("#triangulation").html(
+          "<strong>" + conf + " of " + early.length + "</strong> early-era (pre-1991) title changes are confirmed by an independent ATP-archive source. The remaining <strong>" + iso +
+          "</strong> appear in Sackmann's data alone and have each been checked by hand against primary records.");
+      });
+
+      // Flagged baton hops, with links out to adjudicate each one.
+      loadCsv("uwc_baton_flags.csv").then(rows => {
+        const $b = $("#baton-flags tbody");
+        rows.forEach(r => {
+          const pills = (r.flags || "").split(/\s+/).filter(Boolean).map(f => {
+            let cls = null;
+            if (f === "same-day") cls = "pill-sameday";
+            else if (f === "source-disagree") cls = "pill-disagree";
+            else if (f.indexOf("result") === 0) cls = "pill-ret";
+            return cls ? '<span class="pill ' + cls + '">' + f + "</span>" : "";
+          }).join("");
+          const verify = '<a class="src" href="' + r.wikipedia + '" target="_blank" rel="noopener">wiki</a> · ' +
+                         '<a class="src" href="' + r.atp_archive + '" target="_blank" rel="noopener">ATP</a>';
+          $b.append("<tr><td>" + r.match_date + "</td><td>" + (r.from || "") + "</td><td>" + r.to +
+                    "</td><td>" + r.tournament + "</td><td>" + pills + "</td><td>" + verify + "</td></tr>");
+        });
+        $("#baton-flags").DataTable({ order: [[0, "asc"]], pageLength: 10 });
       });
     });
   </script>
