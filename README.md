@@ -39,7 +39,7 @@ are **git-ignored**; they are reproducible from their sources (see [Reproducing 
 Open `index.html` through a local server or GitHub Pages (it loads CSVs via JavaScript, so it
 will not work from a bare `file://` path). It shows:
 
-- the current champion and a **"verified-sound since 1983"** badge;
+- the current champion and a **"verified-sound since 1982"** badge;
 - a **reign timeline** drawn to scale, with the longest-holding champions colour-coded;
 - **most days as champion**, **longest single reigns** (by days and by matches defended);
 - the **full title lineage** and **every individual reign**, all searchable and sortable;
@@ -129,6 +129,7 @@ Each hop is tagged with which sources carry it (`S` = Sackmann backbone, plus `T
 `man` where hand-verified), and flagged if it is:
 
 - **same-day** — genuinely ambiguous ordering (a tie the round order can't break across tournaments);
+- **schedule-conflict** — see the internal consistency audit below;
 - **source-disagree** — not corroborated by the independent source and not hand-verified;
 - **non-played** — a RET / W/O / DEF result.
 
@@ -136,15 +137,31 @@ A handful of pre-1985 hops that the independent source omits (WCT and minor even
 **hand-verified against primary records**; these are recorded with their citing source so they no longer
 count as unconfirmed. Three early hops remain genuinely unverifiable and are left flagged.
 
-The **verified-since year** is derived empirically: it is the earliest year from which the champion's path
-to the present touches no contested (same-day or unconfirmed) match. For the current build that is **1983**.
-With the round-robin treated as a pool stage, the only remaining cap is the independent ATP-archive source's
-patchy coverage of minor events into the early 1980s — not a dispute, just a coverage gap.
+### Internal consistency audit
+
+Beyond cross-checking against other sources, the chain is checked against itself for **physical
+possibility**. In a continuous lineal chain the champion crowned at one hop is exactly the one dethroned
+at the next, so if those two matches are at *different* tournaments only a few days apart, the champion
+would have had to be in two places at once. Because the data records only tournament start dates, this
+catches short "reigns" that bridge two overlapping events — e.g. Bob Lutz recorded as *winning* the
+Cologne WCT final (17 Oct 1971) and *losing* the Barcelona WCT final (18 Oct 1971). The audit flags **17**
+such conflicts, all pre-1980, and they count against the verified-since line.
+
+### The verified-since year
+
+This is derived empirically: the earliest year from which the champion's path to the present touches no
+contested match — where "contested" now means same-day-ambiguous, a source-disagreement, **or** a schedule
+conflict. For the current build it is **1982**. With the round-robin treated as a pool stage, the binding
+constraint is the independent ATP-archive source's patchy coverage of minor events into the early 1980s
+(a 1981 Bangkok event that could not be independently confirmed) — not a dispute, just a coverage gap.
+Pushing earlier requires hand-verifying those minor events one by one and resolving the 17 schedule
+conflicts, against a genuine early-Open-Era floor below which no source is complete.
 
 ### Current results
 
 - **988** baton hops from 1968 to the present; current champion **Pete Sampras**.
-- **34** flagged hops in total; **9** early-era hops hand-verified against primary records.
+- **48** flagged hops in total: **17** schedule conflicts, plus source-disagreements, non-completed results,
+  and one same-day (the seed). **10** early-era hops have been hand-verified against primary records.
 - **3** hops appear in Sackmann's data alone and could not be independently confirmed (1974 Tucson, 1975
   Houston). Every other isolated hop was checked and found to be a **real** match the official ATP archive
   simply omits, not an error.
@@ -158,7 +175,7 @@ In the interest of transparency, the known limitations of this methodology and i
 1. **The early Open Era is genuinely incomplete in every source.** 1968–c.1975 had overlapping circuits
    (WCT, the Grand Prix, the NTL pro tour) with patchy record-keeping. No public dataset is a complete match
    record for that period, so the earliest part of the lineage is inherently approximate and source-dependent.
-   This is precisely why the chain is only **verified-sound from 1983**; treat everything before then as
+   This is precisely why the chain is only **verified-sound from 1982**; treat everything before then as
    best-effort.
 
 2. **No dataset records actual match dates.** Every source — Sackmann, TennisMyLife, datahub and UTS — stores

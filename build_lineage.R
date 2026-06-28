@@ -28,6 +28,9 @@ RR_PASSES_TITLE   <- as.logical(Sys.getenv("RR_PASSES_TITLE", "FALSE"))
 INCLUDE_DAVIS_CUP <- FALSE      # tourney_level "D"
 INCLUDE_OLYMPICS  <- FALSE      # tourney_level "O"
 FRAGILE_BEFORE    <- 1985       # hops before this year are cross-checked and flagged as early-era
+CONFLICT_WINDOW   <- 5          # days: a reign that wins and loses the title at two different
+                                # tournaments this close together implies the champion was in two
+                                # places at once (only their start dates are known) -> data conflict
 
 SACK_DIR     <- "C:/Users/eshor/OneDrive/Tennis/tennis_atp-master"
 TML_DIR      <- "C:/Users/eshor/OneDrive/Tennis/tml_data"
@@ -74,11 +77,11 @@ NAME_ALIASES <- c(
 # the verification (keyed by year + winner + loser) stops them counting as
 # unconfirmed. Only matches actually checked are listed; unverifiable ones stay flagged.
 MANUAL_VERIFIED_RAW <- data.frame(
-  year   = c(1971, 1971, 1973, 1973, 1974, 1974, 1975, 1976, 1976),
+  year   = c(1971, 1971, 1973, 1973, 1974, 1974, 1975, 1976, 1976, 1982),
   winner = c("Bob Lutz", "Manuel Orantes", "Ove Bengtson", "Jaime Fillol", "Bob Lutz",
-             "John Newcombe", "Bob Lutz", "Bob Lutz", "Harold Solomon"),
+             "John Newcombe", "Bob Lutz", "Bob Lutz", "Harold Solomon", "Balazs Taroczy"),
   loser  = c("Jeff Borowiak", "Bob Lutz", "Ilie Nastase", "Ove Bengtson", "Dick Stockton",
-             "Bob Lutz", "John Alexander", "Roscoe Tanner", "Bob Lutz"),
+             "Bob Lutz", "John Alexander", "Roscoe Tanner", "Bob Lutz", "Yannick Noah"),
   source = c("Wikipedia 1971 WCT circuit (Lutz won Cologne)",
              "Wikipedia 1971 WCT circuit (Orantes won Barcelona)",
              "Sackmann full draw; Jacksonville won by Connors (datahub/UTS corroborate the SF)",
@@ -87,7 +90,8 @@ MANUAL_VERIFIED_RAW <- data.frame(
              "ITF/Wikipedia New Orleans WCT 1974 (won by Newcombe)",
              "Wikipedia 1975 Tokyo WCT (won by Lutz)",
              "Wikipedia 1976 Island Holidays Classic, Maui",
-             "Wikipedia 1976 Island Holidays Classic (Solomon d. Lutz 6-3 5-7 7-5)"),
+             "Wikipedia 1976 Island Holidays Classic (Solomon d. Lutz 6-3 5-7 7-5)",
+             "Wikipedia 1982 Nice International Open (Taroczy d. Noah 6-2 3-6 13-11)"),
   stringsAsFactors = FALSE
 )
 manual_src <- setNames(MANUAL_VERIFIED_RAW$source,
@@ -239,6 +243,12 @@ lin <- lin %>%
     # inside one event shares a date but is correctly ordered, so it is NOT flagged.
     f_same_day  = !is.na(prev_date) & as.numeric(match_date) == prev_date &
                   (tournament != prev_tour | round_order <= prev_ro),
+    # Internal consistency: this reign won the title at the previous hop's tournament
+    # and lost it here. If those are different tournaments only a few days apart, the
+    # champion would have had to be in two places at once -> a data conflict.
+    f_conflict  = !is.na(prev_date) & tournament != prev_tour &
+                  (as.numeric(match_date) - prev_date) >= 0 &
+                  (as.numeric(match_date) - prev_date) <= CONFLICT_WINDOW,
     # Non-completed result that nonetheless moved (or was tested against) the title.
     f_nonplayed = result %in% c("RET", "WO", "DEF"),
     # Fragile early era, where compilations are known to disagree.
@@ -265,8 +275,9 @@ lin <- lin %>%
 # Seed ordering is inherently ambiguous (many same-day opening-round matches).
 lin$f_same_day[1] <- TRUE
 
-# Disqualifying for "verified-sound": contested ordering or a source disagreement.
-lin <- lin %>% mutate(contested = f_same_day | f_disagree)
+# Disqualifying for "verified-sound": contested ordering, a source disagreement,
+# or a physically-impossible schedule conflict.
+lin <- lin %>% mutate(contested = f_same_day | f_disagree | f_conflict)
 worst_contested <- suppressWarnings(max(lin$year[lin$contested], na.rm = TRUE))
 verified_since  <- if (is.finite(worst_contested)) worst_contested + 1 else min(lin$year)
 
@@ -276,10 +287,11 @@ wiki_link <- function(y, t) paste0("https://en.wikipedia.org/w/index.php?search=
 atp_link  <- function(y, t) paste0("https://www.google.com/search?q=", enc(paste0("site:atptour.com ", y, " ", t)))
 
 flagged <- lin %>%
-  filter(f_same_day | f_disagree | f_nonplayed) %>%
+  filter(f_same_day | f_disagree | f_nonplayed | f_conflict) %>%
   mutate(
     flags = trimws(paste(
       ifelse(f_same_day,  "same-day", ""),
+      ifelse(f_conflict,  "schedule-conflict", ""),
       ifelse(f_disagree,  "source-disagree", ""),
       ifelse(f_nonplayed, paste0("result:", result), ""),
       ifelse(f_early,     "early-era", ""))),
@@ -294,7 +306,7 @@ flagged <- lin %>%
 lineage_out <- lin %>%
   transmute(hop, date = tourney_date, match_date, from, to, tournament, round, score,
             result, source, corrob, year,
-            same_day = f_same_day, source_disagree = f_disagree,
+            same_day = f_same_day, schedule_conflict = f_conflict, source_disagree = f_disagree,
             non_played = f_nonplayed, early_era = f_early, manual_source)
 
 write_csv(lineage_out, file.path(OUT_DIR, "uwc_lineage.csv"), na = "")
@@ -305,13 +317,13 @@ provenance <- tibble::tibble(
           "independent_cross_check", "corroborating_cross_check", "ret_counts", "wo_def_count",
           "rr_passes_title", "include_davis_cup", "include_olympics", "fragile_before", "valid_levels",
           "verified_since", "current_champion", "current_since", "total_baton_hops",
-          "flagged_hops", "manually_verified_hops", "truly_isolated_hops", "generated"),
+          "flagged_hops", "schedule_conflicts", "manually_verified_hops", "truly_isolated_hops", "generated"),
   value = c(START_DATE, SPLICE_YEAR, END_YEAR, "Jeff Sackmann tennis_atp (local frozen 1968-2024)",
             "TennisMyLife (live 2025-2026)", "datahub ATP-archive scrape (1968-1990)",
             "UTS / Ultimate Tennis Statistics (<=2021)", RET_COUNTS, WO_DEF_COUNT, RR_PASSES_TITLE,
             INCLUDE_DAVIS_CUP, INCLUDE_OLYMPICS, FRAGILE_BEFORE, paste(valid_levels, collapse = ","),
             verified_since, champ_disp, format(max(lin$match_date)), nrow(lin), nrow(flagged),
-            sum(lin$in_manual), sum(lin$corrob == "S"), as.character(Sys.Date()))
+            sum(lin$f_conflict), sum(lin$in_manual), sum(lin$corrob == "S"), as.character(Sys.Date()))
 )
 write_csv(provenance, file.path(OUT_DIR, "uwc_provenance.csv"))
 
@@ -320,8 +332,8 @@ cat("\n================ CHAIN-INTEGRITY SUMMARY ================\n")
 cat(sprintf("Baton hops (incl. seed): %d\n", nrow(lin)))
 cat(sprintf("Current champion: %s (since %s)\n", champ_disp, format(max(lin$match_date))))
 cat(sprintf("Empirical verified-sound since: %d\n", verified_since))
-cat(sprintf("Flagged hops to adjudicate: %d  (same-day=%d, source-disagree=%d, non-played=%d)\n",
-            nrow(flagged), sum(lin$f_same_day), sum(lin$f_disagree), sum(lin$f_nonplayed)))
+cat(sprintf("Flagged hops to adjudicate: %d  (same-day=%d, schedule-conflict=%d, source-disagree=%d, non-played=%d)\n",
+            nrow(flagged), sum(lin$f_same_day), sum(lin$f_conflict), sum(lin$f_disagree), sum(lin$f_nonplayed)))
 cat(sprintf("  of which pre-%d (fragile era): %d\n", FRAGILE_BEFORE, sum(flagged$year < FRAGILE_BEFORE)))
 cat("\nEarly-era triangulation (baton hops 1968-1990, by which sources carry the match):\n")
 early <- lin %>% filter(year <= 1990, !is.na(from_canon))

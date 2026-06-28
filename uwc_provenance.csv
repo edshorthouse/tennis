@@ -13,11 +13,12 @@ include_davis_cup,FALSE
 include_olympics,FALSE
 fragile_before,1985
 valid_levels,"G,M,A,F,250,500"
-verified_since,1983
+verified_since,1982
 current_champion,Pete Sampras
 current_since,2002-08-26
 total_baton_hops,988
-flagged_hops,34
-manually_verified_hops,9
+flagged_hops,48
+schedule_conflicts,17
+manually_verified_hops,10
 truly_isolated_hops,3
 generated,2026-06-28

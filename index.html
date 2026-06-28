@@ -184,6 +184,7 @@
     .prov dd { margin: 0; }
     .pill { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.76rem; font-weight: 500; margin: 0 0.15rem 0.15rem 0; }
     .pill-sameday  { background: #fbe8c8; color: #8a5a00; }
+    .pill-conflict { background: #e7def2; color: #5b3a8a; }
     .pill-disagree { background: #f3dede; color: #a23b3b; }
     .pill-ret      { background: #e4eddf; color: #3a6b2f; }
     td a.src { color: var(--green); text-decoration: none; border-bottom: 1px dotted var(--green); }
@@ -496,6 +497,7 @@
           const pills = (r.flags || "").split(/\s+/).filter(Boolean).map(f => {
             let cls = null;
             if (f === "same-day") cls = "pill-sameday";
+            else if (f === "schedule-conflict") cls = "pill-conflict";
             else if (f === "source-disagree") cls = "pill-disagree";
             else if (f.indexOf("result") === 0) cls = "pill-ret";
             return cls ? '<span class="pill ' + cls + '">' + f + "</span>" : "";
