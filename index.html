@@ -324,9 +324,11 @@
 
   <script>
     // Robustly load a CSV (handles quoted commas) and hand back row objects.
+    // A cache-busting query param ensures a rebuilt dataset is always fetched fresh.
     function loadCsv(path) {
+      const url = path + (path.indexOf("?") === -1 ? "?" : "&") + "v=" + Date.now();
       return new Promise((resolve, reject) => {
-        Papa.parse(path, {
+        Papa.parse(url, {
           download: true,
           header: true,
           skipEmptyLines: true,
