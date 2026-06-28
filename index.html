@@ -479,10 +479,12 @@
       loadCsv("uwc_lineage.csv").then(rows => {
         const early = rows.filter(r => +r.year <= 1990 && r.from);
         const conf = early.filter(r => /DH/.test(r.corrob)).length;
+        const manual = early.filter(r => /man/.test(r.corrob)).length;
         const iso = early.filter(r => r.corrob === "S").length;
         $("#triangulation").html(
-          "<strong>" + conf + " of " + early.length + "</strong> early-era (pre-1991) title changes are confirmed by an independent ATP-archive source. The remaining <strong>" + iso +
-          "</strong> appear in Sackmann's data alone and have each been checked by hand against primary records.");
+          "<strong>" + conf + " of " + early.length + "</strong> early-era (pre-1991) title changes are confirmed by the independent ATP-archive source, and a further <strong>" + manual +
+          "</strong> have been hand-verified against primary records. <strong>" + iso +
+          "</strong> remain in Sackmann's data alone (real matches the independent sources omit, listed below).");
       });
 
       // Flagged baton hops, with links out to adjudicate each one.

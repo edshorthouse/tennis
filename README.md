@@ -39,7 +39,7 @@ are **git-ignored**; they are reproducible from their sources (see [Reproducing 
 Open `index.html` through a local server or GitHub Pages (it loads CSVs via JavaScript, so it
 will not work from a bare `file://` path). It shows:
 
-- the current champion and a **"verified-sound since 1998"** badge;
+- the current champion and a **"verified-sound since 1983"** badge;
 - a **reign timeline** drawn to scale, with the longest-holding champions colour-coded;
 - **most days as champion**, **longest single reigns** (by days and by matches defended);
 - the **full title lineage** and **every individual reign**, all searchable and sortable;
@@ -67,7 +67,13 @@ python -m http.server 8000
 3. **Walkovers and retirements.** A **retirement (RET)** counts as a loss and passes the title (the
    champion failed to finish). A **walkover (W/O)** or **default (DEF)** does **not** pass the title
    (no contested match took place). These are toggles; the defaults are RET = pass, W/O and DEF = no.
-4. **No vacancy rule (dormancy).** A champion who never loses again keeps the title indefinitely.
+4. **Round-robin is a non-eliminating pool stage.** A loss in a round-robin group (e.g. the Tour
+   Finals) does **not** pass the title; only knockout losses do. This is a toggle (`RR_PASSES_TITLE`,
+   default off). The justification is twofold: a round-robin loss does not eliminate a player, and —
+   decisively — no dataset records the actual day each round-robin match was played, so their order can
+   never be recovered. Treating the round-robin as a pool stage dissolves an otherwise permanent
+   ambiguity rather than guessing at it.
+5. **No vacancy rule (dormancy).** A champion who never loses again keeps the title indefinitely.
    Pete Sampras won the 2002 US Open, which proved to be his last match; he retired without losing,
    so the title has been **dormant** with him ever since. His reign is counted up to his last actual
    match rather than rolling on through the rest of the dataset.
@@ -119,25 +125,29 @@ suffixes and punctuation removed, with a hand alias for Pancho Gonzalez). Cross-
 ±1-year window to absorb calendar-versus-season filing (e.g. the 1975 Australian Open played in December
 1974).
 
-Each hop is tagged with which sources carry it (`S` = Sackmann backbone, plus `TML` / `DH` / `UTS`), and
-flagged if it is:
+Each hop is tagged with which sources carry it (`S` = Sackmann backbone, plus `TML` / `DH` / `UTS`, and
+`man` where hand-verified), and flagged if it is:
 
-- **same-day** — genuinely ambiguous ordering (a tie the round order can't break, e.g. round-robin matches);
-- **source-disagree** — not corroborated by the independent source;
+- **same-day** — genuinely ambiguous ordering (a tie the round order can't break across tournaments);
+- **source-disagree** — not corroborated by the independent source and not hand-verified;
 - **non-played** — a RET / W/O / DEF result.
 
+A handful of pre-1985 hops that the independent source omits (WCT and minor events) have been
+**hand-verified against primary records**; these are recorded with their citing source so they no longer
+count as unconfirmed. Three early hops remain genuinely unverifiable and are left flagged.
+
 The **verified-since year** is derived empirically: it is the earliest year from which the champion's path
-to the present touches no contested (same-day or unconfirmed) match. For the current build that is **1998**,
-capped by the 1997 Tour Finals round-robin, where same-day, same-round results have no recoverable order.
+to the present touches no contested (same-day or unconfirmed) match. For the current build that is **1983**.
+With the round-robin treated as a pool stage, the only remaining cap is the independent ATP-archive source's
+patchy coverage of minor events into the early 1980s — not a dispute, just a coverage gap.
 
 ### Current results
 
-- **1,029** baton hops from 1968 to the present; current champion **Pete Sampras**.
-- **57** flagged hops in total; in the fragile pre-1991 era, **551 of 576** are confirmed by the independent
-  ATP-archive source.
-- **10** hops appear in Sackmann's data alone. Each has been checked by hand against primary records and found
-  to be a **real** match — they are WCT and minor Grand-Prix events that the official ATP archive simply omits,
-  not errors.
+- **988** baton hops from 1968 to the present; current champion **Pete Sampras**.
+- **34** flagged hops in total; **9** early-era hops hand-verified against primary records.
+- **3** hops appear in Sackmann's data alone and could not be independently confirmed (1974 Tucson, 1975
+  Houston). Every other isolated hop was checked and found to be a **real** match the official ATP archive
+  simply omits, not an error.
 
 ---
 
@@ -148,12 +158,15 @@ In the interest of transparency, the known limitations of this methodology and i
 1. **The early Open Era is genuinely incomplete in every source.** 1968–c.1975 had overlapping circuits
    (WCT, the Grand Prix, the NTL pro tour) with patchy record-keeping. No public dataset is a complete match
    record for that period, so the earliest part of the lineage is inherently approximate and source-dependent.
-   This is precisely why the chain is only **verified-sound from 1998**; treat everything before then as
+   This is precisely why the chain is only **verified-sound from 1983**; treat everything before then as
    best-effort.
 
-2. **`tourney_date` is a start date, not a match date.** Round order fixes the sequence *within* a tournament,
-   but it cannot order two title-relevant matches in the **same round** (e.g. round-robin) or in **different
-   tournaments running the same week**. These remain genuine ordering ambiguities and are flagged, not resolved.
+2. **No dataset records actual match dates.** Every source — Sackmann, TennisMyLife, datahub and UTS — stores
+   only the tournament's start date, so all matches in an event share one date. Round order fixes the sequence
+   *within* a knockout draw, but the true order of matches in the **same round** (a round-robin) or in
+   **different tournaments the same week** is unrecoverable from any data, and even primary sources rarely
+   publish it. The round-robin case is handled by the pool-stage rule; the rare same-week cross-tournament case
+   is flagged, not resolved.
 
 3. **The seed is itself ambiguous.** Owen Davidson is assigned as the first champion by the project's premise,
    but the true order of the opening-round matches at Bournemouth is unknowable from the data. The seed is

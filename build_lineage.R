@@ -21,6 +21,10 @@ SPLICE_YEAR       <- 2024       # Sackmann backbone through this year; TML tail 
 END_YEAR          <- 2026
 RET_COUNTS        <- TRUE       # a retirement passes the title
 WO_DEF_COUNT      <- FALSE      # walkovers and defaults do NOT pass the title
+# Do round-robin losses pass the lineal title? RR ordering is unrecoverable from
+# any dataset, so treating the round-robin as a non-eliminating pool stage (FALSE)
+# removes that ambiguity. Overridable via env var for A/B measurement.
+RR_PASSES_TITLE   <- as.logical(Sys.getenv("RR_PASSES_TITLE", "FALSE"))
 INCLUDE_DAVIS_CUP <- FALSE      # tourney_level "D"
 INCLUDE_OLYMPICS  <- FALSE      # tourney_level "O"
 FRAGILE_BEFORE    <- 1985       # hops before this year are cross-checked and flagged as early-era
@@ -64,6 +68,32 @@ NAME_ALIASES <- c(
   "pancho gonzales"         = "richard gonzalez",
   "richard gonzales"        = "richard gonzalez"
 )
+
+# Hops hand-verified against primary sources during manual adjudication. These are
+# real matches the independent datahub scrape omits (WCT / minor events); recording
+# the verification (keyed by year + winner + loser) stops them counting as
+# unconfirmed. Only matches actually checked are listed; unverifiable ones stay flagged.
+MANUAL_VERIFIED_RAW <- data.frame(
+  year   = c(1971, 1971, 1973, 1973, 1974, 1974, 1975, 1976, 1976),
+  winner = c("Bob Lutz", "Manuel Orantes", "Ove Bengtson", "Jaime Fillol", "Bob Lutz",
+             "John Newcombe", "Bob Lutz", "Bob Lutz", "Harold Solomon"),
+  loser  = c("Jeff Borowiak", "Bob Lutz", "Ilie Nastase", "Ove Bengtson", "Dick Stockton",
+             "Bob Lutz", "John Alexander", "Roscoe Tanner", "Bob Lutz"),
+  source = c("Wikipedia 1971 WCT circuit (Lutz won Cologne)",
+             "Wikipedia 1971 WCT circuit (Orantes won Barcelona)",
+             "Sackmann full draw; Jacksonville won by Connors (datahub/UTS corroborate the SF)",
+             "Sackmann full draw; Jacksonville won by Connors (datahub/UTS corroborate the SF)",
+             "ITF/Wikipedia New Orleans WCT 1974 (won by Newcombe)",
+             "ITF/Wikipedia New Orleans WCT 1974 (won by Newcombe)",
+             "Wikipedia 1975 Tokyo WCT (won by Lutz)",
+             "Wikipedia 1976 Island Holidays Classic, Maui",
+             "Wikipedia 1976 Island Holidays Classic (Solomon d. Lutz 6-3 5-7 7-5)"),
+  stringsAsFactors = FALSE
+)
+manual_src <- setNames(MANUAL_VERIFIED_RAW$source,
+                       paste(MANUAL_VERIFIED_RAW$year,
+                             canon(MANUAL_VERIFIED_RAW$winner),
+                             canon(MANUAL_VERIFIED_RAW$loser)))
 
 # Classify a scoreline as a completed match, retirement, walkover, or default.
 result_type <- function(s) {
@@ -166,7 +196,7 @@ cat(sprintf("Loaded %d qualifying matches (backbone+tail); cross-checks: TML=%d,
 n  <- nrow(atp)
 wc <- atp$w_canon; lc <- atp$l_canon
 wn <- atp$winner_name; ln <- atp$loser_name
-rt <- atp$restype
+rt <- atp$restype; rd <- atp$round
 
 # Seed: Owen Davidson holds the title from the first Open Era match. The opening
 # order at Bournemouth is itself ambiguous, so the seed is flagged same-day below.
@@ -179,7 +209,9 @@ hops[[1]] <- list(hop = 0L, tourney_date = atp$tourney_date[1], match_date = atp
 
 for (i in seq_len(n)) {
   if (lc[i] == champ) {
-    hold <- ((rt[i] %in% c("WO", "DEF")) && !WO_DEF_COUNT) || (rt[i] == "RET" && !RET_COUNTS)
+    hold <- ((rt[i] %in% c("WO", "DEF")) && !WO_DEF_COUNT) ||
+            (rt[i] == "RET" && !RET_COUNTS) ||
+            (rd[i] == "RR" && !RR_PASSES_TITLE)
     if (hold) next                      # title successfully "defended" by a non-loss
     hops[[length(hops) + 1]] <- list(
       hop = length(hops), tourney_date = atp$tourney_date[i], match_date = atp$match_date[i],
@@ -217,13 +249,18 @@ lin <- lin %>%
     # "confirmed" uses only the genuinely independent source (datahub, an ATP-site
     # scrape) for <=1990, and TML for later years. corrob lists every source that
     # carries the match: S=Sackmann backbone (always), TML, DH=datahub, UTS.
-    confirmed   = ifelse(year <= 1990, in_dh_hit, in_tml_hit),
+    mkey        = paste(year, to_canon, from_canon),
+    in_manual   = mkey %in% names(manual_src),
+    manual_source = unname(manual_src[mkey]),
+    # "confirmed" = corroborated by the independent source, or hand-verified.
+    confirmed   = ifelse(year <= 1990, in_dh_hit, in_tml_hit) | in_manual,
     f_disagree  = source != "tail" & !is.na(from_canon) & !confirmed,
     corrob = ifelse(is.na(from_canon), "seed",
               paste0("S",
                      ifelse(in_tml_hit, "+TML", ""),
                      ifelse(in_dh_hit,  "+DH",  ""),
-                     ifelse(in_uts_hit, "+UTS", "")))
+                     ifelse(in_uts_hit, "+UTS", ""),
+                     ifelse(in_manual,  "+man", "")))
   )
 # Seed ordering is inherently ambiguous (many same-day opening-round matches).
 lin$f_same_day[1] <- TRUE
@@ -258,7 +295,7 @@ lineage_out <- lin %>%
   transmute(hop, date = tourney_date, match_date, from, to, tournament, round, score,
             result, source, corrob, year,
             same_day = f_same_day, source_disagree = f_disagree,
-            non_played = f_nonplayed, early_era = f_early)
+            non_played = f_nonplayed, early_era = f_early, manual_source)
 
 write_csv(lineage_out, file.path(OUT_DIR, "uwc_lineage.csv"), na = "")
 write_csv(flagged,     file.path(OUT_DIR, "uwc_baton_flags.csv"), na = "")
@@ -266,15 +303,15 @@ write_csv(flagged,     file.path(OUT_DIR, "uwc_baton_flags.csv"), na = "")
 provenance <- tibble::tibble(
   key = c("start_date", "splice_year", "end_year", "backbone_source", "tail_source",
           "independent_cross_check", "corroborating_cross_check", "ret_counts", "wo_def_count",
-          "include_davis_cup", "include_olympics", "fragile_before", "valid_levels",
+          "rr_passes_title", "include_davis_cup", "include_olympics", "fragile_before", "valid_levels",
           "verified_since", "current_champion", "current_since", "total_baton_hops",
-          "flagged_hops", "truly_isolated_hops", "generated"),
+          "flagged_hops", "manually_verified_hops", "truly_isolated_hops", "generated"),
   value = c(START_DATE, SPLICE_YEAR, END_YEAR, "Jeff Sackmann tennis_atp (local frozen 1968-2024)",
             "TennisMyLife (live 2025-2026)", "datahub ATP-archive scrape (1968-1990)",
-            "UTS / Ultimate Tennis Statistics (<=2021)", RET_COUNTS, WO_DEF_COUNT,
+            "UTS / Ultimate Tennis Statistics (<=2021)", RET_COUNTS, WO_DEF_COUNT, RR_PASSES_TITLE,
             INCLUDE_DAVIS_CUP, INCLUDE_OLYMPICS, FRAGILE_BEFORE, paste(valid_levels, collapse = ","),
             verified_since, champ_disp, format(max(lin$match_date)), nrow(lin), nrow(flagged),
-            sum(lin$corrob == "S"), as.character(Sys.Date()))
+            sum(lin$in_manual), sum(lin$corrob == "S"), as.character(Sys.Date()))
 )
 write_csv(provenance, file.path(OUT_DIR, "uwc_provenance.csv"))
 
