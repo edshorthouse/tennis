@@ -17,8 +17,8 @@ verified_since,1982
 current_champion,Pete Sampras
 current_since,2002-08-26
 total_baton_hops,988
-flagged_hops,48
-schedule_conflicts,17
+flagged_hops,39
+schedule_conflicts,6
 manually_verified_hops,10
 truly_isolated_hops,3
-generated,2026-06-28
+generated,2026-06-29

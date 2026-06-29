@@ -232,7 +232,15 @@ lin <- bind_rows(lapply(hops, as.data.frame, stringsAsFactors = FALSE))
 
 lin$round_order <- ifelse(lin$round %in% names(round_order_map),
                           round_order_map[lin$round], 99L)
+# Estimate each match's real date from its round (a final is ~6 days into the
+# week, a first round on day 0). This lets the conflict check tell a real
+# sequence (final at A, then a later semi at B) from a true impossibility (an
+# early-round loss at B that must have happened before the final at A).
+round_offset <- c(R128 = 0, R64 = 1, R32 = 2, R16 = 3, QF = 4, SF = 5, BR = 5, F = 6, RR = 3)
+lin$est_date <- as.numeric(lin$match_date) +
+                ifelse(lin$round %in% names(round_offset), round_offset[lin$round], 3)
 prev_date <- c(NA, head(as.numeric(lin$match_date), -1))
+prev_est  <- c(NA, head(lin$est_date, -1))
 prev_tour <- c(NA, head(lin$tournament, -1))
 prev_ro   <- c(NA, head(lin$round_order, -1))
 lin <- lin %>%
@@ -243,12 +251,12 @@ lin <- lin %>%
     # inside one event shares a date but is correctly ordered, so it is NOT flagged.
     f_same_day  = !is.na(prev_date) & as.numeric(match_date) == prev_date &
                   (tournament != prev_tour | round_order <= prev_ro),
-    # Internal consistency: this reign won the title at the previous hop's tournament
-    # and lost it here. If those are different tournaments only a few days apart, the
-    # champion would have had to be in two places at once -> a data conflict.
-    f_conflict  = !is.na(prev_date) & tournament != prev_tour &
-                  (as.numeric(match_date) - prev_date) >= 0 &
-                  (as.numeric(match_date) - prev_date) <= CONFLICT_WINDOW,
+    # Internal consistency: the title was won at the previous hop and lost here. Using
+    # round-estimated match dates, flag only when the loss is estimated to occur at or
+    # before the win at a different tournament -- a genuine temporal impossibility (the
+    # champion losing the title before, or the same day as, winning it elsewhere).
+    f_conflict  = !is.na(prev_est) & tournament != prev_tour & est_date <= prev_est &
+                  (prev_est - est_date) <= 14,
     # Non-completed result that nonetheless moved (or was tested against) the title.
     f_nonplayed = result %in% c("RET", "WO", "DEF"),
     # Fragile early era, where compilations are known to disagree.

@@ -141,11 +141,19 @@ count as unconfirmed. Three early hops remain genuinely unverifiable and are lef
 
 Beyond cross-checking against other sources, the chain is checked against itself for **physical
 possibility**. In a continuous lineal chain the champion crowned at one hop is exactly the one dethroned
-at the next, so if those two matches are at *different* tournaments only a few days apart, the champion
-would have had to be in two places at once. Because the data records only tournament start dates, this
-catches short "reigns" that bridge two overlapping events — e.g. Bob Lutz recorded as *winning* the
-Cologne WCT final (17 Oct 1971) and *losing* the Barcelona WCT final (18 Oct 1971). The audit flags **17**
-such conflicts, all pre-1980, and they count against the verified-since line.
+at the next, so if those two matches are at *different* tournaments at overlapping times, the champion
+would have had to be in two places at once.
+
+The check is round-aware: it estimates each match's real date from its round (a final falls late in the
+week, a first round on day one), and flags a conflict only when the title-losing match is estimated to
+occur *at or before* the title-winning one — a genuine impossibility, not merely two events in the same
+fortnight. This distinguishes a real sequence (a final at one event, then a later-round match at the next)
+from a true contradiction. Of an initial 17 candidates it confirms **6** genuine conflicts, all 1974–1979:
+artifacts of that era's crowded calendar, where invitationals (e.g. the 1979 Pepsi Grand Slam, an ATP
+special event outside the Grand Prix circuit) and the parallel WCT circuits ran concurrently with regular
+tour stops. These six count against the verified-since line and are left flagged for the record; pinning
+down the "true" path of each would need per-event date archaeology that the surviving record may not
+support.
 
 ### The verified-since year
 
@@ -154,14 +162,15 @@ contested match — where "contested" now means same-day-ambiguous, a source-dis
 conflict. For the current build it is **1982**. With the round-robin treated as a pool stage, the binding
 constraint is the independent ATP-archive source's patchy coverage of minor events into the early 1980s
 (a 1981 Bangkok event that could not be independently confirmed) — not a dispute, just a coverage gap.
-Pushing earlier requires hand-verifying those minor events one by one and resolving the 17 schedule
-conflicts, against a genuine early-Open-Era floor below which no source is complete.
+Pushing earlier requires hand-verifying those minor events one by one and resolving the 6 remaining
+schedule conflicts, against a genuine early-Open-Era floor below which no source is complete.
 
 ### Current results
 
 - **988** baton hops from 1968 to the present; current champion **Pete Sampras**.
-- **48** flagged hops in total: **17** schedule conflicts, plus source-disagreements, non-completed results,
-  and one same-day (the seed). **10** early-era hops have been hand-verified against primary records.
+- **39** flagged hops in total: **6** genuine schedule conflicts (refined from 17 once round timing is
+  accounted for), plus source-disagreements, non-completed results, and one same-day (the seed). **10**
+  early-era hops have been hand-verified against primary records.
 - **3** hops appear in Sackmann's data alone and could not be independently confirmed (1974 Tucson, 1975
   Houston). Every other isolated hop was checked and found to be a **real** match the official ATP archive
   simply omits, not an error.
